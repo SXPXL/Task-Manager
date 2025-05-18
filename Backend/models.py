@@ -1,5 +1,7 @@
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column,Date, Integer, String,ForeignKey, DateTime
+from sqlalchemy.orm import relationship
 from database import Base
+
 
 
 class User(Base):
@@ -17,13 +19,29 @@ class User(Base):
   username =  Column(String,nullable=False)
   email  = Column(String,unique=True,nullable=False,index=True,)
   hashed_password = Column(String,nullable=False)
-  '''
-  role = Column(String,default="user")
+  role = Column(String,default="member")
   
 
 
 # Creating table for storing Projects
 class Project(Base):
   __tablename__= "projects"
+  id = Column(Integer, primary_key=True,index=True,autoincrement=True)
+  title = Column(String,index=True)
+  description = Column(String,nullable=False)
+  #owner_id = Column(Integer,nullable=False)
+  tasks = relationship("Task", back_populates="project", cascade="all,delete")
 
-  '''
+
+# Creating table for storing Tasks
+class Task(Base):
+  __tablename__= "tasks"
+  id = Column(Integer, primary_key=True,index=True,autoincrement=True)
+  title = Column(String,nullable=False)
+  description = Column(String,nullable=False)
+  status = Column(String,default="pending")
+  due_date = Column(Date,nullable=False)
+  assigned_to = Column(Integer,ForeignKey("users.id"),nullable=False)
+  project_id = Column(Integer,ForeignKey("projects.id"))
+  project = relationship("Project", back_populates="tasks")
+  assigned_user = relationship("User")

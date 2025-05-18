@@ -3,3 +3,5 @@ sqlalchemy
 uvicorn
 python-jose
 passlib[bcrypt]
+axios
+react-router-dom

@@ -1,6 +1,9 @@
 from passlib.context import CryptContext
 from jose import jwt 
 from datetime import datetime, timedelta
+from fastapi import HTTPException
+
+
 
 # Password hashing
 password_context=CryptContext(schemes=["bcrypt"],deprecated="auto")
@@ -24,3 +27,16 @@ def create_token(data: dict, minutes: int=30):
   copy_data.update({"exp":expire})
   token = jwt.encode(copy_data,secret_key,algorithm=algorithm)
   return token
+
+
+def validate_password(password: str):
+    if len(password) < 8:
+        raise HTTPException(status_code=400, detail="Password must be at least 8 characters long")
+    if not any(char.isdigit() for char in password):
+        raise HTTPException(status_code=400, detail="Password must include at least one number")
+    if not any(char.isupper() for char in password):
+        raise HTTPException(status_code=400, detail="Password must include at least one uppercase letter")
+    if not any(char.islower() for char in password):
+        raise HTTPException(status_code=400, detail="Password must include at least one lowercase letter")
+    if not any(char in "!@#$%^&*()-_=+[]{}|;:',.<>?/`~" for char in password):
+        raise HTTPException(status_code=400, detail="Password must include at least one special character")

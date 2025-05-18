@@ -1,0 +1,5 @@
+Task status update is currently set to TaskUPdate(no seperate endpoint to update status). Check if status can be passed by the frontend.
+
+Creat UI fro Dashboard
+
+Improve component UI
