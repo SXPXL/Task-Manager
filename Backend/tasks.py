@@ -1,10 +1,13 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException,File, UploadFile
 from sqlalchemy.orm import Session
-from models import Project, Task
-from schemas import TaskCreate, TaskUpdate, TaskOut, ProjectCreate, ProjectOut
+from fastapi.responses import StreamingResponse
+from models import Project, Task, Attachment
+from schemas import TaskCreate, TaskUpdate, TaskOut, ProjectCreate, ProjectOut, AttachmentOut
 from database import get_db
 from typing import List
 from permissions import manager_required
+from io import BytesIO
+
 router = APIRouter()
 
 @router.post("/create-projects",dependencies=[Depends(manager_required)])
@@ -25,6 +28,8 @@ def create_task(task: TaskCreate, db: Session = Depends(get_db)):
    project = db.query(Project).filter(Project.id==task.project_id).first()
    if not project:
         raise HTTPException(status_code=404, detail="Project not found")
+   if task.due_date < task.start_date:
+        raise HTTPException(status_code=400, detail="Due date cannot be before start date")
    new_task = Task(**task.dict())
    db.add(new_task)
    db.commit()
@@ -67,4 +72,45 @@ def update_task(task_id:int, task: TaskUpdate, db: Session = Depends(get_db)):
     db.refresh(db_task)
     return db_task
 
+#22/5/2025
+@router.post("/tasks/{task_id}/attachments/")
+async def upload_attachment(
+    task_id: int,
+    file: UploadFile = File(...),
+    db: Session = Depends(get_db)
+):
+    if not file.filename.lower().endswith('.eml'):
+        raise HTTPException(status_code=400, detail='Only .eml files are allowed')
+       
+    content = await file.read()
 
+    attachment = Attachment(
+        filename=file.filename,
+        content_type=file.content_type,
+        file_data=content,
+        task_id=task_id
+    )
+    db.add(attachment)
+    db.commit()
+    db.refresh(attachment)
+    return {"filename": attachment.filename, "id": attachment.id}
+
+
+@router.get("/tasks/{task_id}/attachments/",response_model=List[AttachmentOut])
+def get_attachments(task_id: int, db: Session = Depends(get_db)):
+    emails = db.query(Attachment).filter(Attachment.task_id == task_id).order_by(Attachment.created_at.desc()).all()
+    return emails
+    
+
+@router.get("/attachments/download/{attachment_id}")
+def download_attachment(attachment_id: int, db: Session = Depends(get_db)):
+    attachment = db.query(Attachment).filter(Attachment.id == attachment_id).first()
+    
+    if not attachment:
+        raise HTTPException(status_code=404, detail="Attachment not found")
+    
+    return StreamingResponse(
+        BytesIO(attachment.file_data),
+        media_type="message/rfc822",  # MIME type for .eml
+        headers={"Content-Disposition": f"attachment; filename={attachment.filename}"}
+    )

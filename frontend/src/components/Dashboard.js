@@ -4,6 +4,7 @@ import axios from 'axios';
 import { useAuth } from '../context/AuthContext';
 import './styles/Dashboard.css';
 import CreateProject from './CreateProject';
+import GreenSpinner from './Spinner';
 
 const Dashboard = () => {
   const { user, token, logout } = useAuth();
@@ -65,6 +66,7 @@ const Dashboard = () => {
   };
 
   return (
+    <div className='wholepage'>
     <div className="dashboard-container">
       <div className="top-bar">
         <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
@@ -74,12 +76,17 @@ const Dashboard = () => {
         <button className="logout-btn" onClick={handleLogout}>Logout</button>
       </div>
 
-      {menuOpen && (
-        <div className="hamburger-menu">
-          <p>Role: {role}</p>
-          {/* Add role-based options here later */}
-        </div>
-      )}
+      {menuOpen && <div className="overlay" onClick={() => setMenuOpen(false)} />}
+  <div className={`hamburger-menu ${menuOpen ? 'open' : ''}`}>
+    <div className='profile'>
+      <h3>{username}</h3>
+      <p>{user?.email}</p>
+      <p>{role}</p>
+    </div>
+    <hr></hr>
+    {/* Add role-based options here later */}
+    
+  </div>
 
       <div className="project-section">
         <div className="project-header">
@@ -110,7 +117,7 @@ const Dashboard = () => {
                 onClick={() => goToProject(project.id)}
               >
               <span className="project-title">{project.title}</span>
-
+               {(role === 'admin' || role === 'manager') && (
                 <button
                   className="delete-btn"
                   onClick={(e) => {
@@ -119,11 +126,13 @@ const Dashboard = () => {
                 >
                   Delete
                 </button>
+              )}
               </div>
             ))
           )}
         </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -1,41 +1,61 @@
 .register-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   max-width: 400px;
   margin: 50px auto;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  background-color: #121212; /* dark Spotify background */
+  color: #fff;
 }
-
+.wholepage{
+  min-height: 100vh;
+  height: 100%;
+  width:100%;
+  background: linear-gradient(135deg, #000000, #1db954);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .register-container h2 {
   text-align: center;
   margin-bottom: 20px;
+  color: #1db954; /* Spotify green */
 }
 
 .register-container input {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  border: 1px solid #ddd;
+  border: 1px solid #333;
   border-radius: 5px;
+  background-color: #222;
+  color: #fff;
+}
+
+.register-container input::placeholder {
+  color: #bbb;
 }
 
 .register-container button {
   width: 100%;
   padding: 10px;
-  background-color: #4caf50;
-  color: white;
+  background-color: #1db954;
+  color: #000;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .register-container button:hover {
-  background-color: #45a049;
+  background-color: #1ed760;
+  transform: scale(1.02);
 }
 
 .error {
-  color: red;
+  color: #ff4d4d;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -43,5 +63,5 @@
 .register-container p {
   text-align: center;
   margin-top: 15px;
-  text-decoration: none;
+  color: #aaa;
 }

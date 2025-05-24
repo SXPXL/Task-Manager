@@ -1,5 +1,5 @@
 from pydantic import BaseModel, EmailStr
-from datetime import date
+from datetime import datetime, date
 from typing import Optional
 
 
@@ -41,6 +41,7 @@ class TaskCreate(BaseModel):
   title: str
   description: str
   due_date: date
+  start_date: date
   assigned_to: int
   project_id: int
   
@@ -51,6 +52,7 @@ class TaskOut(BaseModel):
   title:str
   status:str
   due_date:date
+  start_date:date
   assigned_to:int
   project_id:int
   description:str
@@ -59,9 +61,36 @@ class TaskOut(BaseModel):
     orm_mode = True
 
 class TaskUpdate(BaseModel):
-    title: Optional[str] = None
-    description: Optional[str] = None
-    status: Optional[str] = None
-    due_date: Optional[date] = None
+  title: Optional[str] = None
+  description: Optional[str] = None
+  status: Optional[str] = None
+  due_date: Optional[date] = None
+  start_date: Optional[date] = None
+
+
+class CommentBase(BaseModel):
+  content: str
+
+class CommentCreate(CommentBase):
+  pass
+
+class CommentOut(CommentBase):
+  id: int
+  user_id: int
+  task_id: int
+  created_at: datetime
+  user: UserOut
+
+  class Config:
+    orm_mode = True
+
+class AttachmentOut(BaseModel):
+  id: int 
+  filename: str
+  task_id: int
+  created_at: datetime
+
+  class Config:
+    orm_mode = True
 
   

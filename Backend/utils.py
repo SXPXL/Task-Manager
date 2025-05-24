@@ -1,7 +1,7 @@
 from passlib.context import CryptContext
 from jose import jwt 
 from datetime import datetime, timedelta
-from fastapi import HTTPException
+from fastapi import HTTPException,status
 
 
 
@@ -40,3 +40,11 @@ def validate_password(password: str):
         raise HTTPException(status_code=400, detail="Password must include at least one lowercase letter")
     if not any(char in "!@#$%^&*()-_=+[]{}|;:',.<>?/`~" for char in password):
         raise HTTPException(status_code=400, detail="Password must include at least one special character")
+    
+
+def check_comment_permission(comment, current_user):
+    if comment.user_id != current_user.id and current_user.role not in ["admin", "manager"]:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="You do not have permission to delete this comment"
+        )

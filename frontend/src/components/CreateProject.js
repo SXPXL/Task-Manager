@@ -49,9 +49,10 @@ function CreateProject({ onClose, onProjectCreated }) {
   };
 
   return (
-    <div className="create-project-container">
-      <h3>Create New Project</h3>
-      <form onSubmit={handleSubmit}>
+    <div className="modal-overlay">
+    <div className="modal-content">
+      <form onSubmit={handleSubmit} className="create-form">
+        <h3>Create New Project</h3>
         <input
           type="text"
           name="title"
@@ -70,16 +71,17 @@ function CreateProject({ onClose, onProjectCreated }) {
         />
         
         <br />
-        <button type="submit">Create Project</button>
+        <button type="submit" className="Submit">Create Project</button>
         {onClose && (
-          <button type="button" onClick={onClose} style={{ marginLeft: "10px" }}>
+          <button type="button" className="close" onClick={onClose} >
             Close
           </button>
         )}
       </form>
       {message && <p style={{ marginTop: "10px" }}>{message}</p>}
     </div>
+    </div>
   );
-}
 
+}
 export default CreateProject;

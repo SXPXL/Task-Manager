@@ -7,6 +7,7 @@ const CreateTask = ({ token, onTaskCreated, onClose, projectId }) => {
   const [formData, setFormData] = useState({
     title: '',
     description: '',
+    start_date: '',
     due_date: '',
     assigned_to: '',  // store selected user id
   });
@@ -31,6 +32,10 @@ const CreateTask = ({ token, onTaskCreated, onClose, projectId }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (new Date(formData.start_date) > new Date(formData.due_date)) {
+      alert('Due date cannot be before start date.');
+      return;
+    }
     try {
       const dataToSend = {
         ...formData,
@@ -50,7 +55,10 @@ const CreateTask = ({ token, onTaskCreated, onClose, projectId }) => {
   
 
   return (
+    <div className="modal-overlay" onClick={onClose}> 
+      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
     <form className="create-task-form" onSubmit={handleSubmit}>
+      <h3>Create Task</h3>
       <input 
         name="title"
         placeholder="Title"
@@ -65,6 +73,18 @@ const CreateTask = ({ token, onTaskCreated, onClose, projectId }) => {
         onChange={handleChange}
         required
       />
+      <label>
+        Start date
+      <input
+        name="start_date"
+        type="date"
+        value={formData.start_date}
+        onChange={handleChange}
+        required
+      />
+      </label>
+      <label>
+        Due date
       <input
         name="due_date"
         type="date"
@@ -72,6 +92,8 @@ const CreateTask = ({ token, onTaskCreated, onClose, projectId }) => {
         onChange={handleChange}
         required
       />
+      </label>
+
       <select
         name="assigned_to"
         value={formData.assigned_to}
@@ -85,9 +107,11 @@ const CreateTask = ({ token, onTaskCreated, onClose, projectId }) => {
           </option>
         ))}
       </select>
-      <button type="submit">Create Task</button>
+      <button type="submit" className='submitform'>Create Task</button>
       <button type="button" onClick={onClose}>Cancel</button>
     </form>
+    </div>
+    </div>
   );
 };
 

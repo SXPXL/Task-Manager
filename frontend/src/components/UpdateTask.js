@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './styles/UpdateTask.css';
 
 const UpdateTaskForm = ({ task, token, onClose, onUpdate }) => {
   const [formData, setFormData] = useState({
@@ -73,12 +74,15 @@ const UpdateTaskForm = ({ task, token, onClose, onUpdate }) => {
           <option value="in_progress">In Progress</option>
           <option value="completed">Completed</option>
         </select>
+        <label>
+          Due date
         <input
           type="date"
           name="due_date"
           value={formData.due_date}
           onChange={handleChange}
         />
+        </label>
         <button type="submit">Save</button>
         <button type="button" onClick={onClose}>Cancel</button>
       </form>

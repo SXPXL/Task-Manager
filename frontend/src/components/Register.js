@@ -35,6 +35,7 @@ function Register() {
     try {
       const res = await axios.post("http://localhost:8000/auth/register", formdata);
       console.log("Success:", res.data);
+      alert('Registration Successfull')
 
       // Clear form after successful registration
       setFormData({
@@ -50,6 +51,7 @@ function Register() {
   };
 
   return (
+    <div className="wholepage">
     <div className="register-container">
       <h2>Register</h2>
       <form onSubmit={handleSubmit}>
@@ -81,6 +83,7 @@ function Register() {
         <button type="submit">Register</button>
         <p> <Link to="/login">Already registered? Click here to login</Link></p> 
       </form>
+    </div>
     </div>
   );
 }
