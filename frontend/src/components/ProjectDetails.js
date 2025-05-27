@@ -123,6 +123,7 @@ const ProjectDetail = () => {
   
 
   if(!project) return <GreenSpinner/>;
+  console.log("comments",tasks.map(task => task.comments));
   
 
   return (
@@ -240,23 +241,45 @@ const ProjectDetail = () => {
   <div id="print-section">
     <h2>Project: {project?.title}</h2>
     <p>Filter: {filterStatus}</p>
-    
-    
-      {tasks
-        .filter(task =>  ( filterStatus === 'all' || task.status === filterStatus)&&
-               (assignedUser === 'all' || String(task.assigned_to) === assignedUser)
-                  )
-        .map((task, index) => (
-          <div key={task.id} style={{ marginBottom: '12px' }}>
-            <strong className='title'>{index + 1}.  {task.title}</strong> - <em>{task.status}</em><br />
-            <strong className='desc'>Description:</strong> {task.description || 'No description'}<br />
-            <strong className='as'>Assigned to:</strong> {getUserName(task.assigned_to)|| 'Unassigned'}<br />
-            <strong className='due'>Due Date:</strong> {task.due_date ? new Date(task.due_date).toLocaleDateString() : 'No due date'}
-          </div>
-        ))}
-    
+
+    <table border="1" cellPadding="8" cellSpacing="0" style={{ width: '100%', borderCollapse: 'collapse' }}>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Title</th>
+          <th>Status</th>
+          <th>Description</th>
+          <th>Assigned To</th>
+          <th>Due Date</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        {tasks
+          .filter(task => 
+            (filterStatus === 'all' || task.status === filterStatus) &&
+            (assignedUser === 'all' || String(task.assigned_to) === assignedUser)
+          )
+          .map((task, index) => {
+              
+            return (
+              <tr key={task.id}>
+                <td>{index + 1}</td>
+                <td>{task.title}</td>
+                <td>{task.status}</td>
+                <td>{task.description || 'No description'}</td>
+                <td>{getUserName(task.assigned_to) || 'Unassigned'}</td>
+                <td>{task.due_date ? new Date(task.due_date).toLocaleDateString() : 'No due date'}</td>
+                
+                
+              </tr>
+            );
+          })}
+      </tbody>
+    </table>
   </div>
 </div>
+
 
     </div>
 

@@ -1,0 +1,60 @@
+
+.summary-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 24px 30px;
+  background: #181818;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  min-height: 600px;
+  height: auto;
+}
+
+.user-summary {
+  font-weight: 700;
+  font-size: 28px;
+  margin: 0 0 30px 0;
+  color: #1db954;
+  text-align: center;
+}
+
+.error-msg {
+  color: #e50914;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-body {
+  display: flex;
+  gap: 30px;
+}
+
+
+.card-labels {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+
+.chart-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #121212;
+  border-radius: 10px;
+  min-width: 650px;
+}
+
+.task-chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

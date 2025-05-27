@@ -106,7 +106,8 @@
   margin-bottom: 20px;
 }
 
-.create-project-btn {
+.create-project-btn,
+.goto-dashboard {
   padding: 10px 16px;
   background-color: #1db954;
   color: #000;
@@ -116,7 +117,8 @@
   font-weight: bold;
 }
 
-.create-project-btn:hover {
+.create-project-btn:hover,
+.goto-dashboard:hover {
   background-color: #17a744;
 }
 

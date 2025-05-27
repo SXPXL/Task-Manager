@@ -34,7 +34,6 @@ function Register() {
 
     try {
       const res = await axios.post("http://localhost:8000/auth/register", formdata);
-      console.log("Success:", res.data);
       alert('Registration Successfull')
 
       // Clear form after successful registration
@@ -45,7 +44,6 @@ function Register() {
       });
       navigate("/login");
     } catch (err) {
-      console.log("Error:", err);
       setError(err.response?.data?.detail || "Something went wrong");
     }
   };

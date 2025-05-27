@@ -1,0 +1,108 @@
+.admin-dashboard {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 24px 30px;
+  background: #181818;
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.admin-dashboard h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1db954;
+  margin-bottom: 20px;
+}
+
+.user-container {
+  background-color: #222;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.user-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.user-header span {
+  color: #fff;
+}
+
+.delete-btn {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #b00610;
+}
+
+.user-details {
+  padding: 14px 20px;
+  background-color: #1a1a1a;
+  border-top: 1px solid #333;
+  font-size: 15px;
+  color: #ccc;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.change-role-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.change-role-btn:hover {
+  background-color: #0056b3;
+}
+
+.role-dropdown {
+  padding: 12px 20px;
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid #333;
+}
+
+.role-dropdown select {
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.update-role {
+   background-color: #00b309;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  margin:auto;
+
+}
+.update-role:hover {
+  background-color: #1f9925;
+}

@@ -1,0 +1,52 @@
+.manager-dashboard {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #181818;
+  padding: 24px 30px;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 30px auto;
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+  min-height: 400px;
+}
+
+.manager-dashboard h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #1db954;
+  text-transform: uppercase;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+}
+
+.summary-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.summary-card {
+  flex: 1;
+  min-width: 180px;
+  background-color: #222;
+  padding: 18px 22px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.summary-card h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.summary-card p {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.summary-card.green { color: #1db954; }
+.summary-card.blue { color: #3498db; }
+.summary-card.yellow { color: #ffc107; }

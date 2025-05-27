@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useAuth } from '../context/AuthContext';
 import './styles/Dashboard.css';
 import CreateProject from './CreateProject';
-import GreenSpinner from './Spinner';
+
 
 const Dashboard = () => {
   const { user, token, logout } = useAuth();
@@ -84,7 +84,10 @@ const Dashboard = () => {
       <p>{role}</p>
     </div>
     <hr></hr>
-    {/* Add role-based options here later */}
+    <br></br>
+    <div>
+      <button className="goto-dashboard" onClick={() => navigate('/summary')}> Dashboard</button>
+    </div>
     
   </div>
 

@@ -1,0 +1,30 @@
+.card-container {
+  background-color: #222; /* Slightly lighter than background */
+  padding: 20px 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-width: 180px;
+  text-align: center;
+}
+
+.card-container:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.75);
+  background-color: #2a2a2a;
+}
+
+.label-heading {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1db954; /* Spotify Green as accent */
+  margin-bottom: 10px;
+}
+
+.label-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
