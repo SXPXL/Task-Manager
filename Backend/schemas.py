@@ -56,7 +56,6 @@ class TaskOut(BaseModel):
   assigned_to:int
   project_id:int
   description:str
-
   class Config:
     orm_mode = True
 

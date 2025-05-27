@@ -111,6 +111,6 @@ def download_attachment(attachment_id: int, db: Session = Depends(get_db)):
     
     return StreamingResponse(
         BytesIO(attachment.file_data),
-        media_type="message/rfc822",  # MIME type for .eml
+        media_type="message/rfc822",  
         headers={"Content-Disposition": f"attachment; filename={attachment.filename}"}
     )

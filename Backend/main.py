@@ -2,10 +2,20 @@ from fastapi import FastAPI
 from auth import router as auth_router
 from tasks import router as project_router
 from comments import router as comment_router
+from stats import router as summary_router
 from database import Base, engine
 from fastapi.middleware.cors import CORSMiddleware
 
 app=FastAPI()
+
+# Integration with the frontend
+app.add_middleware(
+  CORSMiddleware,allow_origins=["http://localhost:3000"],
+  allow_credentials=True,
+  allow_methods=["*"],
+  allow_headers=["*"]
+  )
+
 
 # creating database tables
 Base.metadata.create_all(bind=engine)
@@ -15,14 +25,8 @@ Base.metadata.create_all(bind=engine)
 app.include_router(auth_router,prefix="/auth")
 app.include_router(project_router,prefix="/project")
 app.include_router(comment_router,prefix="/comment")
+app.include_router(summary_router,prefix="/summary")
 
-# Integration with the frontend
-app.add_middleware(
-  CORSMiddleware,allow_origins=["http://localhost:3000"],
-  allow_credentials=True,
-  allow_methods=["*"],
-  allow_headers=["*"]
-  )
 
 
 
