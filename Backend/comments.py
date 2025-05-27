@@ -1,3 +1,17 @@
+"""
+This module defines comment-related routes for tasks using FastAPI.
+
+Imported Libraries and Modules:
+- fastapi: Provides APIRouter for route creation and dependencies for request handling
+- sqlalchemy.orm: Used for managing database sessions with SQLAlchemy
+- database.get_db: Dependency to get a database session instance
+- models, schemas: Contains ORM models and Pydantic schemas for database structure and data validation
+- auth.get_current_user: Dependency to retrieve the current authenticated user from the request
+- utils.check_comment_permission: Custom utility to verify if a user has permission to modify/delete a comment
+"""
+
+
+
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from database import get_db
@@ -25,7 +39,7 @@ def create_comment(task_id: int, comment: schemas.CommentCreate, db: Session = D
         HTTPException: 404 if the task does not exist.
 
     Returns:
-        models.Comment: The newly created comment object.
+        db_comment: The newly created comment object.
     '''
     task = db.query(models.Task).filter(models.Task.id == task_id).first()
     if not task:
@@ -104,7 +118,7 @@ def update_comment(comment_id: int, updated: schemas.CommentCreate, db: Session 
         HTTPException: 403 if the user is not the owner of the comment.
 
     Returns:
-        models.Comment: The updated comment object.
+        comment: The updated comment object.
     '''
     comment = db.query(models.Comment).filter(models.Comment.id == comment_id).first()
 

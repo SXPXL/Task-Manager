@@ -1,3 +1,19 @@
+"""
+This module defines authentication and user management routes using FastAPI.
+
+Imported Libraries and Modules:
+- FastAPI core components: APIRouter, Depends, HTTPException, status
+- SQLAlchemy: ORM support for interacting with the database session
+- database.get_db: Dependency for database session retrieval
+- models, schemas: SQLAlchemy models and Pydantic schemas for validation
+- utils: Contains utility functions such as password hashing and token generation
+- jose: For decoding and verifying JWT tokens
+- fastapi.security.OAuth2PasswordBearer: For handling token-based authentication
+- models.User: User model used for querying authenticated user data
+"""
+
+
+
 from fastapi import APIRouter, Depends, HTTPException,status
 import schemas,utils,models
 from sqlalchemy.orm import Session

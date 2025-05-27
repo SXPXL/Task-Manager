@@ -7,13 +7,15 @@ from datetime import datetime
 
 class User(Base):
   '''
-  Table for storing user details in the database
+  Represents a user in the system.
 
-  id: stores the id of a user which can be later used for accessing a user.
-  username: stores the name of the user.
-  email: stores the user's email.
-  hashed_password: it stores the password of the user after hashing it.
-  role: stores the role assigned to a user.
+  Attributes:
+    id (int): Unique identifier for the user.
+    username (str): Name of the user.
+    email (str): Email address of the user (unique).
+    hashed_password (str): Password stored in a hashed format.
+    role (str): Role of the user (e.g., admin, manager, member).
+    comments (relationship): List of comments made by the user.
   '''
   __tablename__ = "users"
   id = Column(Integer, primary_key=True,index=True,autoincrement=True)
@@ -28,12 +30,13 @@ class User(Base):
 
 class Project(Base):
   '''
-  Table for storing the details of a project.
+  Represents a project entity.
 
-  id: stores the project id.
-  title: stores the title of the project.
-  description: stores the description of the project.
-  tasks: sets up a relation with the Task model.
+  Attributes:
+    id (int): Unique identifier for the project.
+    title (str): Title of the project.
+    description (str): Description of the project.
+    tasks (relationship): List of tasks under the project.
   '''
   __tablename__= "projects"
   id = Column(Integer, primary_key=True,index=True,autoincrement=True)
@@ -44,18 +47,22 @@ class Project(Base):
 
 class Task(Base):
   '''
-  Table for storing tasks.
+  Represents a task under a project.
 
-  id: stores the task id.
-  title: stores the title of the task.
-  description: stores the description of the task.
-  status: stores the progress of the task.
-  start_date: stores the starting date of the task.
-  due_date: stores the end date of the task.
-  assigned_to: stores the id of the user who has been assigned with a task.
-  project_id: stores the id of the project under which the task is created.
-  assigned_User: sets up a relation with User model.
-  comments: sets up a relation with Comment model.
+  Attributes:
+    id (int): Unique identifier for the task.
+    title (str): Title of the task.
+    description (str): Detailed description of the task.
+    status (str): Current status of the task (e.g., pending, completed).
+    start_date (date): Start date of the task.
+    due_date (date): Due date for the task.
+    assigned_to (int): User ID of the assignee.
+    project_id (int): Project ID to which this task belongs.
+    project (relationship): Associated project object.
+    assigned_user (relationship): Assigned user object.
+    comments (relationship): Comments associated with the task.
+    attachments (relationship): Attachments uploaded to the task.
+
   '''
   __tablename__= "tasks"
   id = Column(Integer, primary_key=True,index=True,autoincrement=True)
@@ -75,15 +82,16 @@ class Task(Base):
 
 class Comment(Base):
   '''
-  Table for storing comments.
+Represents a comment made by a user on a task.
 
-  id: stores the comment id.
-  content: stores the comment.
-  created_at: stores the date of creation of the comment.
-  user_id: stores the id of the user who added the comment.
-  task_id: stores the id of the task under which the comment is added.
-  user: sets up a relation with the User model.
-  task: sets up a relation with the Task model.
+  Attributes:
+    id (int): Unique identifier for the comment.
+    content (str): Content of the comment.
+    created_at (datetime): Timestamp when the comment was created.
+    user_id (int): ID of the user who made the comment.
+    task_id (int): ID of the task the comment is associated with.
+    user (relationship): User object who made the comment.
+    task (relationship): Task object the comment is linked to.
   '''
   __tablename__ = "comments"
 
@@ -98,6 +106,18 @@ class Comment(Base):
 
 
 class Attachment(Base):
+  """
+  Represents a file attachment to a task.
+
+  Attributes:
+    id (int): Unique identifier for the attachment.
+    task_id (int): ID of the task the file is attached to.
+    filename (str): Name of the file.
+    file_data (bytes): Binary data of the file.
+    content_type (str): MIME type of the file.
+    created_at (datetime): Timestamp of when the file was uploaded.
+    task (relationship): Associated task object.
+    """
   __tablename__ = "attachments"
   id = Column(Integer, primary_key=True, index=True)
   task_id = Column(Integer, ForeignKey("tasks.id"))

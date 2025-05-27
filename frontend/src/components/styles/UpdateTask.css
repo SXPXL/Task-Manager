@@ -1,3 +1,6 @@
+/* ===================================================
+   Modal Overlay Container
+   =================================================== */
 .modal {
   position: fixed;
   top: 0;
@@ -11,6 +14,9 @@
   z-index: 1000;
 }
 
+/* ===================================================
+   Update Form Container inside Modal
+   =================================================== */
 .update-form {
   background-color: #181818; /* Spotify dark */
   padding: 25px;
@@ -25,7 +31,9 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.9);
 }
 
-/* Inputs inside update form */
+/* ===================================================
+   Inputs, Textareas, and Selects in Update Form
+   =================================================== */
 .update-form input,
 .update-form textarea,
 .update-form select {
@@ -40,6 +48,10 @@
   transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
+
+/* ===================================================
+   Focus Styles for Inputs in Update Form
+   =================================================== */
 .update-form input:focus,
 .update-form textarea:focus,
 .update-form select:focus {
@@ -48,7 +60,9 @@
   outline: none;
 }
 
-/* Buttons */
+/* ===================================================
+   Submit Button in Update Form
+   =================================================== */
 .update-form button {
   background-color: #1db954; /* Spotify green */
   color: #000;

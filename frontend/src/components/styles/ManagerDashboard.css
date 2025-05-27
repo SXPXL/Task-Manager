@@ -1,3 +1,6 @@
+/* ===================================================
+   Manager Dashboard Container
+   =================================================== */
 .manager-dashboard {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #181818;
@@ -10,6 +13,9 @@
   min-height: 400px;
 }
 
+/* ===================================================
+   Dashboard Heading
+   =================================================== */
 .manager-dashboard h2 {
   font-size: 26px;
   font-weight: 700;
@@ -20,6 +26,9 @@
   padding-bottom: 10px;
 }
 
+/* ===================================================
+   Summary Cards Wrapper
+   =================================================== */
 .summary-cards {
   display: flex;
   flex-wrap: wrap;
@@ -27,6 +36,9 @@
   margin-top: 20px;
 }
 
+/* ===================================================
+   Individual Summary Card
+   =================================================== */
 .summary-card {
   flex: 1;
   min-width: 180px;
@@ -47,6 +59,9 @@
   font-weight: 700;
 }
 
+/* ===================================================
+   Card Colors
+   =================================================== */
 .summary-card.green { color: #1db954; }
 .summary-card.blue { color: #3498db; }
 .summary-card.yellow { color: #ffc107; }

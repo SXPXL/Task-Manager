@@ -6,6 +6,8 @@ import { useAuth } from "../context/AuthContext";
 import GreenSpinner from "./Spinner";
 
 function Login() {
+
+  // State for input values
   const [formData, setFormData] = useState({
     email:"",
     password: "",
@@ -15,6 +17,7 @@ function Login() {
   const { login } = useAuth();
   const [loading,setLoading] = useState(false);
 
+  // Handles changes to input fields and update state accordingly
   const handleChange = (e) => {
     const {name,value } = e.target;
     setFormData((prev)=>({
@@ -23,12 +26,17 @@ function Login() {
     }))
   };
 
+  // Handle form submission
   const handlesubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); // To prevent default form submit refresh
     setLoading(true);
     try{
+
+      // POST request to backend 
       const res =await axios.post("http://localhost:8000/auth/login", formData);
        setError("");
+
+       // extract access token from response
        const token = res.data.access_token;
        login(token);
        navigate("/dashboard");
@@ -48,6 +56,7 @@ function Login() {
     <div className="login-container">
       <h2>Login</h2>
       <form onSubmit={handlesubmit}>
+        {/* Email input field */}
         <input
           type="email"
           name="email"
@@ -56,6 +65,8 @@ function Login() {
           onChange={handleChange}
           required
         />
+
+        {/* Password input field */}
         <input
           type="password"
           name="password"
@@ -66,6 +77,7 @@ function Login() {
         />
         {error && <p className="error">{error}</p>}
         <button type="submit">Login</button>
+        {/* Link to register page for new users */}
         <p style={{ marginTop: "10px", color: "blue" }}>New user? <Link to="/register">Register</Link></p>    
       </form>
     </div>

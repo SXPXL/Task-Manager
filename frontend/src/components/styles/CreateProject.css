@@ -1,3 +1,6 @@
+/* ===========================================
+   Modal Overlay
+   =========================================== */
 .modal {
   position: fixed;
   top: 0;
@@ -11,6 +14,9 @@
   z-index: 999; /* make sure it’s on top */
 }
 
+/* ===========================================
+   Modal Content Box
+   =========================================== */
 .modal-content {
   background: #181818;
   padding: 25px;
@@ -25,6 +31,9 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* ===========================================
+   Create Project Form Styling
+   =========================================== */
 .create-project-form {
   background: #181818;
   padding: 25px;
@@ -36,7 +45,9 @@
   color: #fff;
 }
 
-/* Input Fields */
+/* ===========================================
+   Input Fields (Text, Textarea, Select)
+   =========================================== */
 input,
 textarea,
 select {
@@ -60,7 +71,9 @@ select:focus {
   outline: none;
 }
 
-/* Submit Button */
+/* ===========================================
+   Submit Button
+   =========================================== */
 .Submit {
   width: 100%;
   padding: 12px;
@@ -80,7 +93,9 @@ select:focus {
   box-shadow: 0 5px 15px rgba(23, 167, 68, 0.8);
 }
 
-/* Close Button */
+/* ===========================================
+   Close Button
+   =========================================== */
 .close {
   width: 100%;
   padding: 10px;

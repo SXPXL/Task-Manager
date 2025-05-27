@@ -1,4 +1,6 @@
-
+/* ===================================================
+   Summary Container
+   =================================================== */
 .summary-container {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   max-width: 1100px;
@@ -12,6 +14,9 @@
   height: auto;
 }
 
+/* ===================================================
+   User Summary Title
+   =================================================== */
 .user-summary {
   font-weight: 700;
   font-size: 28px;
@@ -20,6 +25,9 @@
   text-align: center;
 }
 
+/* ===================================================
+   Error Message Styling
+   =================================================== */
 .error-msg {
   color: #e50914;
   font-weight: 600;
@@ -28,12 +36,17 @@
   margin-bottom: 20px;
 }
 
+/* ===================================================
+   Dashboard Body Layout (Flex container)
+   =================================================== */
 .dashboard-body {
   display: flex;
   gap: 30px;
 }
 
-
+/* ===================================================
+   Card Labels Column
+   =================================================== */
 .card-labels {
   display: flex;
   flex-direction: column;
@@ -41,7 +54,9 @@
   flex: 1;
 }
 
-
+/* ===================================================
+   Chart Section Container
+   =================================================== */
 .chart-section {
   flex: 1;
   display: flex;
@@ -53,6 +68,10 @@
   min-width: 650px;
 }
 
+
+/* ===================================================
+   Task Chart Alignment
+   =================================================== */
 .task-chart {
   display: flex;
   justify-content: center;

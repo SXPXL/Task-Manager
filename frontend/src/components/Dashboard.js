@@ -5,7 +5,12 @@ import { useAuth } from '../context/AuthContext';
 import './styles/Dashboard.css';
 import CreateProject from './CreateProject';
 
-
+/**
+ * Home Page
+ * -------------------
+ * Displays a list of projects based on the user's role.
+ * Includes options for admins/managers to create and delete projects.
+ */
 const Dashboard = () => {
   const { user, token, logout } = useAuth();
   const username = user?.username;
@@ -36,6 +41,11 @@ const Dashboard = () => {
     }
   }, [token]);
 
+  /**
+   * Handle deletion of a project
+   * - Confirms before deleting
+   * - Updates state and shows feedback
+   */
   const handleDelete = async (projectId) => {
     if(!window.confirm("Are you sure you want to delete this project?")) 
       return;
@@ -45,6 +55,8 @@ const Dashboard = () => {
           Authorization: `Bearer ${token}`,
         },
       });
+
+      // Remove the project from the local state
       setProjects((prev) => prev.filter((project) => project.id !== projectId));
       setMessage("Project deleted successfully!");
       console.log("Deleting project ID:", projectId);
@@ -54,13 +66,18 @@ const Dashboard = () => {
     }
   };
 
+  // Handle logout and redirect to login page
   const handleLogout = () => {
     logout();
     navigate('/login');
   };
+
+  // Toggle visibilty of the Create project form
   const toggleCreateProject = () => {
     setShowCreateProject(!showCreateProject);
   }
+
+  // Navigate to project detail page
   const goToProject = (projectId) => {
     navigate(`/project/${projectId}`);
   };
@@ -75,8 +92,10 @@ const Dashboard = () => {
         <div className="welcome-text"><h2>Welcome, {username}!</h2></div>
         <button className="logout-btn" onClick={handleLogout}>Logout</button>
       </div>
-
+      {/* Overlay to close the side menu */}
       {menuOpen && <div className="overlay" onClick={() => setMenuOpen(false)} />}
+
+  {/* Hamburger Menu */}      
   <div className={`hamburger-menu ${menuOpen ? 'open' : ''}`}>
     <div className='profile'>
       <h3>{username}</h3>
@@ -90,10 +109,12 @@ const Dashboard = () => {
     </div>
     
   </div>
-
+      {/* Project Section */}
       <div className="project-section">
         <div className="project-header">
           <h2>Your Projects</h2>
+
+          {/* Only admins and manager can create projects */}
           {(role === 'admin' || role === 'manager') && (
           <button className="create-project-btn" onClick={toggleCreateProject}>
              {showCreateProject ? 'Close' : 'Create New Project'}
@@ -101,6 +122,7 @@ const Dashboard = () => {
           )}
           
         </div>
+        {/* Shows create Project Form */}
         {showCreateProject && (
           <div className="create-project-form">
             <CreateProject onClose={toggleCreateProject} token={token} 
@@ -108,7 +130,7 @@ const Dashboard = () => {
                 ...prev, newProject])}/>
             </div>
         )}
-
+        {/* Project List */}
         <div className="project-list">
           {projects.length === 0 ? (
             <p>No projects yet.</p>
@@ -120,6 +142,8 @@ const Dashboard = () => {
                 onClick={() => goToProject(project.id)}
               >
               <span className="project-title">{project.title}</span>
+
+              {/* Only admins and managers can delete projects */}
                {(role === 'admin' || role === 'manager') && (
                 <button
                   className="delete-btn"

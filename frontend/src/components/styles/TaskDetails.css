@@ -1,5 +1,6 @@
-/* TaskDetails.css */
-
+/* ===================================================
+   Task Details Container
+   =================================================== */
 .task-details-container {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   max-width: 900px;
@@ -13,6 +14,9 @@
   height: auto;
 }
 
+/* ===================================================
+   Top Bar with Buttons
+   =================================================== */
 .task-top-bar {
   display: flex;
   align-items: center;
@@ -68,6 +72,10 @@
   display: inline;
 }
 
+
+/* ===================================================
+   Emails List Section
+   =================================================== */
 .emails-list{
 margin-top: 15px;
 }
@@ -77,6 +85,9 @@ margin-top: 15px;
   margin-top: 15px;
 }
 
+/* ===================================================
+   Task Info Section
+   =================================================== */
 .task-info h2 {
   margin: 0 0 12px 0;
   font-weight: 700;
@@ -91,6 +102,9 @@ margin-top: 15px;
   color: #cccccc;
 }
 
+/* ===================================================
+   Comment Section
+   =================================================== */
 .comment-section {
   margin-top: 40px;
 }
@@ -191,7 +205,9 @@ margin-top: 15px;
   margin-left: 8px;
 }
 
-/* Edit, Save, Cancel Buttons */
+/* ===================================================
+   Comment Edit Action Buttons (Edit, Save, Cancel)
+   =================================================== */
 .comment-actions button {
   margin-left: 8px;
   padding: 5px 10px;

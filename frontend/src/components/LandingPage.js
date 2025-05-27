@@ -16,6 +16,7 @@ const LandingPage = () => {
           smart, simple, and made for you.
         </p>
         <div className="buttons">
+          {/* Buttons for navigation to Sign Up and Sign In pages */}
           <Link to="/register"><button className="btn btn-signup">Sign Up</button></Link>
           <Link to="/login"><button className="btn btn-login">Sign In</button></Link>
         </div>

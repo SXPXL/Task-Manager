@@ -4,19 +4,31 @@ import './styles/AdminDashboard.css';
 import { useAuth } from '../context/AuthContext';
 import GreenSpinner from './Spinner';
 
+// Available roles in the system
 const roles = ['member', 'manager', 'admin'];
 
+/**
+ * AdminDashboard Component
+ * -------------------------
+ * Displays all users in the system for the admin.
+ * Admin can:
+ *  - View user details
+ *  - Delete users (except other admins)
+ *  - Change user roles via dropdown
+ */
 const AdminDashboard = () => {
-  const [users, setUsers] = useState([]);
-  const { token } = useAuth();
-  const [expandedUserId, setExpandedUserId] = useState(null);
-  const [editingRoleUserId, setEditingRoleUserId] = useState(null);
-  const [selectedRoles, setSelectedRoles] = useState({});
+  const [users, setUsers] = useState([]); // List of all users
+  const { token } = useAuth(); // Auth token from context
+  const [expandedUserId, setExpandedUserId] = useState(null); // Tracks expanded user toshow details
+  const [editingRoleUserId, setEditingRoleUserId] = useState(null); // Tracks which user's role is beign edited
+  const [selectedRoles, setSelectedRoles] = useState({}); // Stores selected role values for dropdown
 
+ // Fetch users when component mounts or token changes
   useEffect(() => {
     fetchUsers(); 
   }, [token]);
 
+  // Fetch users from the Backend
   const fetchUsers = async () => {
     try {
       
@@ -27,6 +39,7 @@ const AdminDashboard = () => {
     }
   };
 
+  // Handles deletion of a user after confirmation
   const handleDelete = async (userId) => {
   if (!window.confirm('Do you want to delete this user?')) return;
 
@@ -36,22 +49,27 @@ const AdminDashboard = () => {
         Authorization: `Bearer ${token}`
       }
     });
+    // Removes deleted user from local state
     setUsers(users.filter((user) => user.id !== userId));
   } catch (err) {
     console.error('Error deleting user:', err);
   }
 };
 
-
+  // Expand or collapse the user details section
   const toggleExpand = (userId) => {
     setExpandedUserId(expandedUserId === userId ? null : userId);
   };
 
+
+  // Toggle the role editing mode for a user
   const toggleEditRole = (userId, currentRole) => {
     setEditingRoleUserId(editingRoleUserId === userId ? null : userId);
     setSelectedRoles({ ...selectedRoles, [userId]: currentRole });
   };
 
+
+  // Sends a rewuest to the backend to update user's role
   const handleChangeRole = async (userId) => {
     const newRole = selectedRoles[userId];
     try {
@@ -61,16 +79,19 @@ const AdminDashboard = () => {
         Authorization: `Bearer ${token}`,
           },
       });
-      fetchUsers(); // refresh after update
+      fetchUsers(); // refresh user list after update
       setEditingRoleUserId(null);
     } catch (err) {
       console.error('Error updating role:', err);
     }
   };
+  // Shows a loading spinner if the token is not yet available
   if(!token) return <GreenSpinner/>
   return (
     <div className="admin-dashboard">
       <h2>All Users</h2>
+
+      {/* Loop through users and display each one */}
       {users.map((user) => (
         <div
           key={user.id}
@@ -79,6 +100,8 @@ const AdminDashboard = () => {
         >
           <div className="user-header">
             <span>{user.username}</span>
+
+            {/* Only allow delete/change role for non-admin users */}
             {(user.role != 'admin') && (
             <div className="button-group">
               <button
@@ -105,7 +128,7 @@ const AdminDashboard = () => {
           }
           </div>
             
-
+          {/* Role dropdown shown only when editing */}
           {editingRoleUserId === user.id && (
             <div className="role-dropdown">
               <select
@@ -117,6 +140,7 @@ const AdminDashboard = () => {
                   })
                 }
               >
+                {/* Role optioins */}
                 {roles.map((role) => (
                   <option key={role} value={role}>
                     {role}
@@ -126,7 +150,7 @@ const AdminDashboard = () => {
               <button className='update-role' onClick={() => handleChangeRole(user.id)}>Update</button>
             </div>
           )}
-
+          {/* Expanded user details */}
           {expandedUserId === user.id && (
             <div className="user-details">
               <p><strong>Email:</strong> {user.email}</p>

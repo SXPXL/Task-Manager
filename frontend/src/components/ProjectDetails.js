@@ -7,20 +7,29 @@ import './styles/ProjectDetail.css';
 import UpdateTaskForm from './UpdateTask';
 import GreenSpinner from './Spinner';
 
+
+/**
+ * Project Detail Page
+ * -------------------
+ * Displays detailed information about a single project.
+ * Shows the task list with filtering and sorting options.
+ * Allows creating, updating, and deleting tasks for admins/managers.
+ * Includes a print feature for the project report.
+ */
 const ProjectDetail = () => {
-  const { projectId } = useParams();
-  const { token, user } = useAuth();
-  const navigate = useNavigate();
+  const { projectId } = useParams(); // Project ID from URL parameters
+  const { token, user } = useAuth(); // Auth token and currrent user info
+  const navigate = useNavigate(); 
+  const [project, setProject] = useState(null); // Current project details
+  const [tasks, setTasks] = useState([]); // List of tasks for the project
+  const [showCreateTask, setShowCreateTask] = useState(false); 
+  const [filterStatus, setFilterStatus] = useState('all'); // Filter to show tasks by status
+  const [errors, setErrors] = useState(null); // Storing errors during api calls
+  const [editingTask, setEditingTask] = useState(null); // Task currently being edited
+  const [users, setUsers] = useState([]); // List of Users
+  const [assignedUser, setAssignedUser] = useState('all'); // Filter to show tasks based on the user
 
-  const [project, setProject] = useState(null);
-  const [tasks, setTasks] = useState([]);
-  const [showCreateTask, setShowCreateTask] = useState(false);
-  const [filterStatus, setFilterStatus] = useState('all');
-  const [errors, setErrors] = useState(null);
-  const [editingTask, setEditingTask] = useState(null);
-  const [users, setUsers] = useState([]);
-  const [assignedUser, setAssignedUser] = useState('all');
-
+  // Fetch project details
   const fetchProject = async () => {
     try {
       const res = await axios.get('http://localhost:8000/project/get-projects', {
@@ -34,6 +43,7 @@ const ProjectDetail = () => {
     }
   };
 
+  // Fetch all tasks within the project
   const fetchTasks = async () => {
     try {
       const res = await axios.get(`http://localhost:8000/project/${projectId}/tasks`, {
@@ -44,6 +54,8 @@ const ProjectDetail = () => {
       console.error('Error fetching tasks:', err);
     }
   };
+
+  // Fetch all users
   const fetchUsers = async () => {
       try {
         const res =await axios.get('http://localhost:8000/auth/get-users', 
@@ -57,6 +69,7 @@ const ProjectDetail = () => {
       }
     }
 
+  // Intital data fetch when tokke or projectId changes
   useEffect(() => {
     if (token) {
       fetchProject();
@@ -65,20 +78,24 @@ const ProjectDetail = () => {
     }
   }, [token, projectId]);
 
+  // To get a username by user id
   const getUserName = (userId) => {
     const user = users.find((u) => u.id === userId);
     return user ? user.username : 'Unknown';
   }
 
+  // To navigate to respective task detail page
   const handleTaskClick = (taskId) => {
     navigate(`/project/${projectId}/tasks/${taskId}`);
   };
 
+  // CallBack when a new task is created
   const handleTaskCreated = () => {
     setShowCreateTask(false);
     fetchTasks();
   };
 
+  // Start editing task
   const handleUpdateTask = (taskId, e) => {
     e.stopPropagation();
     const taskToEdit = tasks.find((task) => task.id === taskId);
@@ -86,11 +103,13 @@ const ProjectDetail = () => {
     
   };
 
+  // Closes form and refresh after task update
   const handleTaskUpdated = () => {
     setEditingTask(null);
     fetchTasks();
   };
-
+ 
+  // delete a task after confirmation
   const handleDeleteTask = async (taskId, e) => {
     e.stopPropagation();
     if(!window.confirm("Are you sure you want to delete this task?")) 
@@ -107,6 +126,7 @@ const ProjectDetail = () => {
     }
   };
 
+  // Print the filtered project report
   const handlePrint = () => {
     const content = document.getElementById('print-section').innerHTML;
 
@@ -138,6 +158,7 @@ const ProjectDetail = () => {
         </div>
       </div>
 
+      {/* Task headers with filters and create button */}
       <div className="task-header-list">
         <div className="task-header">
           <h3>Tasks</h3>
@@ -175,7 +196,8 @@ const ProjectDetail = () => {
             </button>
           )}
         </div>
-
+        
+        {/* Create Task Form */}
         {showCreateTask && (
           <CreateTask 
           projectId={projectId}
@@ -185,6 +207,7 @@ const ProjectDetail = () => {
            />
         )}
 
+        {/* Update Task Form */}
         {editingTask && (
         <UpdateTaskForm
           task={editingTask}
@@ -194,6 +217,7 @@ const ProjectDetail = () => {
         />
       )}
 
+        {/* Task list with filtering */}
         <div className="task-list">
           {tasks.length === 0 ? (
             <p>No tasks for this project.</p>
@@ -228,6 +252,7 @@ const ProjectDetail = () => {
           )}
         </div>
       
+        {/* Hidden printable section */}
         <div className='print-section'>
           <button className='print' onClick={handlePrint}>
             Print Report

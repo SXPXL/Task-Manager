@@ -1,30 +1,39 @@
+/* ===========================================
+   Modal (General Full-Screen Centered Overlay)
+   =========================================== */
 .modal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* darker overlay */
+  background: rgba(0, 0, 0, 0.7); 
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 999;
 }
 
+/* ===========================================
+   Modal Overlay (Alternative Fullscreen Overlay)
+   Useful if you separate modal box and background
+   =========================================== */
 .modal-overlay {
   position: fixed;
   top: 0; 
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.7); /* consistent with modal bg */
+  background: rgba(0, 0, 0, 0.7); 
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 999;
 }
 
-/* Create Task Form Container */
+/* ===========================================
+   Create Task Form Container
+   =========================================== */
 .create-task-form {
 
   display: flex;
@@ -35,7 +44,9 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Form Fields */
+/* ===========================================
+   Input, Textarea, and Select Styling
+   =========================================== */
 input,
 textarea,
 select {
@@ -59,8 +70,9 @@ select:focus {
   outline: none;
 }
 
-
-/* Submit Button */
+/* ===========================================
+   Submit Button Styling
+   =========================================== */
 .submitform {
   background-color: #1db954;
   color: #000;
@@ -78,7 +90,9 @@ select:focus {
   box-shadow: 0 5px 15px rgba(23, 167, 68, 0.8);
 }
 
-/* Cancel / Secondary Button */
+/* ===========================================
+   Cancel Button Styling
+   =========================================== */
 button[type="button"] {
   background-color: #6c757d;
   color: white;

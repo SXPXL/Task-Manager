@@ -1,5 +1,6 @@
-/* TaskListPage.css */
-
+/* ===================================================
+   Task List Page Container
+   =================================================== */
 .task-list-page {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #181818;
@@ -13,6 +14,9 @@
   height: auto;
 }
 
+/* ===================================================
+   Page Heading
+   =================================================== */
 .task-list-page h2 {
   font-size: 28px;
   font-weight: 700;
@@ -23,12 +27,18 @@
   padding-bottom: 10px;
 }
 
+/* ===================================================
+   Task List 
+   =================================================== */
 .task-list {
   list-style: none;
   padding: 0;
   margin-top: 20px;
 }
 
+/* ===================================================
+   Individual Task Item
+   =================================================== */
 .task-item {
   background-color: #222;
   padding: 14px 18px;
@@ -54,8 +64,9 @@
   margin-bottom: 10px;
 }
 
-
-
+/* ===================================================
+   No Tasks Message (When task list is empty)
+   =================================================== */
 .no-tasks-message {
   font-size: 18px;
   color: #999999;

@@ -2,7 +2,19 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './styles/UpdateTask.css';
 
+/**
+ * UpdateTaskForm Component
+ * ------------------------
+ * A modal form used to update an existing task.
+ * 
+ * Props:
+ * - task: the task object to be updated
+ * - token: authentication token (string)
+ * - onClose: function to close the modal
+ * - onUpdate: callback to notify parent when task is updated
+ * */
 const UpdateTaskForm = ({ task, token, onClose, onUpdate }) => {
+  // Local state to hold form data
   const [formData, setFormData] = useState({
     title: '',
     description: '',
@@ -10,6 +22,7 @@ const UpdateTaskForm = ({ task, token, onClose, onUpdate }) => {
     due_date: '',
   });
 
+  // Effect to populate form data when 'task' prop changes
   useEffect(() => {
     if (task) {
       setFormData({
@@ -21,6 +34,7 @@ const UpdateTaskForm = ({ task, token, onClose, onUpdate }) => {
     }
   }, [task]);
 
+  // Handles changes to input fields and updates state accordingly
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -29,6 +43,7 @@ const UpdateTaskForm = ({ task, token, onClose, onUpdate }) => {
     e.preventDefault();
 
     try {
+      // Send PUT request to update the task
       const response = await axios.put(
         `http://localhost:8000/project/update-task/${task.id}`,
         formData,
@@ -47,6 +62,7 @@ const UpdateTaskForm = ({ task, token, onClose, onUpdate }) => {
 
   return (
     <div className="modal">
+      {/* Form UI for updating tasks */}
       <form onSubmit={handleSubmit} className="update-form">
         <h3>Update Task</h3>
         <input
@@ -63,6 +79,8 @@ const UpdateTaskForm = ({ task, token, onClose, onUpdate }) => {
           onChange={handleChange}
           placeholder="Description"
         />
+
+        {/* Drop down for task status */}
         <select
           name="status"
           value={formData.status}

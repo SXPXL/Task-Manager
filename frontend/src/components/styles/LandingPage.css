@@ -1,4 +1,6 @@
-/* Base reset */
+/* ===================================================
+   Global Styles
+   =================================================== */
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +12,9 @@ body {
   background: linear-gradient(135deg, #000000, #1db954);
 }
 
-/* Container styling */
+/* ===================================================
+   Landing Page Container
+   =================================================== */
 .landing-container {
   min-height: 100vh;
   display: flex;
@@ -30,7 +34,10 @@ body {
   backdrop-filter: blur(10px);
 }
 
-/* Typography */
+/* ===================================================
+   Typography
+   =================================================== */
+
 h1 {
   font-size: 3rem;
   margin-bottom: 0.3rem;
@@ -56,7 +63,10 @@ p {
   color: #cccccc;
 }
 
-/* Buttons */
+
+/* ===================================================
+   Buttons
+   =================================================== */
 .buttons {
   display: flex;
   justify-content: center;
@@ -83,6 +93,7 @@ p {
   transform: scale(0.97);
 }
 
+/* Signup and Login Buttons */
 .btn-signup {
   background: #191414;
   color: #1db954;
@@ -115,7 +126,7 @@ footer {
   color: #888;
 }
 
-/* Responsive */
+/* Responsive design */
 @media (max-width: 480px) {
   h1 {
     font-size: 2.4rem;

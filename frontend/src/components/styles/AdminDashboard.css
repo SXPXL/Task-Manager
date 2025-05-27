@@ -1,3 +1,6 @@
+/* ===========================================
+   Admin Dashboard Container
+   =========================================== */
 .admin-dashboard {
   max-width: 900px;
   margin: 30px auto;
@@ -15,6 +18,9 @@
   margin-bottom: 20px;
 }
 
+/* ===========================================
+   User Card Container
+   =========================================== */
 .user-container {
   background-color: #222;
   margin-bottom: 15px;
@@ -24,6 +30,9 @@
   cursor: pointer;
 }
 
+/* ===========================================
+   User Card Header Section
+   =========================================== */
 .user-header {
   display: flex;
   justify-content: space-between;
@@ -36,6 +45,9 @@
   color: #fff;
 }
 
+/* ===========================================
+   Delete Button
+   =========================================== */
 .delete-btn {
   background-color: #e50914;
   color: white;
@@ -51,6 +63,9 @@
   background-color: #b00610;
 }
 
+/* ===========================================
+   User Details Section (Expanded View)
+   =========================================== */
 .user-details {
   padding: 14px 20px;
   background-color: #1a1a1a;
@@ -59,11 +74,17 @@
   color: #ccc;
 }
 
+/* ===========================================
+   Button Group (e.g., Actions like Change Role)
+   =========================================== */
 .button-group {
   display: flex;
   gap: 10px;
 }
 
+/* ===========================================
+   Change Role Button
+   =========================================== */
 .change-role-btn {
   background-color: #007bff;
   color: white;
@@ -78,6 +99,9 @@
   background-color: #0056b3;
 }
 
+/* ===========================================
+   Role Dropdown Section
+   =========================================== */
 .role-dropdown {
   padding: 12px 20px;
   background-color: #1a1a1a;
@@ -92,6 +116,9 @@
   border-radius: 4px;
 }
 
+/* ===========================================
+   Update Role Button
+   =========================================== */
 .update-role {
    background-color: #00b309;
   color: white;

@@ -1,3 +1,19 @@
+/* ===================================================
+   Whole Page Container
+   =================================================== */
+.wholepage{
+  min-height: 100vh;
+  height: 100%;
+  width:100%;
+  background: linear-gradient(135deg, #000000, #1db954);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===================================================
+   Register Container
+   =================================================== */
 .register-container {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   max-width: 400px;
@@ -8,21 +24,16 @@
   background-color: #121212; /* dark Spotify background */
   color: #fff;
 }
-.wholepage{
-  min-height: 100vh;
-  height: 100%;
-  width:100%;
-  background: linear-gradient(135deg, #000000, #1db954);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .register-container h2 {
   text-align: center;
   margin-bottom: 20px;
   color: #1db954; /* Spotify green */
 }
 
+/* ===================================================
+   Input Fields
+   =================================================== */
 .register-container input {
   width: 100%;
   padding: 10px;
@@ -37,6 +48,7 @@
   color: #bbb;
 }
 
+/* Submit Button */
 .register-container button {
   width: 100%;
   padding: 10px;
@@ -54,12 +66,18 @@
   transform: scale(1.02);
 }
 
+/* ===================================================
+   Error Message
+   =================================================== */
 .error {
   color: #ff4d4d;
   margin-bottom: 10px;
   text-align: center;
 }
 
+/* ===================================================
+   Bottom Text
+   =================================================== */
 .register-container p {
   text-align: center;
   margin-top: 15px;

@@ -1,5 +1,13 @@
 Troubleshoot_ make  sure your port isnt in use.
 
+Removed member permission check if its needed
+def member_required(current_user: User = Depends(get_current_user)):
+  if current_user.role not in ["admin","manager","member"]:
+    raise HTTPException(
+      status_code=status.HTTP_403_FORBIDDEN,
+      detail="You do not have permission to perform this action"
+    )
+  return current_user
 
 
 Improve component UI

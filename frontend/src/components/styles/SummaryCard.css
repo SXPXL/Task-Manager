@@ -1,3 +1,6 @@
+/* ===================================================
+   Card Container
+   =================================================== */
 .card-container {
   background-color: #222; /* Slightly lighter than background */
   padding: 20px 24px;
@@ -10,12 +13,19 @@
   text-align: center;
 }
 
+
+/* ===================================================
+   Card Hover Effect
+   =================================================== */
 .card-container:hover {
   transform: scale(1.03);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.75);
   background-color: #2a2a2a;
 }
 
+/* ===================================================
+   Label Heading
+   =================================================== */
 .label-heading {
   font-size: 18px;
   font-weight: 600;
@@ -23,6 +33,9 @@
   margin-bottom: 10px;
 }
 
+/* ===================================================
+   Label Text
+   =================================================== */
 .label-text {
   font-size: 24px;
   font-weight: 700;

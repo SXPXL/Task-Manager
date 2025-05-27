@@ -1,3 +1,15 @@
+"""
+This is the main entry point of the FastAPI application.
+
+Modules and Configuration:
+- Imports route modules: Handles authentication, projects/tasks, comments, and statistics
+- Sets up CORS middleware: Allows cross-origin requests from the frontend (e.g., React app at localhost:3000)
+- Creates database tables using SQLAlchemy's Base metadata
+- Registers routers with specific URL prefixes for modular route organization
+"""
+
+
+
 from fastapi import FastAPI
 from auth import router as auth_router
 from tasks import router as project_router

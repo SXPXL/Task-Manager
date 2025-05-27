@@ -1,3 +1,6 @@
+/* ===================================================
+   Full Page Wrapper
+   =================================================== */
 .login-container {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   max-width: 400px;
@@ -5,7 +8,7 @@
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-  background-color: #121212; /* dark background */
+  background-color: #121212; 
   color: #fff;
 }
 
@@ -19,12 +22,18 @@
   align-items: center;
 }
 
+/* ===================================================
+   Login Box Container
+   =================================================== */
 .login-container h2 {
   text-align: center;
   margin-bottom: 20px;
-  color: #1db954; /* Spotify green */
+  color: #1db954;
 }
 
+/* ===================================================
+   Input Fields
+   =================================================== */
 .login-container input {
   width: 100%;
   padding: 10px;
@@ -39,6 +48,9 @@
   color: #bbb;
 }
 
+/* ===================================================
+   Button
+   =================================================== */
 .login-container button {
   width: 100%;
   padding: 10px;
@@ -56,12 +68,18 @@
   transform: scale(1.02);
 }
 
+/* ===================================================
+   Error Message
+   =================================================== */
 .login-container .error {
   color: #ff4d4d;
   margin-bottom: 10px;
   text-align: center;
 }
 
+/* ===================================================
+   Bottom Text
+   =================================================== */
 .login-container p {
   text-align: center;
   margin-top: 15px;
