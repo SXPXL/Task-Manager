@@ -72,7 +72,7 @@ uvicorn main:app --reload
 1. **Installing required packages**:  
 Open a new terminal and paste the code.
 ```bash
-cd frontend
+cd Task-Manager/frontend
 ```
 Paste this code to install all the necessary packages
 ```bash
