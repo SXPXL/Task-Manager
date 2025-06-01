@@ -1,0 +1,161 @@
+/* ===================================================
+   Tool List Container
+   =================================================== */
+.tool-list-container {
+  padding: 23.5px;
+  background-color: #181818;       
+  border-radius: 12px;
+  border: 1px solid #282828;       
+  box-shadow: 0 3px 8px rgba(0,0,0,0.7);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  min-width:200px;
+  max-width: 220px;
+  min-height: 300px;
+  box-sizing: border-box;
+  margin-top: 22px;
+  
+}
+
+/* ===================================================
+   Tool Heading
+   =================================================== */
+.tool-list-heading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #1db954; 
+  display: inline;
+  margin-right: 5px;
+  margin-bottom: 15px;
+}
+
+/* ===================================================
+   Tool Form Input Section
+   =================================================== */
+.tool-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+/* ===================================================
+   Tool List Items
+   =================================================== */
+.tool-input {
+  flex: 1;
+  padding: 10px 14px;
+  background-color: #282828;      
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 8px;
+  margin-top:15px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.tool-input::placeholder {
+  color: #999;
+}
+
+.tool-input:focus {
+  background-color: #333;
+  border-color: #1db954;
+  outline: none;
+  color: #fff;
+}
+
+.tool-add-button {
+  width:35px;
+  height: 40px;
+  background-color: #1db954;
+  margin-top:15px;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(29,185,84,0.6);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-add-button:hover {
+  background-color: #17a744;
+  box-shadow: 0 5px 15px rgba(23,167,68,0.8);
+}
+
+.tool-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.tool-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #282828;      /* match task-item */
+  padding: 14px 18px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.tool-item:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+.tool-name {
+  flex-grow: 1;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Delete tool button */ 
+.tool-delete-button {
+  background: none;
+  border: none;
+  color: #e22134;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  
+}
+
+.tool-delete-button:hover {
+  color: #b91d2d;
+}
+
+.no-tools {
+  color: #999;
+  font-size: 14px;
+  text-align: center;
+  padding: 12px 0;
+}
+
+/* ===================================================
+   Clear Tool Filter Button
+   =================================================== */
+.clear-tool-filter{
+  background-color: #e22134;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  margin-top:30px;
+  margin: auto;
+  box-shadow: 0 3px 7px rgba(226,33,52,0.7);
+ 
+}
+
+.clear-tool-filter:hover {
+  background-color: #b91d2d;
+  box-shadow: 0 4px 12px rgba(185,29,45,0.9);
+}

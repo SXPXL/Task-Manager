@@ -6,6 +6,7 @@ import CreateTask from './CreateTask';
 import './styles/ProjectDetail.css';
 import UpdateTaskForm from './UpdateTask';
 import GreenSpinner from './Spinner';
+import ToolList from './ToolList.js';
 
 
 /**
@@ -22,7 +23,9 @@ const ProjectDetail = () => {
   const navigate = useNavigate(); 
   const [project, setProject] = useState(null); // Current project details
   const [tasks, setTasks] = useState([]); // List of tasks for the project
+  const [allTasks,setAllTasks] = useState([]);
   const [showCreateTask, setShowCreateTask] = useState(false); 
+  const [selectedTool,setSelectedTool] = useState(null);
   const [filterStatus, setFilterStatus] = useState('all'); // Filter to show tasks by status
   const [errors, setErrors] = useState(null); // Storing errors during api calls
   const [editingTask, setEditingTask] = useState(null); // Task currently being edited
@@ -49,6 +52,7 @@ const ProjectDetail = () => {
       const res = await axios.get(`http://localhost:8000/project/${projectId}/tasks`, {
         headers: { Authorization: `Bearer ${token}` },
       });
+      setAllTasks(res.data);
       setTasks(res.data);
     } catch (err) {
       console.error('Error fetching tasks:', err);
@@ -83,6 +87,7 @@ const ProjectDetail = () => {
     const user = users.find((u) => u.id === userId);
     return user ? user.username : 'Unknown';
   }
+  
 
   // To navigate to respective task detail page
   const handleTaskClick = (taskId) => {
@@ -125,6 +130,11 @@ const ProjectDetail = () => {
       console.error('Error deleting task:', error);
     }
   };
+  
+  // To filter tasks based on selected tool
+  const handleToolClick = (toolId) => {
+  setSelectedTool(toolId); 
+};
 
   // Print the filtered project report
   const handlePrint = () => {
@@ -216,17 +226,28 @@ const ProjectDetail = () => {
           onUpdate={handleTaskUpdated}
         />
       )}
-
+      <div className='lists-wrapper'>
+       
+       {/* Adding the ToolLIst component */}
+       <ToolList 
+        projectId={projectId} 
+        onToolClick={handleToolClick} 
+        clearfilter={() => setSelectedTool(null)}
+        fetchTasks={fetchTasks}
+       />
+        
         {/* Task list with filtering */}
         <div className="task-list">
           {tasks.length === 0 ? (
-            <p>No tasks for this project.</p>
+            <p className="no-task">No tasks for this project.</p>
+          
           ) : (
             tasks
               .filter(
                 (task) =>
                   ( filterStatus === 'all' || task.status === filterStatus)&&
-               (assignedUser === 'all' || String(task.assigned_to) === assignedUser)
+                  (assignedUser === 'all' || String(task.assigned_to) === assignedUser)&&
+                  (!selectedTool || task.tool_id === selectedTool)
                   )
               .map((task) => (
                 <div
@@ -251,7 +272,9 @@ const ProjectDetail = () => {
               ))
           )}
         </div>
-      
+        </div>
+        
+       
         {/* Hidden printable section */}
         <div className='print-section'>
           <button className='print' onClick={handlePrint}>
@@ -276,7 +299,7 @@ const ProjectDetail = () => {
           <th>Description</th>
           <th>Assigned To</th>
           <th>Due Date</th>
-          
+        
         </tr>
       </thead>
       <tbody>
@@ -295,7 +318,6 @@ const ProjectDetail = () => {
                 <td>{task.description || 'No description'}</td>
                 <td>{getUserName(task.assigned_to) || 'Unassigned'}</td>
                 <td>{task.due_date ? new Date(task.due_date).toLocaleDateString() : 'No due date'}</td>
-                
                 
               </tr>
             );

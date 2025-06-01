@@ -38,6 +38,7 @@ const TaskDetails = () => {
   const [emails,setEmails] = useState([]); // List of uploaded emails
   const [showEmails, setShowEmails] =useState(false); // Toggle email display
   const [uploading,setUploading] = useState(false); // Track if file is being uploaded
+  const [tools,setTools] = useState([]);
 
   
 
@@ -88,10 +89,25 @@ const TaskDetails = () => {
     }
   };
 
+  const fetchTools = async () =>{
+  
+  try {
+    const res = await axios.get(`http://localhost:8000/tool/${projectId}/tools`);
+    setTools(res.data);
+    } catch (err) {
+    console.error("Error fetching tools:", err);
+    }
+   };
+
   // Helper function to get username by user ID
   const getUserName = (userId) => {
     const user = users.find((u) => u.id === userId);
     return user ? user.username : 'Unknown';
+  }
+
+  const getToolName = (toolId) => {
+    const tool = tools.find((t) => t.id === toolId);
+    return tool ? tool.name : 'Unknown';
   }
 
   // Fetch all required data 
@@ -101,6 +117,7 @@ const TaskDetails = () => {
       fetchComments();
       fecthUsers();
       fetchEmails();
+      fetchTools();
     }
   }, [token, projectId, taskId]);
 
@@ -284,6 +301,7 @@ if(uploading) return <GreenSpinner/>;
           <p>Description: {task.description}</p>
           <p>Start Date: {task.start_date}</p>
           <p>Due Date: {task.due_date}</p>
+          <p>Tool Used: {getToolName(task.tool_id)}</p>
           <p>Assigned to: {getUserName(task.assigned_to)}</p>
         </div>
         {/* Only assigned user,manager or the admin can update the task */}

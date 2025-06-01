@@ -87,6 +87,7 @@ class TaskCreate(BaseModel):
         start_date (date): Starting date of the task.
         assigned_to (int): User ID the task is  the assigned to.
         project_id (int): Project ID under which the task falls.
+        tool_id (int): ID of the tool used in the task.
     """
   title: str
   description: str
@@ -94,6 +95,7 @@ class TaskCreate(BaseModel):
   start_date: date
   assigned_to: int
   project_id: int
+  tool_id: int
   
 
 
@@ -110,15 +112,17 @@ class TaskOut(BaseModel):
         assigned_to (int): User ID the task is assigned to.
         project_id (int): ID of the related project.
         description (str): Description of the task.
+        tool_id (int): Stores the id of the tool used in the task.
     """
   id:int
   title:str
   status:str
   due_date:date
   start_date:date
-  assigned_to:int
+  assigned_to:Optional[int]
   project_id:int
   description:str
+  tool_id: Optional[int]
 
   class Config:
     orm_mode = True
@@ -195,4 +199,27 @@ class AttachmentOut(BaseModel):
   class Config:
     orm_mode = True
 
-  
+class ToolBase(BaseModel):
+    """
+    Schema for storing tool details.
+
+    Attributes:
+    name (str): Stores the name of the tool.
+    """
+    name: str
+
+class ToolCreate(ToolBase):
+    pass
+
+class ToolOut(ToolBase):
+    """
+    Schema for sending tool details in responses.
+
+    Attributes:
+    id (int): For sending the ID of the tool.
+    """
+    id: int
+
+    class Config:
+        orm_mode = True
+

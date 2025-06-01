@@ -25,6 +25,7 @@ class User(Base):
   role = Column(String,default="member")
   comments = relationship("Comment", back_populates="user", cascade="all,delete")
   
+  
 
 
 
@@ -37,13 +38,14 @@ class Project(Base):
     title (str): Title of the project.
     description (str): Description of the project.
     tasks (relationship): List of tasks under the project.
+    tools (relationship): List of toold under the project.
   '''
   __tablename__= "projects"
   id = Column(Integer, primary_key=True,index=True,autoincrement=True)
   title = Column(String,index=True)
   description = Column(String,nullable=False)
   tasks = relationship("Task", back_populates="project", cascade="all,delete")
-
+  tools = relationship("Tool",back_populates="project", cascade="all,delete")
 
 class Task(Base):
   '''
@@ -58,10 +60,12 @@ class Task(Base):
     due_date (date): Due date for the task.
     assigned_to (int): User ID of the assignee.
     project_id (int): Project ID to which this task belongs.
+    tool_id (int): tool ID to which this task belongs.
     project (relationship): Associated project object.
     assigned_user (relationship): Assigned user object.
     comments (relationship): Comments associated with the task.
     attachments (relationship): Attachments uploaded to the task.
+    tools (relationship): Tool used in the task.
 
   '''
   __tablename__= "tasks"
@@ -71,12 +75,14 @@ class Task(Base):
   status = Column(String,default="pending")
   due_date = Column(Date,nullable=False)
   start_date = Column(Date,nullable=False)
-  assigned_to = Column(Integer,ForeignKey("users.id"),nullable=False)
+  assigned_to = Column(Integer,ForeignKey("users.id"),nullable=True)
   project_id = Column(Integer,ForeignKey("projects.id"))
   project = relationship("Project", back_populates="tasks")
   assigned_user = relationship("User")
   comments = relationship("Comment", back_populates="task", cascade="all,delete")
-  attachments = relationship("Attachment", back_populates="task")
+  attachments = relationship("Attachment", back_populates="task", cascade="all, delete")
+  tool_id = Column(Integer, ForeignKey('tools.id'), nullable=True)
+  tool = relationship("Tool", back_populates="tasks")
 
 
 
@@ -126,5 +132,23 @@ class Attachment(Base):
   content_type = Column(String)
   task = relationship("Task", back_populates="attachments")
   created_at = Column(DateTime,default=datetime.utcnow)
+
+class Tool(Base):
+  """
+  Represent all the tools available in a task
+  
+  Attributes:
+  id (int): Unique identifier for the tool.
+  name (string): Name of the tool.
+  project_id (int): The ID of the project where the tool is added.
+  project (relationship): A relation between tool and project.
+  tasks (relationship): A relation between tool and tasks.
+  """
+  __tablename__ = 'tools'
+  id = Column(Integer,primary_key=True,index=True)
+  name = Column(String,nullable=False)
+  project_id = Column(Integer,ForeignKey('projects.id'))
+  project = relationship("Project", back_populates="tools")
+  tasks = relationship("Task", back_populates="tool",cascade="all,delete")
   
   

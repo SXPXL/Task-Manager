@@ -15,6 +15,7 @@ import './styles/CreateTask.css';
  */
 const CreateTask = ({ token, onTaskCreated, onClose, projectId }) => {
   const [users, setUsers] = useState([]);
+  const [tools,setTools] = useState([]);
 
   // State for form inputs
   const [formData, setFormData] = useState({
@@ -22,7 +23,8 @@ const CreateTask = ({ token, onTaskCreated, onClose, projectId }) => {
     description: '',
     start_date: '',
     due_date: '',
-    assigned_to: '',  
+    assigned_to: '', 
+    tool_id: '', 
   });
 
   /**
@@ -42,6 +44,22 @@ const CreateTask = ({ token, onTaskCreated, onClose, projectId }) => {
     };
     fetchUsers();
   }, [token]);
+
+  /* useEffect to fecthTools from the backend */
+  useEffect(() => {
+  const fetchTools = async () => {
+    try {
+      const res = await axios.get(`http://localhost:8000/tool/${projectId}/tools`, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      setTools(res.data);
+    } catch (err) {
+      console.error('Failed to fetch tools:', err);
+    }
+  };
+  fetchTools();
+}, [projectId, token]);
+
 
   // Updates the form data when the user changes any input field
   const handleChange = (e) => {
@@ -93,7 +111,7 @@ const CreateTask = ({ token, onTaskCreated, onClose, projectId }) => {
         onChange={handleChange}
         required
       />
-      <textarea
+      <input
         name="description"
         placeholder="Description"
         value={formData.description}
@@ -132,6 +150,21 @@ const CreateTask = ({ token, onTaskCreated, onClose, projectId }) => {
         {users.map(user => (
           <option key={user.id} value={user.id}>
             {user.username} ({user.role})
+          </option>
+        ))}
+      </select>
+
+      {/* Tools dropdown */}
+      <select
+        name="tool_id"
+        value={formData.tool_id}
+        onChange={handleChange}
+        required
+      >
+        <option value="">Select Tool...</option>
+        {tools.map((tool) => (
+          <option key={tool.id} value={tool.id}>
+            {tool.name}
           </option>
         ))}
       </select>
