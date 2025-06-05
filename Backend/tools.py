@@ -115,7 +115,7 @@ def get_tasks_by_tool(
     Returns:
         List[TaskOut]: List of tasks linked to the tool.
     """
-    
+  
   project =db.query(Project).filter(Project.id == project_id).first()
   if not project:
     raise HTTPException(status_code=404,details="Project not found")

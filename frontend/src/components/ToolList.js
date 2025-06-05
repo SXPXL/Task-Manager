@@ -62,7 +62,7 @@ try {
    * 
    */
  const handleDeleteTool = async (toolId) => {
-  window.confirm("Deleting this tool will delete all the tasks using it.")
+  if (!window.confirm("Deleting this tool will delete all the tasks using it.")) return;
   try {
     await axios.delete(`http://localhost:8000/tool/tools/${toolId}`,{
     headers: { Authorization: `Bearer ${token}` },
