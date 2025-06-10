@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import PrivateRoute from "./components/PrivateRoute";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Register from "./components/Register";
 import Login from "./components/Login";
@@ -44,17 +45,15 @@ function App() {
         <Route path="/login" element={<Login />} />
 
         {/* Protected routes that require user and token */}
-        <Route path="/dashboard" element={<Dashboard user={user} token={token} />} />
-        <Route path="/project/:projectId" element={<ProjectDetail user={user} token={token} />} />
+         <Route path="/dashboard" element={<PrivateRoute><Dashboard user={user} token={token} /></PrivateRoute>} />
+        <Route path="/project/:projectId" element={<PrivateRoute><ProjectDetail user={user} token={token} /></PrivateRoute>} />
         <Route path="/project/:projectId/tasks/:taskId"
-        element={<TaskDetail user={user} token={token} />} />
-        <Route path="/summary" element={<Stats user={user} token={token} />}/>
+        element={<PrivateRoute><TaskDetail user={user} token={token} /></PrivateRoute>} />
+        <Route path="/summary" element={<PrivateRoute><Stats user={user} token={token} /></PrivateRoute>}/>
 
         {/* Dynamic route for task lists based on status */}
-        <Route path="/tasks/:status" element={<TaskListPage />} />
-    
+        <Route path="/tasks/:status" element={<PrivateRoute><TaskListPage /></PrivateRoute>} />
       </Routes>
-      
     </Router>
   );
 }

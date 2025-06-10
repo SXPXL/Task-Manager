@@ -3,6 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./styles/Register.css"; // Import external CSS
 import { Link } from "react-router-dom";
+import BASE_URL from "../config";
 
 /**
  * Register Component
@@ -39,7 +40,7 @@ function Register() {
     setError(""); // clear previous error
 
     try {
-      const res = await axios.post("http://localhost:8000/auth/register", formdata);
+      await axios.post(`${BASE_URL}/auth/register`, formdata);
       alert('Registration Successfull')
 
       // Clear form after successful registration

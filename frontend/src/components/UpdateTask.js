@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './styles/UpdateTask.css';
+import BASE_URL from '../config';
 
 /**
  * UpdateTaskForm Component
@@ -45,7 +46,7 @@ const UpdateTaskForm = ({ task, token, onClose, onUpdate }) => {
     try {
       // Send PUT request to update the task
       const response = await axios.put(
-        `http://localhost:8000/project/update-task/${task.id}`,
+        `${BASE_URL}/project/update-task/${task.id}`,
         formData,
         {
           headers: {
@@ -56,7 +57,7 @@ const UpdateTaskForm = ({ task, token, onClose, onUpdate }) => {
       onUpdate(response.data);
       onClose();
     } catch (error) {
-      console.error('Error updating task:', error);
+      alert('Error updating task');
     }
   };
 

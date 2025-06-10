@@ -18,12 +18,13 @@ from passlib.context import CryptContext
 from jose import jwt 
 from datetime import datetime, timedelta
 from fastapi import HTTPException,status
+from config import JWT_SECRET, EXPIRY
 
 # Password hashing
 password_context=CryptContext(schemes=["bcrypt"],deprecated="auto")
 
 # Settings for token creation
-secret_key = "mysecretkey"
+secret_key = JWT_SECRET
 algorithm="HS256"
 
 
@@ -54,7 +55,7 @@ def check_password(password,hash_password):
   return password_context.verify(password,hash_password)
 
 
-def create_token(data: dict, minutes: int=30):
+def create_token(data: dict, minutes: int=EXPIRY):
   """
     Create a JWT token for user authentication.
 

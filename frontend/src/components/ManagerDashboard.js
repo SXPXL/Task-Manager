@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './styles/ManagerDashboard.css';
+import BASE_URL from '../config';
 
 const ManagerDashboard = () => {
   // State to hold summary data for projects and tasks
@@ -17,7 +18,7 @@ const ManagerDashboard = () => {
       try {
 
         // Fetching all projects from data
-        const projectRes = await axios.get('http://localhost:8000/project/get-projects');
+        const projectRes = await axios.get(`${BASE_URL}/project/get-projects`);
         const projects = projectRes.data;
         let totalTasks = 0;
         let inProgressTasks = 0;
@@ -25,7 +26,7 @@ const ManagerDashboard = () => {
 
         // Looping through all projects to fetch tasks 
         for (const project of projects) {
-          const taskRes = await axios.get(`http://localhost:8000/project/${project.id}/tasks`);
+          const taskRes = await axios.get(`${BASE_URL}/project/${project.id}/tasks`);
           const tasks = taskRes.data;
           totalTasks += tasks.length;
 
@@ -46,7 +47,7 @@ const ManagerDashboard = () => {
           completedTasks,
         });
       } catch (error) {
-        console.error('Error fetching project/task data:', error);
+        alert('Error fetching project/task data');
       }
     };
 

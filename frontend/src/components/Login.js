@@ -4,7 +4,9 @@ import { useNavigate, Link } from "react-router-dom";
 import "./styles/Login.css"; 
 import { useAuth } from "../context/AuthContext";
 import GreenSpinner from "./Spinner";
+import BASE_URL from "../config";
 
+// Function for user login
 function Login() {
 
   // State for input values
@@ -33,7 +35,7 @@ function Login() {
     try{
 
       // POST request to backend 
-      const res =await axios.post("http://localhost:8000/auth/login", formData);
+      const res =await axios.post(`${BASE_URL}/auth/login`, formData);
        setError("");
 
        // extract access token from response

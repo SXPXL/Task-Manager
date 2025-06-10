@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './styles/CreateTask.css';
+import BASE_URL from '../config';
 
 /**
  * CreateTask Component
@@ -34,12 +35,12 @@ const CreateTask = ({ token, onTaskCreated, onClose, projectId }) => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const res = await axios.get('http://localhost:8000/auth/get-users', {
+        const res = await axios.get(`${BASE_URL}/auth/get-users`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setUsers(res.data);
       } catch (err) {
-        console.error('Failed to fetch users:', err);
+        alert('Failed to fetch users');
       }
     };
     fetchUsers();
@@ -49,12 +50,12 @@ const CreateTask = ({ token, onTaskCreated, onClose, projectId }) => {
   useEffect(() => {
   const fetchTools = async () => {
     try {
-      const res = await axios.get(`http://localhost:8000/tool/${projectId}/tools`, {
+      const res = await axios.get(`${BASE_URL}/tool/${projectId}/tools`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setTools(res.data);
     } catch (err) {
-      console.error('Failed to fetch tools:', err);
+      alert('Failed to fetch tools');
     }
   };
   fetchTools();
@@ -84,14 +85,14 @@ const CreateTask = ({ token, onTaskCreated, onClose, projectId }) => {
         project_id: projectId,  // include project ID
       };
       const response = await axios.post(
-        `http://localhost:8000/project/create-tasks`,
+        `${BASE_URL}/project/create-tasks`,
         dataToSend,
         { headers: { Authorization: `Bearer ${token}` } }
       );
       onTaskCreated(response.data);
       onClose();
     } catch (err) {
-      console.error('Error creating task:', err);
+      alert('Error creating task');
     }
   };
   

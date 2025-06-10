@@ -5,6 +5,7 @@ import { useAuth } from '../context/AuthContext';
 import './styles/TaskDetails.css'; 
 import UpdateTaskForm from './UpdateTask';
 import GreenSpinner from './Spinner';
+import BASE_URL from '../config';
 
 /**
  * TaskDetails Component
@@ -25,7 +26,6 @@ const TaskDetails = () => {
   const { token, user } = useAuth(); // get token and user from auth context
   const navigate = useNavigate();
   const [task, setTask] = useState(null); // holds the current task object
-  const [setAllTasks] = useState([]); // Store all tasks in the project
   const [comments, setComments] = useState([]); // Store list of comments
   const [newComment, setNewComment] = useState(''); // New comment input
   const [users, setUsers] = useState([]); // List of all users for displaying their name
@@ -48,43 +48,37 @@ const TaskDetails = () => {
 
   // Fetch task detaisl from backend
   const fetchTask = async () => {
-    try {
-      const res = await axios.get(`http://localhost:8000/project/${projectId}/tasks`, authHeaders);
+      const res = await axios.get(`${BASE_URL}/project/${projectId}/tasks`, authHeaders);
       const found = res.data.find((t) => String(t.id) === taskId);
       setTask(found);
-      setAllTasks(res.data);
-    } catch (err) {
-      console.error('Error fetching task:', err);
-    }
   };
 
   // Fetch comments related to the task
   const fetchComments = async () => {
     try {
-      const res = await axios.get(`http://localhost:8000/comment/task/${taskId}`, authHeaders);
+      const res = await axios.get(`${BASE_URL}/comment/task/${taskId}`, authHeaders);
       setComments(res.data);
     } catch (err) {
-      console.error('Error fetching comments:', err);
+      alert('Error fetching comments');
     }
   };
 
   // Fetch list of all users 
   const fecthUsers = async () => {
     try {
-      const res =await axios.get('http://localhost:8000/auth/get-users', authHeaders);
+      const res =await axios.get(`${BASE_URL}/auth/get-users`, authHeaders);
       setUsers(res.data);
     } catch (err) {
-      console.error('Error fetching users:', err);
+      alert('Error fetching users');
     }
   }
 
   // Fetch email attachments related to the task
   const fetchEmails = async () => {
     try {
-      const res = await axios.get(`http://localhost:8000/project/tasks/${taskId}/attachments/`, authHeaders)
+      const res = await axios.get(`${BASE_URL}/project/tasks/${taskId}/attachments/`, authHeaders)
       setEmails(res.data);
     } catch(err) {
-      console.error('Error fetching emails:', err);
       alert(err);
     }
   };
@@ -92,10 +86,10 @@ const TaskDetails = () => {
   const fetchTools = async () =>{
   
   try {
-    const res = await axios.get(`http://localhost:8000/tool/${projectId}/tools`);
+    const res = await axios.get(`${BASE_URL}/tool/${projectId}/tools`);
     setTools(res.data);
     } catch (err) {
-    console.error("Error fetching tools:", err);
+    alert("Error fetching tools");
     }
    };
 
@@ -145,7 +139,7 @@ const TaskDetails = () => {
   setUploading(true);
   try {
      await axios.post(
-      `http://localhost:8000/project/tasks/${taskId}/attachments`,
+      `${BASE_URL}/project/tasks/${taskId}/attachments`,
       formData,
       {
         headers: {
@@ -162,7 +156,7 @@ const TaskDetails = () => {
     fetchEmails();
     
   } catch (err) {
-    console.error("Upload error:", err);
+    alert("Upload error");
 
     setUploading(false);
     if (err.response && err.response.data && err.response.data.detail) {
@@ -188,7 +182,7 @@ if(uploading) return <GreenSpinner/>;
   const handleDownload = async (attachmentId, filename) => {
   try {
     const response = await axios.get(
-      `http://localhost:8000/project/attachments/download/${attachmentId}`,
+      `${BASE_URL}/project/attachments/download/${attachmentId}`,
       {
         authHeaders, 
         responseType: 'blob', 
@@ -204,7 +198,6 @@ if(uploading) return <GreenSpinner/>;
     a.remove();
     window.URL.revokeObjectURL(url);
   } catch (error) {
-    console.error("Download error:", error);
     alert("Failed to download email.");
   }
 };
@@ -232,7 +225,7 @@ if(uploading) return <GreenSpinner/>;
 
     try {
       const res = await axios.post(
-        `http://localhost:8000/comment/task/${taskId}`,
+        `${BASE_URL}/comment/task/${taskId}`,
         { content: newComment },
         authHeaders
         
@@ -249,7 +242,7 @@ if(uploading) return <GreenSpinner/>;
   // Handle comment deletion
   const handleDeleteComment = async (commentId) => {
     try {
-      await axios.delete(`http://localhost:8000/comment/${commentId}`, authHeaders);
+      await axios.delete(`${BASE_URL}/comment/${commentId}`, authHeaders);
       setComments(comments.filter((c) => c.id !== commentId));
     } catch (err) {
       alert('Not authorized to delete this comment.');
@@ -261,7 +254,7 @@ if(uploading) return <GreenSpinner/>;
   e.preventDefault();
   try {
     const res = await axios.put(
-      `http://localhost:8000/comment/comments/${commentId}`,
+      `${BASE_URL}/comment/comments/${commentId}`,
       { content: editContent },
       authHeaders
     );
@@ -435,3 +428,4 @@ if(uploading) return <GreenSpinner/>;
 };
 
 export default TaskDetails;
+

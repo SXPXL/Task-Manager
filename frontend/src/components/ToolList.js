@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { useAuth } from "../context/AuthContext";
 import "./styles/ToolList.css";
+import BASE_URL from "../config";
 
 /**
  * ToolList Component
@@ -27,10 +28,10 @@ export default function ToolList({projectId,onToolClick,clearfilter,fetchTasks})
 const fetchTools = async () =>{
 
 try {
-  const res = await axios.get(`http://localhost:8000/tool/${projectId}/tools`);
+  const res = await axios.get(`${BASE_URL}/tool/${projectId}/tools`);
   setTools(res.data);
   } catch (err) {
-  
+  alert('Error fetching tools');
   }
  };
 
@@ -41,17 +42,14 @@ try {
  const handleAddTool = async () => {
   if(!newTool.trim()) return;
   try {
-    
-    await axios.post(`http://localhost:8000/tool/${projectId}/tools`,{name: newTool },{
+    await axios.post(`${BASE_URL}/tool/${projectId}/tools`,{name: newTool },{
     headers: { Authorization: `Bearer ${token}` },
   });
     setNewTool("");
     await fetchTools();
   } catch (err) {
-    
-  } finally {
-    
-  }
+    alert('Error occured while adding tools');
+  } 
 
  };
 
@@ -64,15 +62,14 @@ try {
  const handleDeleteTool = async (toolId) => {
   if (!window.confirm("Deleting this tool will delete all the tasks using it.")) return;
   try {
-    await axios.delete(`http://localhost:8000/tool/tools/${toolId}`,{
+    await axios.delete(`${BASE_URL}/tool/tools/${toolId}`,{
     headers: { Authorization: `Bearer ${token}` },
   });
     setTools(tools.filter(t => t.id !== toolId))
     fetchTools();
     fetchTasks();
   } catch (err) {
-    
-
+  alert('Could not delete tool');
   }
  };
 

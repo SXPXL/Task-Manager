@@ -7,6 +7,7 @@ import './styles/ProjectDetail.css';
 import UpdateTaskForm from './UpdateTask';
 import GreenSpinner from './Spinner';
 import ToolList from './ToolList.js';
+import BASE_URL from '../config.js';
 
 
 /**
@@ -27,7 +28,6 @@ const ProjectDetail = () => {
   const [showCreateTask, setShowCreateTask] = useState(false); 
   const [selectedTool,setSelectedTool] = useState(null);
   const [filterStatus, setFilterStatus] = useState('all'); // Filter to show tasks by status
-  const [errors, setErrors] = useState(null); // Storing errors during api calls
   const [editingTask, setEditingTask] = useState(null); // Task currently being edited
   const [users, setUsers] = useState([]); // List of Users
   const [assignedUser, setAssignedUser] = useState('all'); // Filter to show tasks based on the user
@@ -35,41 +35,40 @@ const ProjectDetail = () => {
   // Fetch project details
   const fetchProject = async () => {
     try {
-      const res = await axios.get('http://localhost:8000/project/get-projects', {
+      const res = await axios.get(`${BASE_URL}/project/get-projects`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       const found = res.data.find((p) => String(p.id) === projectId);
       setProject(found || null);
     } catch (err) {
-      setErrors(err);
-      console.error('Error fetching project:', err);
+      alert('Error fetching project');
     }
   };
 
   // Fetch all tasks within the project
   const fetchTasks = async () => {
     try {
-      const res = await axios.get(`http://localhost:8000/project/${projectId}/tasks`, {
+      const res = await axios.get(`${BASE_URL}/project/${projectId}/tasks`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setAllTasks(res.data);
       setTasks(res.data);
     } catch (err) {
-      console.error('Error fetching tasks:', err);
+      alert('Error fetching tasks');
     }
   };
 
   // Fetch all users
   const fetchUsers = async () => {
       try {
-        const res =await axios.get('http://localhost:8000/auth/get-users', 
+        const res =await axios.get(`${BASE_URL}/auth/get-users`, 
           {
         headers: { Authorization: `Bearer ${token}` },
       }
         );
         setUsers(res.data);
       } catch (err) {
-        console.error('Error fetching users:', err);
+        alert('Error fetching users');
       }
     }
 
@@ -120,14 +119,14 @@ const ProjectDetail = () => {
     if(!window.confirm("Are you sure you want to delete this task?")) 
       return;
     try {
-      await axios.delete(`http://localhost:8000/project/delete-task/${taskId}`, {
+      await axios.delete(`${BASE_URL}/project/delete-task/${taskId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
       });
       setTasks((prevTasks) => prevTasks.filter((task) => task.id !== taskId));
     } catch (error) {
-      console.error('Error deleting task:', error);
+      alert('Error deleting task');
     }
   };
   
@@ -153,8 +152,6 @@ const ProjectDetail = () => {
   
 
   if(!project) return <GreenSpinner/>;
-  console.log("comments",tasks.map(task => task.comments));
-  
 
   return (
     <div className='wholepage'>

@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useAuth } from '../context/AuthContext';
 import './styles/Dashboard.css';
 import CreateProject from './CreateProject';
-
+import BASE_URL from '../config';
 /**
  * Home Page
  * -------------------
@@ -18,22 +18,20 @@ const Dashboard = () => {
   const [projects, setProjects] = useState([]);
   const [showCreateProject, setShowCreateProject] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [message, setMessage] = useState('');
   const navigate = useNavigate();
 
   // Fetch projects from backend using JWT
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/project/get-projects', {
+        const response = await axios.get(`${BASE_URL}/project/get-projects`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
         });
-        console.log('Projects:', response.data);
         setProjects(response.data);
       } catch (error) {
-        console.error('Error fetching projects:', error);
+        alert('Error fetching projects');
       }
     };
     if (token) {
@@ -50,7 +48,7 @@ const Dashboard = () => {
     if(!window.confirm("Are you sure you want to delete this project?")) 
       return;
     try {
-      await axios.delete(`http://localhost:8000/project/delete-project/${projectId}`,{
+      await axios.delete(`${BASE_URL}/project/delete-project/${projectId}`,{
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -58,11 +56,10 @@ const Dashboard = () => {
 
       // Remove the project from the local state
       setProjects((prev) => prev.filter((project) => project.id !== projectId));
-      setMessage("Project deleted successfully!");
-      console.log("Deleting project ID:", projectId);
+      alert("Project deleted successfully!");
 
     } catch (err) {
-      setMessage(`${err.response?.data?.detail || "Error deleting project"}`);
+      alert("Error deleting project");
     }
   };
 

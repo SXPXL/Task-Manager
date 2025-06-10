@@ -4,6 +4,7 @@ import axios from "axios";
 import { useAuth } from "../context/AuthContext";
 import GreenSpinner from "./Spinner";
 import './styles/TaskListPage.css'; 
+import BASE_URL from "../config";
 
 /**
  * TaskListPage Component
@@ -25,7 +26,7 @@ export default function TaskListPage() {
     // Fetch tasks from the backend API
     const fetchTasks = async () => {
       try {
-        const response = await axios.get(`http://localhost:8000/summary/tasks/${status}`, {
+        const response = await axios.get(`${BASE_URL}/summary/tasks/${status}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -35,7 +36,7 @@ export default function TaskListPage() {
         setTasks(response.data);
         console.log(response.data);
       } catch (err) {
-        console.error("Failed to fetch tasks:", err);
+        alert("Failed to fetch tasks");
       } finally {
         setLoading(false);
       }

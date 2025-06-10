@@ -8,6 +8,7 @@ import { useAuth } from "../context/AuthContext";
 import ManagerDashboard from "./ManagerDashboard";
 import './styles/Stats.css';
 import AdminDashboard from "./AdminDashboard";
+import BASE_URL from "../config";
 
 /**
  * Stats Component
@@ -40,14 +41,13 @@ export default function Stats() {
 
     const fetchSummary = async () => {
       try {
-        const response = await axios.get(`http://localhost:8000/summary/user-summary`, {
+        const response = await axios.get(`${BASE_URL}/summary/user-summary`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
         });
         setSummary(response.data);
       } catch (err) {
-        console.error("Failed to fetch summary:", err);
         setError("Unable to load dashboard data.");
       }
     };

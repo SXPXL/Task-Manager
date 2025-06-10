@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useAuth } from "../context/AuthContext";
 import "./styles/CreateProject.css";
+import BASE_URL from "../config";
 
 /**
  * CreateProject Component
@@ -41,7 +42,7 @@ function CreateProject({ onClose, onProjectCreated }) {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:8000/project/create-projects",
+        `${BASE_URL}/project/create-projects`,
         formData,
         {
           headers: {

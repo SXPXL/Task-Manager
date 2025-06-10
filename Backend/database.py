@@ -14,8 +14,9 @@ Components:
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
+from config import DATABASE_URL
 
-database_url = "sqlite:///./users.db"
+database_url = DATABASE_URL
 
 engine = create_engine(database_url,connect_args={"check_same_thread":False})
 

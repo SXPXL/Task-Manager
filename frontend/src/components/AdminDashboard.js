@@ -3,6 +3,7 @@ import axios from 'axios';
 import './styles/AdminDashboard.css';
 import { useAuth } from '../context/AuthContext';
 import GreenSpinner from './Spinner';
+import BASE_URL from '../config';
 
 // Available roles in the system
 const roles = ['member', 'manager', 'admin'];
@@ -32,10 +33,10 @@ const AdminDashboard = () => {
   const fetchUsers = async () => {
     try {
       
-      const res = await axios.get('http://localhost:8000/auth/get-users');
+      const res = await axios.get(`${BASE_URL}/auth/get-users`);
       setUsers(res.data);
     } catch (err) {
-      console.error('Error fetching users:', err);
+      alert('Error fetching users');
     }
   };
 
@@ -44,7 +45,7 @@ const AdminDashboard = () => {
   if (!window.confirm('Do you want to delete this user?')) return;
 
   try {
-    await axios.delete(`http://localhost:8000/auth/users/${userId}`, {
+    await axios.delete(`${BASE_URL}/auth/users/${userId}`, {
       headers: {
         Authorization: `Bearer ${token}`
       }
@@ -73,7 +74,7 @@ const AdminDashboard = () => {
   const handleChangeRole = async (userId) => {
     const newRole = selectedRoles[userId];
     try {
-      await axios.put(`http://localhost:8000/auth/change-role/${userId}?role=${newRole}`, { 
+      await axios.put(`${BASE_URL}/auth/change-role/${userId}?role=${newRole}`, { 
         
         headers: {
         Authorization: `Bearer ${token}`,
@@ -82,7 +83,7 @@ const AdminDashboard = () => {
       fetchUsers(); // refresh user list after update
       setEditingRoleUserId(null);
     } catch (err) {
-      console.error('Error updating role:', err);
+      alert('Error updating role');
     }
   };
   // Shows a loading spinner if the token is not yet available
@@ -102,7 +103,7 @@ const AdminDashboard = () => {
             <span>{user.username}</span>
 
             {/* Only allow delete/change role for non-admin users */}
-            {(user.role != 'admin') && (
+            {(user.role !== 'admin') && (
             <div className="button-group">
               <button
                 className="delete-btn"
