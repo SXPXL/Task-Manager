@@ -1,29 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import './styles/UpdateTask.css';
 import BASE_URL from '../config';
 
-/**
- * UpdateTaskForm Component
- * ------------------------
- * A modal form used to update an existing task.
- * 
- * Props:
- * - task: the task object to be updated
- * - token: authentication token (string)
- * - onClose: function to close the modal
- * - onUpdate: callback to notify parent when task is updated
- * */
 const UpdateTaskForm = ({ task, token, onClose, onUpdate }) => {
-  // Local state to hold form data
   const [formData, setFormData] = useState({
     title: '',
     description: '',
     status: '',
     due_date: '',
   });
+  const [reason, setReason] = useState('');
+  const [error, setError] = useState('');
+  const initialDueDate = useRef('');
 
-  // Effect to populate form data when 'task' prop changes
   useEffect(() => {
     if (task) {
       setFormData({
@@ -32,22 +22,38 @@ const UpdateTaskForm = ({ task, token, onClose, onUpdate }) => {
         status: task.status,
         due_date: task.due_date ? task.due_date.slice(0, 10) : '',
       });
+      initialDueDate.current = task.due_date ? task.due_date.slice(0, 10) : '';
+      setReason('');
+      setError('');
     }
   }, [task]);
 
-  // Handles changes to input fields and updates state accordingly
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+    if (e.target.name === 'due_date' && e.target.value !== initialDueDate.current) {
+      setReason('');
+    }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setError('');
+
+    const dueDateChanged = formData.due_date !== initialDueDate.current;
+    if (dueDateChanged && !reason.trim()) {
+      setError('Reason for due date change is required.');
+      return;
+    }
+
+    const payload = { ...formData };
+    if (dueDateChanged) {
+      payload.due_date_change_reason = reason;
+    }
 
     try {
-      // Send PUT request to update the task
       const response = await axios.put(
         `${BASE_URL}/project/update-task/${task.id}`,
-        formData,
+        payload, // <-- use payload, not formData
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -57,13 +63,12 @@ const UpdateTaskForm = ({ task, token, onClose, onUpdate }) => {
       onUpdate(response.data);
       onClose();
     } catch (error) {
-      alert('Error updating task');
+      setError('Error updating task');
     }
   };
 
   return (
     <div className="modal">
-      {/* Form UI for updating tasks */}
       <form onSubmit={handleSubmit} className="update-form">
         <h3>Update Task</h3>
         <input
@@ -80,8 +85,6 @@ const UpdateTaskForm = ({ task, token, onClose, onUpdate }) => {
           onChange={handleChange}
           placeholder="Description"
         />
-
-        {/* Drop down for task status */}
         <select
           name="status"
           value={formData.status}
@@ -95,13 +98,25 @@ const UpdateTaskForm = ({ task, token, onClose, onUpdate }) => {
         </select>
         <label>
           Due date
-        <input
-          type="date"
-          name="due_date"
-          value={formData.due_date}
-          onChange={handleChange}
-        />
+          <input
+            type="date"
+            name="due_date"
+            value={formData.due_date}
+            onChange={handleChange}
+          />
         </label>
+        {formData.due_date !== initialDueDate.current && (
+          <div>
+            <label>Reason for Due Date Change</label>
+            <input
+              type="text"
+              value={reason}
+              onChange={(e) => setReason(e.target.value)}
+              required
+            />
+          </div>
+        )}
+        {error && <div className="error">{error}</div>}
         <button type="submit">Save</button>
         <button type="button" onClick={onClose}>Cancel</button>
       </form>

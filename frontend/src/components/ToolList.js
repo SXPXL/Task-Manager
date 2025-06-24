@@ -7,31 +7,31 @@ import BASE_URL from "../config";
 /**
  * ToolList Component
  * ------------------
- * Displays a list of tools associated with a project.
+ * Displays a list of modules associated with a project.
  * Allows filtering tasks based on selected tool.
- * Admins/Managers can add or delete tools.
+ * Admins/Managers can add or delete modules.
  * 
  * Props:
  * - projectId: ID of the current project
  * - onToolClick: Callback to filter tasks by selected tool
  * - clearfilter: Function to clear the tool filter
- * - fetchTasks: Function to re-fetch tasks when a tool is deleted
+ * - refresh: Function to re-fetch tasks when a tool is deleted
  */
 
-export default function ToolList({projectId,onToolClick,clearfilter,fetchTasks}) {
+export default function ToolList({projectId,onToolClick,clearfilter,refresh}) {
   const [tools,setTools] = useState([]); // List of tools in the project
   const [newTool, setNewTool] = useState(""); // Input for adding new tool
   
   const { token, user } = useAuth();
 
-  // Fetches all tools for the current project from the API.
+  // Fetches all modules for the current project from the API.
 const fetchTools = async () =>{
 
 try {
   const res = await axios.get(`${BASE_URL}/tool/${projectId}/tools`);
   setTools(res.data);
   } catch (err) {
-  alert('Error fetching tools');
+  alert('Error fetching modules');
   }
  };
 
@@ -48,7 +48,7 @@ try {
     setNewTool("");
     await fetchTools();
   } catch (err) {
-    alert('Error occured while adding tools');
+    alert('Error occured while adding modules');
   } 
 
  };
@@ -56,7 +56,7 @@ try {
  /**
    * Deletes a tool by ID after confirmation.
    * Warns the user that deleting the tool will also delete related tasks.
-   * Refetches both tools and tasks after deletion.
+   * Refetches both modules and tasks after deletion.
    * 
    */
  const handleDeleteTool = async (toolId) => {
@@ -65,9 +65,11 @@ try {
     await axios.delete(`${BASE_URL}/tool/tools/${toolId}`,{
     headers: { Authorization: `Bearer ${token}` },
   });
+  await fetchTools();
+    clearfilter(); 
     setTools(tools.filter(t => t.id !== toolId))
-    fetchTools();
-    fetchTasks();
+    refresh();
+    
   } catch (err) {
   alert('Could not delete tool');
   }
@@ -80,9 +82,9 @@ try {
   
  return(
   <div className="tool-list-container">
-    <h2 className="tool-list-heading">Tools</h2>
+    <h2 className="tool-list-heading">Modules</h2>
 
-    {/* Only the admins or managers can add tools */}
+    {/* Only the admins or managers can add modules */}
     {(user.role === 'admin' || user.role === 'manager') && (
     <div className="tool-form">
       {/* Input for new tool */}
@@ -90,14 +92,14 @@ try {
       type="text"
       value={newTool}
       onChange={(e) => setNewTool(e.target.value)}
-      placeholder = "Tool name"
+      placeholder = "Module name"
       className="tool-input"
       />
       <button 
       onClick={handleAddTool}
       className = "tool-add-button"
       >
-        Add
+        +
       </button>
     </div>
     )}
@@ -122,7 +124,7 @@ try {
         )}
       </li>
       ))}
-      {tools.length === 0 && <p className="no-tools">No tools added</p>}
+      {tools.length === 0 && <p className="no-tools">No modules added</p>}
     </ul>
     {tools.length!== 0 && 
     <button className="clear-tool-filter" onClick={clearfilter}>Clear Filter</button>

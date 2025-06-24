@@ -1,0 +1,702 @@
+[2025-06-18 19:56:05,572] - INFO - Incoming request: GET /
+[2025-06-18 19:56:05,578] - INFO - Completed GET / with status 404 in 0.01s
+[2025-06-18 19:56:05,677] - INFO - Incoming request: GET /favicon.ico
+[2025-06-18 19:56:05,680] - INFO - Completed GET /favicon.ico with status 404 in 0.00s
+[2025-06-18 19:56:13,052] - INFO - Incoming request: GET /docs
+[2025-06-18 19:56:13,056] - INFO - Completed GET /docs with status 200 in 0.00s
+[2025-06-18 19:56:13,532] - INFO - Incoming request: GET /openapi.json
+[2025-06-18 19:56:13,587] - INFO - Completed GET /openapi.json with status 200 in 0.05s
+[2025-06-18 19:57:43,435] - INFO - Incoming request: OPTIONS /auth/login
+[2025-06-18 19:57:43,437] - INFO - Completed OPTIONS /auth/login with status 200 in 0.00s
+[2025-06-18 19:57:43,455] - INFO - Incoming request: POST /auth/login
+[2025-06-18 19:57:43,920] - INFO - Completed POST /auth/login with status 200 in 0.46s
+[2025-06-18 19:57:44,018] - INFO - Incoming request: OPTIONS /project/get-projects
+[2025-06-18 19:57:44,019] - INFO - Incoming request: OPTIONS /project/get-projects
+[2025-06-18 19:57:44,021] - INFO - Completed OPTIONS /project/get-projects with status 200 in 0.00s
+[2025-06-18 19:57:44,024] - INFO - Completed OPTIONS /project/get-projects with status 200 in 0.00s
+[2025-06-18 19:57:44,031] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 19:57:44,052] - INFO - Completed GET /project/get-projects with status 200 in 0.02s
+[2025-06-18 19:57:44,057] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 19:57:44,064] - INFO - Completed GET /project/get-projects with status 200 in 0.01s
+[2025-06-18 19:57:46,293] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 19:57:46,298] - INFO - Incoming request: OPTIONS /project/3/tasks
+[2025-06-18 19:57:46,300] - INFO - Incoming request: OPTIONS /auth/get-users
+[2025-06-18 19:57:46,304] - INFO - Incoming request: OPTIONS /project/3/tasks
+[2025-06-18 19:57:46,307] - INFO - Incoming request: OPTIONS /auth/get-users
+[2025-06-18 19:57:46,310] - INFO - Completed OPTIONS /project/3/tasks with status 200 in 0.01s
+[2025-06-18 19:57:46,318] - INFO - Completed OPTIONS /auth/get-users with status 200 in 0.02s
+[2025-06-18 19:57:46,329] - INFO - Completed OPTIONS /project/3/tasks with status 200 in 0.02s
+[2025-06-18 19:57:46,338] - INFO - Completed OPTIONS /auth/get-users with status 200 in 0.03s
+[2025-06-18 19:57:46,356] - INFO - Completed GET /project/get-projects with status 200 in 0.06s
+[2025-06-18 19:57:46,359] - INFO - Incoming request: GET /auth/get-users
+[2025-06-18 19:57:46,360] - INFO - Incoming request: GET /project/3/tasks
+[2025-06-18 19:57:46,376] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 19:57:46,392] - INFO - Completed GET /auth/get-users with status 200 in 0.03s
+[2025-06-18 19:57:46,434] - INFO - Incoming request: GET /tool/3/tools
+[2025-06-18 19:57:46,446] - INFO - Incoming request: GET /auth/get-users
+[2025-06-18 19:57:46,484] - INFO - Completed GET /tool/3/tools with status 200 in 0.05s
+[2025-06-18 19:57:46,498] - INFO - Incoming request: GET /tool/3/tools
+[2025-06-18 19:57:46,519] - INFO - Completed GET /tool/3/tools with status 200 in 0.02s
+[2025-06-18 19:57:46,570] - INFO - Completed GET /project/get-projects with status 200 in 0.19s
+[2025-06-18 19:57:46,580] - INFO - Completed GET /project/3/tasks with status 200 in 0.22s
+[2025-06-18 19:57:46,590] - INFO - Incoming request: GET /project/3/tasks
+[2025-06-18 19:57:46,611] - INFO - Completed GET /auth/get-users with status 200 in 0.17s
+[2025-06-18 19:57:46,618] - INFO - Completed GET /project/3/tasks with status 200 in 0.03s
+[2025-06-18 19:57:53,781] - INFO - Incoming request: OPTIONS /tool/3/tools
+[2025-06-18 19:57:53,783] - INFO - Completed OPTIONS /tool/3/tools with status 200 in 0.00s
+[2025-06-18 19:57:53,792] - INFO - Incoming request: POST /tool/3/tools
+[2025-06-18 19:57:53,864] - INFO - Completed POST /tool/3/tools with status 200 in 0.07s
+[2025-06-18 19:57:53,871] - INFO - Incoming request: GET /tool/3/tools
+[2025-06-18 19:57:53,885] - INFO - Completed GET /tool/3/tools with status 200 in 0.01s
+[2025-06-18 19:57:56,350] - INFO - Incoming request: GET /auth/get-users
+[2025-06-18 19:57:56,354] - INFO - Incoming request: GET /tool/3/tools
+[2025-06-18 19:57:56,379] - INFO - Completed GET /tool/3/tools with status 200 in 0.02s
+[2025-06-18 19:57:56,386] - INFO - Completed GET /auth/get-users with status 200 in 0.04s
+[2025-06-18 19:57:56,413] - INFO - Incoming request: GET /tool/3/tools
+[2025-06-18 19:57:56,428] - INFO - Completed GET /tool/3/tools with status 200 in 0.02s
+[2025-06-18 19:57:56,441] - INFO - Incoming request: GET /auth/get-users
+[2025-06-18 19:57:56,457] - INFO - Completed GET /auth/get-users with status 200 in 0.02s
+[2025-06-18 19:58:24,432] - INFO - Incoming request: OPTIONS /project/create-tasks
+[2025-06-18 19:58:24,433] - INFO - Completed OPTIONS /project/create-tasks with status 200 in 0.00s
+[2025-06-18 19:58:24,437] - INFO - Incoming request: POST /project/create-tasks
+[2025-06-18 19:58:24,477] - INFO - Completed POST /project/create-tasks with status 200 in 0.04s
+[2025-06-18 19:58:24,483] - INFO - Incoming request: GET /project/3/tasks
+[2025-06-18 19:58:24,493] - INFO - Completed GET /project/3/tasks with status 200 in 0.01s
+[2025-06-18 19:58:34,880] - INFO - Incoming request: OPTIONS /comment/task/2
+[2025-06-18 19:58:34,882] - INFO - Completed OPTIONS /comment/task/2 with status 200 in 0.00s
+[2025-06-18 19:58:34,906] - INFO - Incoming request: OPTIONS /project/tasks/2/attachments/
+[2025-06-18 19:58:34,914] - INFO - Incoming request: GET /project/3/tasks
+[2025-06-18 19:58:34,916] - INFO - Incoming request: OPTIONS /project/tasks/2/attachments/
+[2025-06-18 19:58:34,919] - INFO - Incoming request: OPTIONS /comment/task/2
+[2025-06-18 19:58:34,926] - INFO - Completed OPTIONS /project/tasks/2/attachments/ with status 200 in 0.02s
+[2025-06-18 19:58:34,937] - INFO - Incoming request: GET /tool/3/tools
+[2025-06-18 19:58:34,938] - INFO - Incoming request: GET /auth/get-users
+[2025-06-18 19:58:34,940] - INFO - Completed OPTIONS /project/tasks/2/attachments/ with status 200 in 0.02s
+[2025-06-18 19:58:34,942] - INFO - Completed OPTIONS /comment/task/2 with status 200 in 0.02s
+[2025-06-18 19:58:34,948] - INFO - Incoming request: GET /comment/task/2
+[2025-06-18 19:58:34,950] - INFO - Incoming request: GET /project/tasks/2/attachments/
+[2025-06-18 19:58:34,976] - INFO - Completed GET /tool/3/tools with status 200 in 0.04s
+[2025-06-18 19:58:34,979] - INFO - Completed GET /auth/get-users with status 200 in 0.04s
+[2025-06-18 19:58:34,982] - INFO - Completed GET /project/3/tasks with status 200 in 0.07s
+[2025-06-18 19:58:34,989] - INFO - Incoming request: GET /tool/3/tools
+[2025-06-18 19:58:35,004] - INFO - Completed GET /comment/task/2 with status 200 in 0.06s
+[2025-06-18 19:58:35,011] - INFO - Incoming request: GET /auth/get-users
+[2025-06-18 19:58:35,018] - INFO - Incoming request: GET /comment/task/2
+[2025-06-18 19:58:35,028] - INFO - Incoming request: GET /project/3/tasks
+[2025-06-18 19:58:35,059] - INFO - Completed GET /auth/get-users with status 200 in 0.05s
+[2025-06-18 19:58:35,062] - INFO - Completed GET /tool/3/tools with status 200 in 0.07s
+[2025-06-18 19:58:35,069] - INFO - Completed GET /project/3/tasks with status 200 in 0.04s
+[2025-06-18 19:58:35,074] - INFO - Completed GET /comment/task/2 with status 200 in 0.06s
+[2025-06-18 19:58:35,098] - INFO - Completed GET /project/tasks/2/attachments/ with status 200 in 0.15s
+[2025-06-18 19:58:35,104] - INFO - Incoming request: GET /project/tasks/2/attachments/
+[2025-06-18 19:58:35,114] - INFO - Completed GET /project/tasks/2/attachments/ with status 200 in 0.01s
+[2025-06-18 20:01:38,586] - INFO - Incoming request: OPTIONS /project/tasks/2/attachments
+[2025-06-18 20:01:38,590] - INFO - Completed OPTIONS /project/tasks/2/attachments with status 200 in 0.01s
+[2025-06-18 20:01:38,609] - INFO - Incoming request: POST /project/tasks/2/attachments
+[2025-06-18 20:01:38,613] - INFO - Completed POST /project/tasks/2/attachments with status 307 in 0.00s
+[2025-06-18 20:01:38,628] - INFO - Incoming request: POST /project/tasks/2/attachments/
+[2025-06-18 20:01:38,645] - ERROR - Exception during request: 'Session' object has no attribute 'filename'
+Traceback (most recent call last):
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 148, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream from None
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samue\Task-Manager\Backend\common\logging_middleware.py", line 15, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\Task-Manager\Backend\apis\tasks.py", line 59, in upload_attachment
+    return await task_service.upload_attachment(task_id, file, db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\Task-Manager\Backend\services\task_service.py", line 46, in upload_attachment
+    filename = file.filename.lower()
+               ^^^^^^^^^^^^^
+AttributeError: 'Session' object has no attribute 'filename'
+[2025-06-18 20:12:31,807] - INFO - Incoming request: OPTIONS /project/tasks/2/attachments
+[2025-06-18 20:12:31,811] - INFO - Completed OPTIONS /project/tasks/2/attachments with status 200 in 0.00s
+[2025-06-18 20:12:31,823] - INFO - Incoming request: POST /project/tasks/2/attachments
+[2025-06-18 20:12:31,828] - INFO - Completed POST /project/tasks/2/attachments with status 307 in 0.00s
+[2025-06-18 20:12:31,839] - INFO - Incoming request: OPTIONS /project/tasks/2/attachments/
+[2025-06-18 20:12:31,842] - INFO - Completed OPTIONS /project/tasks/2/attachments/ with status 200 in 0.00s
+[2025-06-18 20:12:31,855] - INFO - Incoming request: POST /project/tasks/2/attachments/
+[2025-06-18 20:12:31,870] - ERROR - Exception during request: 'Session' object has no attribute 'filename'
+Traceback (most recent call last):
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 148, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream from None
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samue\Task-Manager\Backend\common\logging_middleware.py", line 15, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\Task-Manager\Backend\apis\tasks.py", line 59, in upload_attachment
+    return await task_service.upload_attachment(task_id, file, db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\Task-Manager\Backend\services\task_service.py", line 46, in upload_attachment
+    filename = file.filename.lower()
+               ^^^^^^^^^^^^^
+AttributeError: 'Session' object has no attribute 'filename'
+[2025-06-18 20:14:24,182] - INFO - Incoming request: POST /project/tasks/2/attachments
+[2025-06-18 20:14:24,184] - INFO - Completed POST /project/tasks/2/attachments with status 307 in 0.00s
+[2025-06-18 20:14:24,190] - INFO - Incoming request: POST /project/tasks/2/attachments/
+[2025-06-18 20:14:24,305] - INFO - Completed POST /project/tasks/2/attachments/ with status 200 in 0.11s
+[2025-06-18 20:14:26,683] - INFO - Incoming request: GET /project/tasks/2/attachments/
+[2025-06-18 20:14:26,721] - INFO - Completed GET /project/tasks/2/attachments/ with status 200 in 0.04s
+[2025-06-18 20:28:02,843] - INFO - Incoming request: OPTIONS /project/tasks/2/attachments
+[2025-06-18 20:28:02,878] - INFO - Completed OPTIONS /project/tasks/2/attachments with status 200 in 0.04s
+[2025-06-18 20:28:02,916] - INFO - Incoming request: POST /project/tasks/2/attachments
+[2025-06-18 20:28:02,932] - INFO - Completed POST /project/tasks/2/attachments with status 307 in 0.02s
+[2025-06-18 20:28:02,947] - INFO - Incoming request: OPTIONS /project/tasks/2/attachments/
+[2025-06-18 20:28:02,948] - INFO - Completed OPTIONS /project/tasks/2/attachments/ with status 200 in 0.00s
+[2025-06-18 20:28:02,958] - INFO - Incoming request: POST /project/tasks/2/attachments/
+[2025-06-18 20:28:03,178] - INFO - Completed POST /project/tasks/2/attachments/ with status 200 in 0.22s
+[2025-06-18 20:28:05,068] - INFO - Incoming request: GET /project/tasks/2/attachments/
+[2025-06-18 20:28:05,113] - INFO - Completed GET /project/tasks/2/attachments/ with status 200 in 0.04s
+[2025-06-18 20:28:23,643] - INFO - Incoming request: OPTIONS /project/get-projects
+[2025-06-18 20:28:23,652] - INFO - Incoming request: OPTIONS /project/3/tasks
+[2025-06-18 20:28:23,658] - INFO - Incoming request: OPTIONS /auth/get-users
+[2025-06-18 20:28:23,664] - INFO - Completed OPTIONS /project/get-projects with status 200 in 0.02s
+[2025-06-18 20:28:23,691] - INFO - Incoming request: OPTIONS /project/get-projects
+[2025-06-18 20:28:23,693] - INFO - Incoming request: OPTIONS /project/3/tasks
+[2025-06-18 20:28:23,695] - INFO - Incoming request: OPTIONS /auth/get-users
+[2025-06-18 20:28:23,696] - INFO - Completed OPTIONS /project/3/tasks with status 200 in 0.04s
+[2025-06-18 20:28:23,698] - INFO - Completed OPTIONS /auth/get-users with status 200 in 0.04s
+[2025-06-18 20:28:23,708] - INFO - Completed OPTIONS /project/get-projects with status 200 in 0.02s
+[2025-06-18 20:28:23,711] - INFO - Completed OPTIONS /project/3/tasks with status 200 in 0.02s
+[2025-06-18 20:28:23,714] - INFO - Completed OPTIONS /auth/get-users with status 200 in 0.02s
+[2025-06-18 20:28:23,716] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 20:28:23,740] - INFO - Incoming request: GET /project/3/tasks
+[2025-06-18 20:28:23,743] - INFO - Incoming request: GET /auth/get-users
+[2025-06-18 20:28:23,777] - INFO - Completed GET /project/get-projects with status 200 in 0.06s
+[2025-06-18 20:28:23,783] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 20:28:23,796] - INFO - Completed GET /project/get-projects with status 200 in 0.01s
+[2025-06-18 20:28:23,878] - INFO - Incoming request: GET /tool/3/tools
+[2025-06-18 20:28:23,901] - INFO - Completed GET /tool/3/tools with status 200 in 0.02s
+[2025-06-18 20:28:23,932] - INFO - Incoming request: GET /tool/3/tools
+[2025-06-18 20:28:23,952] - INFO - Completed GET /tool/3/tools with status 200 in 0.02s
+[2025-06-18 20:28:24,007] - INFO - Completed GET /project/3/tasks with status 200 in 0.27s
+[2025-06-18 20:28:24,037] - INFO - Incoming request: GET /project/3/tasks
+[2025-06-18 20:28:24,045] - INFO - Completed GET /auth/get-users with status 200 in 0.30s
+[2025-06-18 20:28:24,051] - INFO - Completed GET /project/3/tasks with status 200 in 0.01s
+[2025-06-18 20:28:24,060] - INFO - Incoming request: GET /auth/get-users
+[2025-06-18 20:28:24,075] - INFO - Completed GET /auth/get-users with status 200 in 0.01s
+[2025-06-18 20:28:57,973] - INFO - Incoming request: OPTIONS /comment/task/2
+[2025-06-18 20:28:57,975] - INFO - Incoming request: GET /project/tasks/2/attachments/
+[2025-06-18 20:28:57,976] - INFO - Incoming request: GET /project/3/tasks
+[2025-06-18 20:28:57,977] - INFO - Incoming request: OPTIONS /comment/task/2
+[2025-06-18 20:28:57,978] - INFO - Incoming request: GET /auth/get-users
+[2025-06-18 20:28:57,981] - INFO - Incoming request: GET /tool/3/tools
+[2025-06-18 20:28:57,985] - INFO - Completed OPTIONS /comment/task/2 with status 200 in 0.01s
+[2025-06-18 20:28:57,992] - INFO - Completed OPTIONS /comment/task/2 with status 200 in 0.01s
+[2025-06-18 20:28:57,996] - INFO - Incoming request: GET /comment/task/2
+[2025-06-18 20:28:58,021] - INFO - Completed GET /project/3/tasks with status 200 in 0.04s
+[2025-06-18 20:28:58,043] - INFO - Completed GET /auth/get-users with status 200 in 0.07s
+[2025-06-18 20:28:58,070] - INFO - Completed GET /project/tasks/2/attachments/ with status 200 in 0.09s
+[2025-06-18 20:28:58,097] - INFO - Incoming request: GET /project/3/tasks
+[2025-06-18 20:28:58,142] - INFO - Incoming request: GET /project/tasks/2/attachments/
+[2025-06-18 20:28:58,144] - INFO - Incoming request: GET /auth/get-users
+[2025-06-18 20:28:58,169] - INFO - Completed GET /project/3/tasks with status 200 in 0.07s
+[2025-06-18 20:28:58,175] - INFO - Completed GET /project/tasks/2/attachments/ with status 200 in 0.03s
+[2025-06-18 20:28:58,197] - INFO - Completed GET /auth/get-users with status 200 in 0.05s
+[2025-06-18 20:28:58,229] - INFO - Completed GET /comment/task/2 with status 200 in 0.23s
+[2025-06-18 20:28:58,242] - INFO - Incoming request: GET /comment/task/2
+[2025-06-18 20:28:58,242] - INFO - Completed GET /tool/3/tools with status 200 in 0.26s
+[2025-06-18 20:28:58,258] - INFO - Completed GET /comment/task/2 with status 200 in 0.02s
+[2025-06-18 20:28:58,263] - INFO - Incoming request: GET /tool/3/tools
+[2025-06-18 20:28:58,287] - INFO - Completed GET /tool/3/tools with status 200 in 0.02s
+[2025-06-18 20:29:03,805] - INFO - Incoming request: GET /project/attachments/download/2
+[2025-06-18 20:29:03,816] - ERROR - Exception during request: module 'services.task_service' has no attribute 'download_attachment_by_id'
+Traceback (most recent call last):
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 148, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream from None
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samue\Task-Manager\Backend\common\logging_middleware.py", line 15, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "C:\Users\samue\Task-Manager\Backend\apis\tasks.py", line 69, in download_attachment
+    return task_service.download_attachment_by_id(attachment_id, db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'services.task_service' has no attribute 'download_attachment_by_id'. Did you mean: 'download_attachment'?
+[2025-06-18 20:29:08,098] - INFO - Incoming request: GET /project/attachments/download/1
+[2025-06-18 20:29:08,107] - ERROR - Exception during request: module 'services.task_service' has no attribute 'download_attachment_by_id'
+Traceback (most recent call last):
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 148, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream from None
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samue\Task-Manager\Backend\common\logging_middleware.py", line 15, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "C:\Users\samue\Task-Manager\Backend\apis\tasks.py", line 69, in download_attachment
+    return task_service.download_attachment_by_id(attachment_id, db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'services.task_service' has no attribute 'download_attachment_by_id'. Did you mean: 'download_attachment'?
+[2025-06-18 20:30:27,701] - INFO - Incoming request: GET /project/attachments/download/2
+[2025-06-18 20:30:27,706] - ERROR - Exception during request: 'int' object has no attribute 'query'
+Traceback (most recent call last):
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 148, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream from None
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samue\Task-Manager\Backend\common\logging_middleware.py", line 15, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "C:\Users\samue\Task-Manager\Backend\apis\tasks.py", line 69, in download_attachment
+    return task_service.download_attachment(attachment_id, db)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\Task-Manager\Backend\services\task_service.py", line 65, in download_attachment
+    attachment = db.query(Attachment).filter(Attachment.id == attachment_id).first()
+                 ^^^^^^^^
+AttributeError: 'int' object has no attribute 'query'
+[2025-06-18 20:31:18,837] - INFO - Incoming request: GET /project/attachments/download/2
+[2025-06-18 20:31:18,956] - INFO - Completed GET /project/attachments/download/2 with status 200 in 0.12s
+[2025-06-18 20:31:31,160] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 20:31:31,171] - INFO - Incoming request: GET /project/3/tasks
+[2025-06-18 20:31:31,179] - INFO - Incoming request: GET /auth/get-users
+[2025-06-18 20:31:31,211] - INFO - Completed GET /project/get-projects with status 200 in 0.05s
+[2025-06-18 20:31:31,226] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 20:31:31,245] - INFO - Completed GET /project/get-projects with status 200 in 0.02s
+[2025-06-18 20:31:31,277] - INFO - Incoming request: GET /tool/3/tools
+[2025-06-18 20:31:31,304] - INFO - Completed GET /tool/3/tools with status 200 in 0.03s
+[2025-06-18 20:31:31,323] - INFO - Incoming request: GET /tool/3/tools
+[2025-06-18 20:31:31,355] - INFO - Completed GET /tool/3/tools with status 200 in 0.03s
+[2025-06-18 20:31:31,388] - INFO - Completed GET /project/3/tasks with status 200 in 0.22s
+[2025-06-18 20:31:31,402] - INFO - Incoming request: GET /project/3/tasks
+[2025-06-18 20:31:31,420] - INFO - Completed GET /project/3/tasks with status 200 in 0.02s
+[2025-06-18 20:31:31,484] - INFO - Completed GET /auth/get-users with status 200 in 0.30s
+[2025-06-18 20:31:31,488] - INFO - Incoming request: GET /auth/get-users
+[2025-06-18 20:31:31,504] - INFO - Completed GET /auth/get-users with status 200 in 0.02s
+[2025-06-18 20:31:32,528] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 20:31:32,542] - INFO - Completed GET /project/get-projects with status 200 in 0.01s
+[2025-06-18 20:31:32,572] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 20:31:32,586] - INFO - Completed GET /project/get-projects with status 200 in 0.01s
+[2025-06-18 20:31:34,493] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 20:31:34,501] - INFO - Incoming request: OPTIONS /summary/user-summary
+[2025-06-18 20:31:34,503] - INFO - Completed OPTIONS /summary/user-summary with status 200 in 0.00s
+[2025-06-18 20:31:34,522] - INFO - Incoming request: OPTIONS /summary/user-summary
+[2025-06-18 20:31:34,535] - INFO - Completed OPTIONS /summary/user-summary with status 200 in 0.01s
+[2025-06-18 20:31:34,539] - INFO - Incoming request: GET /auth/get-users
+[2025-06-18 20:31:34,541] - INFO - Completed GET /project/get-projects with status 200 in 0.05s
+[2025-06-18 20:31:34,553] - INFO - Incoming request: GET /summary/user-summary
+[2025-06-18 20:31:34,565] - INFO - Completed GET /auth/get-users with status 200 in 0.03s
+[2025-06-18 20:31:34,568] - INFO - Completed GET /summary/user-summary with status 401 in 0.01s
+[2025-06-18 20:31:34,572] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 20:31:34,580] - INFO - Incoming request: GET /project/3/tasks
+[2025-06-18 20:31:34,590] - INFO - Completed GET /project/get-projects with status 200 in 0.02s
+[2025-06-18 20:31:34,602] - INFO - Completed GET /project/3/tasks with status 200 in 0.02s
+[2025-06-18 20:31:34,608] - INFO - Incoming request: GET /auth/get-users
+[2025-06-18 20:31:34,618] - INFO - Incoming request: GET /summary/user-summary
+[2025-06-18 20:31:34,624] - INFO - Completed GET /summary/user-summary with status 401 in 0.01s
+[2025-06-18 20:31:34,636] - INFO - Completed GET /auth/get-users with status 200 in 0.03s
+[2025-06-18 20:31:34,641] - INFO - Incoming request: GET /project/3/tasks
+[2025-06-18 20:31:34,655] - INFO - Completed GET /project/3/tasks with status 200 in 0.01s
+[2025-06-18 20:31:46,437] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 20:31:46,452] - INFO - Completed GET /project/get-projects with status 200 in 0.02s
+[2025-06-18 20:31:46,475] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 20:31:46,497] - INFO - Completed GET /project/get-projects with status 200 in 0.02s
+[2025-06-18 20:31:49,617] - INFO - Incoming request: GET /summary/user-summary
+[2025-06-18 20:31:49,623] - INFO - Completed GET /summary/user-summary with status 401 in 0.01s
+[2025-06-18 20:31:49,632] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 20:31:49,653] - INFO - Completed GET /project/get-projects with status 200 in 0.02s
+[2025-06-18 20:31:49,666] - INFO - Incoming request: GET /auth/get-users
+[2025-06-18 20:31:49,675] - INFO - Completed GET /auth/get-users with status 200 in 0.01s
+[2025-06-18 20:31:49,683] - INFO - Incoming request: GET /summary/user-summary
+[2025-06-18 20:31:49,688] - INFO - Completed GET /summary/user-summary with status 401 in 0.00s
+[2025-06-18 20:31:49,697] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 20:31:49,710] - INFO - Completed GET /project/get-projects with status 200 in 0.01s
+[2025-06-18 20:31:49,721] - INFO - Incoming request: GET /project/3/tasks
+[2025-06-18 20:31:49,733] - INFO - Completed GET /project/3/tasks with status 200 in 0.01s
+[2025-06-18 20:31:49,736] - INFO - Incoming request: GET /auth/get-users
+[2025-06-18 20:31:49,744] - INFO - Completed GET /auth/get-users with status 200 in 0.01s
+[2025-06-18 20:31:49,754] - INFO - Incoming request: GET /project/3/tasks
+[2025-06-18 20:31:49,765] - INFO - Completed GET /project/3/tasks with status 200 in 0.01s
+[2025-06-18 20:31:56,019] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 20:31:56,036] - INFO - Completed GET /project/get-projects with status 200 in 0.02s
+[2025-06-18 20:31:56,078] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 20:31:56,089] - INFO - Completed GET /project/get-projects with status 200 in 0.01s
+[2025-06-18 20:31:59,266] - INFO - Incoming request: OPTIONS /project/delete-project/3
+[2025-06-18 20:31:59,267] - INFO - Completed OPTIONS /project/delete-project/3 with status 200 in 0.00s
+[2025-06-18 20:31:59,274] - INFO - Incoming request: DELETE /project/delete-project/3
+[2025-06-18 20:31:59,277] - INFO - Completed DELETE /project/delete-project/3 with status 401 in 0.00s
+[2025-06-18 20:36:46,272] - INFO - Incoming request: OPTIONS /auth/register
+[2025-06-18 20:36:46,274] - INFO - Completed OPTIONS /auth/register with status 200 in 0.00s
+[2025-06-18 20:36:46,285] - INFO - Incoming request: POST /auth/register
+[2025-06-18 20:36:46,651] - INFO - Completed POST /auth/register with status 200 in 0.37s
+[2025-06-18 20:36:54,191] - INFO - Incoming request: OPTIONS /auth/login
+[2025-06-18 20:36:54,194] - INFO - Completed OPTIONS /auth/login with status 200 in 0.00s
+[2025-06-18 20:36:54,211] - INFO - Incoming request: POST /auth/login
+[2025-06-18 20:36:54,520] - INFO - Completed POST /auth/login with status 200 in 0.31s
+[2025-06-18 20:36:54,571] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 20:36:54,582] - INFO - Completed GET /project/get-projects with status 200 in 0.01s
+[2025-06-18 20:36:54,586] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 20:36:54,592] - INFO - Completed GET /project/get-projects with status 200 in 0.01s
+[2025-06-18 20:36:56,486] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 20:36:56,488] - INFO - Incoming request: GET /auth/get-users
+[2025-06-18 20:36:56,490] - INFO - Incoming request: GET /project/3/tasks
+[2025-06-18 20:36:56,516] - INFO - Completed GET /project/3/tasks with status 200 in 0.03s
+[2025-06-18 20:36:56,518] - INFO - Completed GET /project/get-projects with status 200 in 0.03s
+[2025-06-18 20:36:56,520] - INFO - Completed GET /auth/get-users with status 200 in 0.03s
+[2025-06-18 20:36:56,523] - INFO - Incoming request: GET /project/3/tasks
+[2025-06-18 20:36:56,531] - INFO - Incoming request: GET /auth/get-users
+[2025-06-18 20:36:56,532] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 20:36:56,544] - INFO - Completed GET /auth/get-users with status 200 in 0.01s
+[2025-06-18 20:36:56,551] - INFO - Completed GET /project/get-projects with status 200 in 0.02s
+[2025-06-18 20:36:56,558] - INFO - Incoming request: GET /tool/3/tools
+[2025-06-18 20:36:56,563] - INFO - Completed GET /project/3/tasks with status 200 in 0.04s
+[2025-06-18 20:36:56,580] - INFO - Completed GET /tool/3/tools with status 200 in 0.02s
+[2025-06-18 20:36:56,585] - INFO - Incoming request: GET /tool/3/tools
+[2025-06-18 20:36:56,590] - INFO - Completed GET /tool/3/tools with status 200 in 0.01s
+[2025-06-18 20:36:58,027] - INFO - Incoming request: GET /project/3/tasks
+[2025-06-18 20:36:58,037] - INFO - Incoming request: GET /auth/get-users
+[2025-06-18 20:36:58,039] - INFO - Incoming request: GET /comment/task/2
+[2025-06-18 20:36:58,050] - INFO - Incoming request: GET /project/tasks/2/attachments/
+[2025-06-18 20:36:58,065] - INFO - Incoming request: GET /tool/3/tools
+[2025-06-18 20:36:58,099] - INFO - Completed GET /project/3/tasks with status 200 in 0.07s
+[2025-06-18 20:36:58,101] - INFO - Completed GET /auth/get-users with status 200 in 0.06s
+[2025-06-18 20:36:58,103] - INFO - Completed GET /comment/task/2 with status 200 in 0.06s
+[2025-06-18 20:36:58,144] - INFO - Incoming request: GET /project/3/tasks
+[2025-06-18 20:36:58,157] - INFO - Incoming request: GET /comment/task/2
+[2025-06-18 20:36:58,173] - INFO - Incoming request: GET /auth/get-users
+[2025-06-18 20:36:58,190] - INFO - Completed GET /project/3/tasks with status 200 in 0.05s
+[2025-06-18 20:36:58,202] - INFO - Completed GET /auth/get-users with status 200 in 0.03s
+[2025-06-18 20:36:58,210] - INFO - Completed GET /comment/task/2 with status 200 in 0.05s
+[2025-06-18 20:36:58,241] - INFO - Completed GET /project/tasks/2/attachments/ with status 200 in 0.19s
+[2025-06-18 20:36:58,252] - INFO - Completed GET /tool/3/tools with status 200 in 0.19s
+[2025-06-18 20:36:58,256] - INFO - Incoming request: GET /project/tasks/2/attachments/
+[2025-06-18 20:36:58,268] - INFO - Incoming request: GET /tool/3/tools
+[2025-06-18 20:36:58,282] - INFO - Completed GET /project/tasks/2/attachments/ with status 200 in 0.03s
+[2025-06-18 20:36:58,288] - INFO - Completed GET /tool/3/tools with status 200 in 0.02s
+[2025-06-18 20:37:01,310] - INFO - Incoming request: OPTIONS /comment/task/2
+[2025-06-18 20:37:01,311] - INFO - Completed OPTIONS /comment/task/2 with status 200 in 0.00s
+[2025-06-18 20:37:01,315] - INFO - Incoming request: POST /comment/task/2
+[2025-06-18 20:37:01,361] - INFO - Completed POST /comment/task/2 with status 200 in 0.05s
+[2025-06-18 20:37:05,351] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 20:37:05,356] - INFO - Incoming request: GET /project/3/tasks
+[2025-06-18 20:37:05,357] - INFO - Incoming request: GET /auth/get-users
+[2025-06-18 20:37:05,381] - INFO - Completed GET /project/3/tasks with status 200 in 0.02s
+[2025-06-18 20:37:05,383] - INFO - Completed GET /project/get-projects with status 200 in 0.03s
+[2025-06-18 20:37:05,386] - INFO - Completed GET /auth/get-users with status 200 in 0.03s
+[2025-06-18 20:37:05,390] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 20:37:05,393] - INFO - Incoming request: GET /project/3/tasks
+[2025-06-18 20:37:05,398] - INFO - Incoming request: GET /auth/get-users
+[2025-06-18 20:37:05,409] - INFO - Completed GET /project/get-projects with status 200 in 0.02s
+[2025-06-18 20:37:05,416] - INFO - Incoming request: GET /tool/3/tools
+[2025-06-18 20:37:05,420] - INFO - Completed GET /auth/get-users with status 200 in 0.02s
+[2025-06-18 20:37:05,422] - INFO - Completed GET /project/3/tasks with status 200 in 0.03s
+[2025-06-18 20:37:05,436] - INFO - Completed GET /tool/3/tools with status 200 in 0.02s
+[2025-06-18 20:37:05,443] - INFO - Incoming request: GET /tool/3/tools
+[2025-06-18 20:37:05,450] - INFO - Completed GET /tool/3/tools with status 200 in 0.01s
+[2025-06-18 20:37:08,239] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 20:37:08,253] - INFO - Completed GET /project/get-projects with status 200 in 0.01s
+[2025-06-18 20:37:08,258] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 20:37:08,266] - INFO - Completed GET /project/get-projects with status 200 in 0.01s
+[2025-06-18 20:37:16,202] - INFO - Incoming request: POST /auth/login
+[2025-06-18 20:37:16,514] - INFO - Completed POST /auth/login with status 200 in 0.31s
+[2025-06-18 20:37:16,539] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 20:37:16,551] - INFO - Completed GET /project/get-projects with status 200 in 0.01s
+[2025-06-18 20:37:16,561] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 20:37:16,572] - INFO - Completed GET /project/get-projects with status 200 in 0.01s
+[2025-06-18 20:37:21,737] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 20:37:21,743] - INFO - Incoming request: GET /auth/get-users
+[2025-06-18 20:37:21,754] - INFO - Incoming request: GET /project/3/tasks
+[2025-06-18 20:37:21,799] - INFO - Completed GET /project/get-projects with status 200 in 0.06s
+[2025-06-18 20:37:21,815] - INFO - Completed GET /project/3/tasks with status 200 in 0.06s
+[2025-06-18 20:37:21,820] - INFO - Completed GET /auth/get-users with status 200 in 0.08s
+[2025-06-18 20:37:21,942] - INFO - Incoming request: GET /project/get-projects
+[2025-06-18 20:37:21,982] - INFO - Incoming request: GET /project/3/tasks
+[2025-06-18 20:37:21,989] - INFO - Incoming request: GET /auth/get-users
+[2025-06-18 20:37:21,994] - INFO - Incoming request: GET /tool/3/tools
+[2025-06-18 20:37:22,029] - INFO - Completed GET /project/get-projects with status 200 in 0.09s
+[2025-06-18 20:37:22,034] - INFO - Completed GET /project/3/tasks with status 200 in 0.05s
+[2025-06-18 20:37:22,037] - INFO - Completed GET /auth/get-users with status 200 in 0.05s
+[2025-06-18 20:37:22,043] - INFO - Completed GET /tool/3/tools with status 200 in 0.05s
+[2025-06-18 20:37:22,049] - INFO - Incoming request: GET /tool/3/tools
+[2025-06-18 20:37:22,058] - INFO - Completed GET /tool/3/tools with status 200 in 0.01s
+[2025-06-18 20:37:22,889] - INFO - Incoming request: GET /comment/task/2
+[2025-06-18 20:37:22,896] - INFO - Incoming request: GET /project/3/tasks
+[2025-06-18 20:37:22,903] - INFO - Incoming request: GET /auth/get-users
+[2025-06-18 20:37:22,905] - INFO - Incoming request: GET /tool/3/tools
+[2025-06-18 20:37:22,906] - INFO - Incoming request: GET /project/tasks/2/attachments/
+[2025-06-18 20:37:22,932] - INFO - Completed GET /project/3/tasks with status 200 in 0.04s
+[2025-06-18 20:37:22,934] - INFO - Completed GET /auth/get-users with status 200 in 0.03s
+[2025-06-18 20:37:22,938] - INFO - Completed GET /project/tasks/2/attachments/ with status 200 in 0.03s
+[2025-06-18 20:37:22,940] - INFO - Completed GET /tool/3/tools with status 200 in 0.04s
+[2025-06-18 20:37:22,944] - INFO - Completed GET /comment/task/2 with status 200 in 0.06s
+[2025-06-18 20:37:22,950] - INFO - Incoming request: GET /project/3/tasks
+[2025-06-18 20:37:22,952] - INFO - Incoming request: GET /auth/get-users
+[2025-06-18 20:37:22,956] - INFO - Incoming request: GET /project/tasks/2/attachments/
+[2025-06-18 20:37:22,961] - INFO - Incoming request: GET /tool/3/tools
+[2025-06-18 20:37:22,965] - INFO - Incoming request: GET /comment/task/2
+[2025-06-18 20:37:22,988] - INFO - Completed GET /auth/get-users with status 200 in 0.04s
+[2025-06-18 20:37:22,992] - INFO - Completed GET /project/3/tasks with status 200 in 0.04s
+[2025-06-18 20:37:23,003] - INFO - Completed GET /tool/3/tools with status 200 in 0.04s
+[2025-06-18 20:37:23,011] - INFO - Completed GET /project/tasks/2/attachments/ with status 200 in 0.05s
+[2025-06-18 20:37:23,016] - INFO - Completed GET /comment/task/2 with status 200 in 0.05s
+[2025-06-18 20:37:26,419] - INFO - Incoming request: OPTIONS /comment/1
+[2025-06-18 20:37:26,422] - INFO - Completed OPTIONS /comment/1 with status 200 in 0.00s
+[2025-06-18 20:37:26,433] - INFO - Incoming request: DELETE /comment/1
+[2025-06-18 20:37:26,456] - INFO - Completed DELETE /comment/1 with status 204 in 0.02s

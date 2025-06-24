@@ -64,7 +64,7 @@ const TaskDetails = () => {
   };
 
   // Fetch list of all users 
-  const fecthUsers = async () => {
+  const fetchUsers = async () => {
     try {
       const res =await axios.get(`${BASE_URL}/auth/get-users`, authHeaders);
       setUsers(res.data);
@@ -109,7 +109,7 @@ const TaskDetails = () => {
     if (token) {
       fetchTask();
       fetchComments();
-      fecthUsers();
+      fetchUsers();
       fetchEmails();
       fetchTools();
     }
@@ -118,8 +118,9 @@ const TaskDetails = () => {
   // Validate of selected file ends with .eml
   const handleFileChange =(e) => {
     const selectedFile = e.target.files[0];
-    if (selectedFile && !selectedFile.name.toLowerCase().endsWith('.eml')) {
-      setUploadMessage('Only .eml files are allowed');
+    if (selectedFile && !selectedFile.name.toLowerCase().endsWith('.eml')&&
+     !selectedFile.name.toLowerCase().endsWith('.pdf')) {
+      setUploadMessage('Only .eml or .pdf files are allowed');
       setEmlFile(null);
     } else {
       setUploadMessage('File upload complete');
@@ -130,7 +131,7 @@ const TaskDetails = () => {
   // Upload selected .eml file to the backend
   const handleFileUpload = async (e) => {
   if (!emlFile){
-    alert('Only eml files are allowed.')
+    alert('Only .eml or .pdf files are allowed.')
     return;
   }
 
@@ -289,18 +290,21 @@ if(uploading) return <GreenSpinner/>;
     <div className="task-details-container">
       <div className="task-top-bar">
         <button className="back" onClick={() => navigate(-1)}>← Back</button>
-        <div className="task-info">
-          <h2>{task.title}</h2>
-          <p>Description: {task.description}</p>
-          <p>Start Date: {task.start_date}</p>
-          <p>Due Date: {task.due_date}</p>
-          <p>Tool Used: {getToolName(task.tool_id)}</p>
-          <p>Assigned to: {getUserName(task.assigned_to)}</p>
-        </div>
         {/* Only assigned user,manager or the admin can update the task */}
         {(user.user_id === task.assigned_to || ['admin','manager'].includes(user.role)) && (
               <button className="update-btn" onClick={() => handleUpdateTask(task.id)}>Update</button>
         )}
+        <div className="task-info">
+          <h2>{task.title}</h2>
+          <p><b>Description:</b> {task.description}</p>
+          <p><b>Start Date:</b> {task.start_date}</p>
+          <p><b>Due Date:</b> {task.due_date}</p>
+          <p><b>Tool Used:</b> {getToolName(task.tool_id)}</p>
+          <p><b>Assigned to:</b> {getUserName(task.assigned_to)}</p>
+          {task.due_date_edited && task.due_date_change_reason && (
+          <p><b>Reason for Due Date Change:</b> {task.due_date_change_reason}</p>
+          )}
+        </div>
       </div>
 
       {editingTask && (
@@ -313,11 +317,15 @@ if(uploading) return <GreenSpinner/>;
       )}
 
       {/* Email upload section */}
-      <button className='add-mail'onClick={() => setShowFileInput(prev => !prev)}>{showFileInput ? 'Close' : 'Add Mails' }</button>
+      <button className='add-mail'onClick={() => setShowFileInput(prev => !prev)}>{showFileInput ? 'Close' : 'Add Files' }</button>
+      {/* Show/hide uploaded emails */}
+      <button className='show-mail' onClick={() => setShowEmails(!showEmails)}>
+        {showEmails ? 'Hide Files' : 'Show Files'}
+      </button>
       {showFileInput && (
       <div>
         <h3>Upload Emails</h3>
-        <input type='file' accept=".eml" onChange={handleFileChange}/>
+        <input type='file' accept=".eml,.pdf" onChange={handleFileChange}/>
         <button className='upload-mail' onClick={handleFileUpload}>
           Upload
         </button>
@@ -325,10 +333,7 @@ if(uploading) return <GreenSpinner/>;
       </div>
       )}
 
-      {/* Show/hide uploaded emails */}
-      <button className='show-mail' onClick={() => setShowEmails(!showEmails)}>
-        {showEmails ? 'Hide Mails' : 'Show Mails'}
-      </button>
+      
 
       <div>
 
@@ -339,7 +344,7 @@ if(uploading) return <GreenSpinner/>;
           {Object.entries(groupedEmails).map(([date, group]) => (
             <div key={date} className="email-group">
               <h4>{date}</h4>
-              <ul>
+              <ul style={{ listStyleType: 'none'}}>
                 {group.map(email => (
                   <li key={email.id}>
                     <p className='download-email'  onClick={() => handleDownload(email.id,email.filename)}>{email.filename}</p></li>
@@ -406,8 +411,8 @@ if(uploading) return <GreenSpinner/>;
                 Edit
               </button>
                 )}
-                {/* Only the author,manager or adminn can delete the comment */}
-                {(user.username === comment.user.username || ['admin','manager'].includes(user.role))&& (
+                {/* Only thuser.username === comment.user.username ||e author,manager or adminn can delete the comment */}
+                { (user.role === 'admin')&& (
                   <button
                     onClick={() => handleDeleteComment(comment.id)}
                     className="delete-comment"

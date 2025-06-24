@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useAuth } from "../context/AuthContext";
@@ -18,23 +18,24 @@ export default function TaskListPage() {
   const [tasks, setTasks] = useState([]); // State to store fetched tasks
   const [loading, setLoading] = useState(true); // State to control loading spinner
   const navigate = useNavigate();
+  const location = useLocation();
+  
 
   //To fetch tasks based on the status from the backend when the component mounts or status changes
   useEffect(() => {
     if (!token) return;
+    const searchParams = new URLSearchParams(location.search);
+    const userId = searchParams.get("user_id");
 
     // Fetch tasks from the backend API
     const fetchTasks = async () => {
       try {
-        const response = await axios.get(`${BASE_URL}/summary/tasks/${status}`, {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
+        const response = await axios.get(`${BASE_URL}/summary/tasks/${status}${userId ? `?user_id=${userId}` : ''}`, {
+          headers: { Authorization: `Bearer ${token}` }
         });
 
         // Update task list state with fetched tasks
         setTasks(response.data);
-        console.log(response.data);
       } catch (err) {
         alert("Failed to fetch tasks");
       } finally {

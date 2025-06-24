@@ -11,13 +11,17 @@ Modules and Configuration:
 
 
 from fastapi import FastAPI
-from auth import router as auth_router
-from tasks import router as project_router
-from comments import router as comment_router
-from stats import router as summary_router
-from tools import router as tool_router
-from database import Base, engine
+from apis.auth import router as auth_router
+from apis.tasks import router as project_router
+from apis.comments import router as comment_router
+from apis.summary import router as summary_router
+from apis.tools import router as tool_router
+from database.database import Base, engine
 from fastapi.middleware.cors import CORSMiddleware
+from common.logging_middleware import LoggingMiddleware
+from database.database import SessionLocal
+from configuration.config import load_admin_config
+from services.admin_creation_service import create_admin_if_not_exists
 
 app=FastAPI()
 
@@ -29,10 +33,10 @@ app.add_middleware(
   allow_headers=["*"]
   )
 
+app.add_middleware(LoggingMiddleware)
 
 # creating database tables
 Base.metadata.create_all(bind=engine)
-
 
 # Including routes for authentication
 app.include_router(auth_router,prefix="/auth")
@@ -41,6 +45,13 @@ app.include_router(comment_router,prefix="/comment")
 app.include_router(summary_router,prefix="/summary")
 app.include_router(tool_router,prefix="/tool")
 
+
+@app.on_event("startup")
+def on_startup():
+    print("AAAAAA RUNNNNINGGGGG")
+    db = SessionLocal()
+    admin_config = load_admin_config()
+    create_admin_if_not_exists(db, admin_config)
 
 
 

@@ -51,8 +51,18 @@ const ProjectDetail = () => {
       const res = await axios.get(`${BASE_URL}/project/${projectId}/tasks`, {
         headers: { Authorization: `Bearer ${token}` },
       });
-      setAllTasks(res.data);
-      setTasks(res.data);
+      let filteredTasks;
+
+    if (user.role === "admin" || user.role === "manager") {
+      // Admins/managers see all tasks
+      filteredTasks = res.data;
+    } else {
+      // Normal users see only tasks assigned to them
+      filteredTasks = res.data.filter(task => task.assigned_to === user.user_id);
+    }
+
+    setAllTasks(filteredTasks);
+    setTasks(filteredTasks);
     } catch (err) {
       alert('Error fetching tasks');
     }
@@ -162,6 +172,8 @@ const ProjectDetail = () => {
         <div className="project-info">
           <h2>{project.title}</h2>
           <p>{project.description}</p>
+          <p>Start Date: {project.start_date}</p>
+          <p>Due Date: {project.due_date}</p>
         </div>
       </div>
 
@@ -170,13 +182,15 @@ const ProjectDetail = () => {
         <div className="task-header">
           <h3>Tasks</h3>
           <div className="task-filter">
-            
-              <label htmlFor="userFilter">User: </label>
+              
+              {(user.role === 'admin' || user.role === 'manager') && (
+
               <select
                 id="userFilter"
                 value={assignedUser}
                 onChange={(e) => setAssignedUser(e.target.value)}
               >
+                <label htmlFor="userFilter">User: </label>
                 <option value="all">All</option>
                 {users.map((user) => (
                   <option key={user.id} value={user.id}>
@@ -184,6 +198,7 @@ const ProjectDetail = () => {
                   </option>
                 ))}
               </select>
+              )}
             
             <label htmlFor="statusFilter">Sort: </label>
             <select
@@ -227,15 +242,15 @@ const ProjectDetail = () => {
        
        {/* Adding the ToolLIst component */}
        <ToolList 
-        projectId={projectId} 
+        projectId={projectId}
         onToolClick={handleToolClick} 
         clearfilter={() => setSelectedTool(null)}
-        fetchTasks={fetchTasks}
+        refresh={fetchTasks}
        />
         
         {/* Task list with filtering */}
         <div className="task-list">
-          {tasks.length === 0 ? (
+          {tasks.length === 0 ? ( 
             <p className="no-task">No tasks for this project.</p>
           
           ) : (
@@ -273,7 +288,7 @@ const ProjectDetail = () => {
         
        
         {/* Hidden printable section */}
-        <div className='print-section'>
+        <div className='print-section'> 
           <button className='print' onClick={handlePrint}>
             Print Report
           </button>

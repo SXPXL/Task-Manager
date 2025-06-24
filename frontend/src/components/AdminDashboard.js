@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './styles/AdminDashboard.css';
 import { useAuth } from '../context/AuthContext';
@@ -23,7 +24,7 @@ const AdminDashboard = () => {
   const [expandedUserId, setExpandedUserId] = useState(null); // Tracks expanded user toshow details
   const [editingRoleUserId, setEditingRoleUserId] = useState(null); // Tracks which user's role is beign edited
   const [selectedRoles, setSelectedRoles] = useState({}); // Stores selected role values for dropdown
-
+  const navigate = useNavigate();
  // Fetch users when component mounts or token changes
   useEffect(() => {
     fetchUsers(); 
@@ -124,6 +125,15 @@ const AdminDashboard = () => {
               >
                 Change Role
               </button>
+              <button
+              className="view-tasks-btn"
+              onClick={(e) => {
+                e.stopPropagation();
+                navigate(`/tasks/assigned_tasks?user_id=${user.id}`);
+              }}
+            >
+              View Tasks
+            </button>
             </div>
             )
           }

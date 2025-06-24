@@ -1,0 +1,68 @@
+[2025-06-16 11:20:38,613] - INFO - Incoming request: OPTIONS /auth/login
+[2025-06-16 11:20:38,615] - INFO - Completed OPTIONS /auth/login with status 200 in 0.00s
+[2025-06-16 11:20:38,622] - INFO - Incoming request: POST /auth/login
+[2025-06-16 11:20:39,061] - INFO - Completed POST /auth/login with status 200 in 0.44s
+[2025-06-16 11:20:39,186] - INFO - Incoming request: OPTIONS /project/get-projects
+[2025-06-16 11:20:39,188] - INFO - Incoming request: OPTIONS /project/get-projects
+[2025-06-16 11:20:39,189] - INFO - Completed OPTIONS /project/get-projects with status 200 in 0.00s
+[2025-06-16 11:20:39,191] - INFO - Completed OPTIONS /project/get-projects with status 200 in 0.00s
+[2025-06-16 11:20:39,196] - INFO - Incoming request: GET /project/get-projects
+[2025-06-16 11:20:39,223] - INFO - Completed GET /project/get-projects with status 200 in 0.03s
+[2025-06-16 11:20:39,229] - INFO - Incoming request: GET /project/get-projects
+[2025-06-16 11:20:39,242] - INFO - Completed GET /project/get-projects with status 200 in 0.01s
+[2025-06-16 11:20:58,158] - INFO - Incoming request: OPTIONS /project/1/tasks
+[2025-06-16 11:20:58,160] - INFO - Incoming request: OPTIONS /project/1/tasks
+[2025-06-16 11:20:58,161] - INFO - Incoming request: OPTIONS /auth/get-users
+[2025-06-16 11:20:58,162] - INFO - Incoming request: OPTIONS /auth/get-users
+[2025-06-16 11:20:58,164] - INFO - Incoming request: GET /project/get-projects
+[2025-06-16 11:20:58,166] - INFO - Completed OPTIONS /project/1/tasks with status 200 in 0.01s
+[2025-06-16 11:20:58,173] - INFO - Completed OPTIONS /project/1/tasks with status 200 in 0.01s
+[2025-06-16 11:20:58,176] - INFO - Completed OPTIONS /auth/get-users with status 200 in 0.01s
+[2025-06-16 11:20:58,178] - INFO - Completed OPTIONS /auth/get-users with status 200 in 0.02s
+[2025-06-16 11:20:58,185] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-16 11:20:58,195] - INFO - Incoming request: GET /auth/get-users
+[2025-06-16 11:20:58,224] - INFO - Completed GET /project/get-projects with status 200 in 0.06s
+[2025-06-16 11:20:58,248] - INFO - Incoming request: GET /project/get-projects
+[2025-06-16 11:20:58,257] - INFO - Completed GET /auth/get-users with status 200 in 0.06s
+[2025-06-16 11:20:58,259] - INFO - Completed GET /project/1/tasks with status 200 in 0.07s
+[2025-06-16 11:20:58,276] - INFO - Completed GET /project/get-projects with status 200 in 0.03s
+[2025-06-16 11:20:58,297] - INFO - Incoming request: GET /auth/get-users
+[2025-06-16 11:20:58,298] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-16 11:20:58,341] - INFO - Completed GET /project/1/tasks with status 200 in 0.04s
+[2025-06-16 11:20:58,344] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-16 11:20:58,354] - INFO - Completed GET /auth/get-users with status 200 in 0.06s
+[2025-06-16 11:20:58,364] - INFO - Completed GET /tool/1/tools with status 200 in 0.02s
+[2025-06-16 11:20:58,378] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-16 11:20:58,393] - INFO - Completed GET /tool/1/tools with status 200 in 0.02s
+[2025-06-16 11:20:59,692] - INFO - Incoming request: OPTIONS /comment/task/1
+[2025-06-16 11:20:59,709] - INFO - Incoming request: OPTIONS /project/tasks/1/attachments/
+[2025-06-16 11:20:59,710] - INFO - Incoming request: OPTIONS /comment/task/1
+[2025-06-16 11:20:59,710] - INFO - Incoming request: OPTIONS /project/tasks/1/attachments/
+[2025-06-16 11:20:59,712] - INFO - Completed OPTIONS /comment/task/1 with status 200 in 0.02s
+[2025-06-16 11:20:59,726] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-16 11:20:59,729] - INFO - Incoming request: GET /auth/get-users
+[2025-06-16 11:20:59,730] - INFO - Completed OPTIONS /project/tasks/1/attachments/ with status 200 in 0.02s
+[2025-06-16 11:20:59,731] - INFO - Completed OPTIONS /comment/task/1 with status 200 in 0.02s
+[2025-06-16 11:20:59,739] - INFO - Completed OPTIONS /project/tasks/1/attachments/ with status 200 in 0.03s
+[2025-06-16 11:20:59,744] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-16 11:20:59,760] - INFO - Incoming request: GET /comment/task/1
+[2025-06-16 11:20:59,762] - INFO - Incoming request: GET /project/tasks/1/attachments/
+[2025-06-16 11:20:59,792] - INFO - Completed GET /project/1/tasks with status 200 in 0.07s
+[2025-06-16 11:20:59,794] - INFO - Completed GET /auth/get-users with status 200 in 0.06s
+[2025-06-16 11:20:59,798] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-16 11:20:59,807] - INFO - Incoming request: GET /auth/get-users
+[2025-06-16 11:20:59,821] - INFO - Completed GET /project/tasks/1/attachments/ with status 200 in 0.06s
+[2025-06-16 11:20:59,830] - INFO - Completed GET /tool/1/tools with status 200 in 0.09s
+[2025-06-16 11:20:59,843] - INFO - Incoming request: GET /project/tasks/1/attachments/
+[2025-06-16 11:20:59,844] - INFO - Completed GET /comment/task/1 with status 200 in 0.08s
+[2025-06-16 11:20:59,857] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-16 11:20:59,861] - INFO - Incoming request: GET /comment/task/1
+[2025-06-16 11:20:59,864] - INFO - Completed GET /project/1/tasks with status 200 in 0.07s
+[2025-06-16 11:20:59,880] - INFO - Completed GET /auth/get-users with status 200 in 0.07s
+[2025-06-16 11:20:59,906] - INFO - Completed GET /project/tasks/1/attachments/ with status 200 in 0.06s
+[2025-06-16 11:20:59,912] - INFO - Completed GET /comment/task/1 with status 200 in 0.05s
+[2025-06-16 11:20:59,928] - INFO - Completed GET /tool/1/tools with status 200 in 0.07s
+[2025-06-16 11:21:02,090] - INFO - Incoming request: OPTIONS /comment/1
+[2025-06-16 11:21:02,091] - INFO - Completed OPTIONS /comment/1 with status 200 in 0.00s
+[2025-06-16 11:21:02,096] - INFO - Incoming request: DELETE /comment/1
+[2025-06-16 11:21:02,138] - INFO - Completed DELETE /comment/1 with status 204 in 0.04s

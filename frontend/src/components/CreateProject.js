@@ -20,6 +20,7 @@ function CreateProject({ onClose, onProjectCreated }) {
   const [formData, setFormData] = useState({
     title: "",
     description: "",
+    start_date:"",
     due_date: "",
   });
 
@@ -40,6 +41,23 @@ function CreateProject({ onClose, onProjectCreated }) {
    */
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setMessage("");
+    const today = new Date();
+    const start = new Date(formData.start_date);
+    const due = new Date(formData.due_date);
+    if (start < today.setHours(0,0,0,0)) {
+    setMessage("Start cannot be in the past");
+    return;
+    }
+     if (due < today.setHours(0,0,0,0)) {
+      setMessage("Due date cannot be in the past.");
+      return;
+    }
+    if (due < start) {
+      setMessage("Due date cannot be before start date.");
+      return;
+    }
+
     try {
       const res = await axios.post(
         `${BASE_URL}/project/create-projects`,
@@ -56,6 +74,8 @@ function CreateProject({ onClose, onProjectCreated }) {
       setFormData({
         title: "",
         description: "",
+        start_date: "",
+        due_date: "",
        
       });
       if (onProjectCreated) {
@@ -88,7 +108,22 @@ function CreateProject({ onClose, onProjectCreated }) {
           onChange={handleChange}
           required
         />
-        
+        <label>Start Date</label>
+          <input
+            type="date"
+            name="start_date"
+            value={formData.start_date}
+            onChange={handleChange}
+            required
+          />
+          <label>Due Date</label>
+          <input
+            type="date"
+            name="due_date"
+            value={formData.due_date}
+            onChange={handleChange}
+            required
+          />
         <br />
         <button type="submit" className="Submit">Create Project</button>
         

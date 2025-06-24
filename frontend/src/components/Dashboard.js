@@ -22,22 +22,48 @@ const Dashboard = () => {
 
   // Fetch projects from backend using JWT
   useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        const response = await axios.get(`${BASE_URL}/project/get-projects`, {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        });
+  const fetchProjects = async () => {
+    try {
+      const response = await axios.get(`${BASE_URL}/project/get-projects`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      // If admin/manager, show all projects
+      if (role === 'admin' || role === 'manager') {
         setProjects(response.data);
-      } catch (error) {
-        alert('Error fetching projects');
+        return;
       }
-    };
-    if (token) {
-    fetchProjects();
+
+      // For normal users: only include projects with at least one task assigned to them
+      const userProjects = [];
+
+      for (const project of response.data) {
+        const taskRes = await axios.get(`${BASE_URL}/project/${project.id}/tasks`, {
+          headers: { Authorization: `Bearer ${token}` },
+        });
+
+        const userTasks = taskRes.data.filter(
+          (task) => task.assigned_to === user.user_id
+        );
+
+        if (userTasks.length > 0) {
+          userProjects.push(project);
+        }
+      }
+
+      setProjects(userProjects);
+    } catch (error) {
+      alert('Error fetching projects');
     }
-  }, [token]);
+  };
+
+  if (token) {
+    fetchProjects();
+  }
+}, [token, role, user?.user_id]);
+
 
   /**
    * Handle deletion of a project

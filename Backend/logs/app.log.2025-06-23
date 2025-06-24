@@ -1,0 +1,1692 @@
+[2025-06-23 19:29:55,252] - INFO - Incoming request: OPTIONS /auth/login
+[2025-06-23 19:29:55,266] - INFO - Completed OPTIONS /auth/login with status 200 in 0.01s
+[2025-06-23 19:29:55,284] - INFO - Incoming request: POST /auth/login
+[2025-06-23 19:29:55,837] - INFO - Completed POST /auth/login with status 200 in 0.55s
+[2025-06-23 19:29:55,968] - INFO - Incoming request: OPTIONS /project/get-projects
+[2025-06-23 19:29:55,975] - INFO - Incoming request: OPTIONS /project/get-projects
+[2025-06-23 19:29:55,983] - INFO - Completed OPTIONS /project/get-projects with status 200 in 0.02s
+[2025-06-23 19:29:55,988] - INFO - Completed OPTIONS /project/get-projects with status 200 in 0.01s
+[2025-06-23 19:29:56,006] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 19:29:56,032] - INFO - Completed GET /project/get-projects with status 200 in 0.03s
+[2025-06-23 19:29:56,039] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 19:29:56,048] - INFO - Completed GET /project/get-projects with status 200 in 0.01s
+[2025-06-23 19:42:21,109] - INFO - Incoming request: OPTIONS /project/create-projects
+[2025-06-23 19:42:21,115] - INFO - Completed OPTIONS /project/create-projects with status 200 in 0.01s
+[2025-06-23 19:42:21,127] - INFO - Incoming request: POST /project/create-projects
+[2025-06-23 19:42:21,180] - INFO - Completed POST /project/create-projects with status 200 in 0.05s
+[2025-06-23 19:42:23,217] - INFO - Incoming request: OPTIONS /project/get-projects
+[2025-06-23 19:42:23,227] - INFO - Incoming request: OPTIONS /auth/get-users
+[2025-06-23 19:42:23,232] - INFO - Incoming request: OPTIONS /project/1/tasks
+[2025-06-23 19:42:23,236] - INFO - Completed OPTIONS /project/get-projects with status 200 in 0.02s
+[2025-06-23 19:42:23,241] - INFO - Completed OPTIONS /auth/get-users with status 200 in 0.01s
+[2025-06-23 19:42:23,248] - INFO - Completed OPTIONS /project/1/tasks with status 200 in 0.02s
+[2025-06-23 19:42:23,252] - INFO - Incoming request: OPTIONS /project/get-projects
+[2025-06-23 19:42:23,254] - INFO - Incoming request: OPTIONS /project/1/tasks
+[2025-06-23 19:42:23,256] - INFO - Completed OPTIONS /project/get-projects with status 200 in 0.00s
+[2025-06-23 19:42:23,259] - INFO - Incoming request: OPTIONS /auth/get-users
+[2025-06-23 19:42:23,263] - INFO - Completed OPTIONS /project/1/tasks with status 200 in 0.01s
+[2025-06-23 19:42:23,267] - INFO - Completed OPTIONS /auth/get-users with status 200 in 0.01s
+[2025-06-23 19:42:23,271] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 19:42:23,273] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 19:42:23,279] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 19:42:23,295] - INFO - Completed GET /project/get-projects with status 200 in 0.02s
+[2025-06-23 19:42:23,305] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 19:42:23,318] - INFO - Completed GET /project/get-projects with status 200 in 0.01s
+[2025-06-23 19:42:23,399] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 19:42:23,415] - INFO - Completed GET /tool/1/tools with status 200 in 0.02s
+[2025-06-23 19:42:23,421] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 19:42:23,439] - INFO - Completed GET /tool/1/tools with status 200 in 0.02s
+[2025-06-23 19:42:23,454] - INFO - Completed GET /project/1/tasks with status 200 in 0.18s
+[2025-06-23 19:42:23,467] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 19:42:23,472] - INFO - Completed GET /auth/get-users with status 200 in 0.20s
+[2025-06-23 19:42:23,480] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 19:42:23,488] - INFO - Completed GET /project/1/tasks with status 200 in 0.02s
+[2025-06-23 19:42:23,505] - INFO - Completed GET /auth/get-users with status 200 in 0.02s
+[2025-06-23 20:30:52,407] - INFO - Incoming request: OPTIONS /auth/login
+[2025-06-23 20:30:52,415] - INFO - Completed OPTIONS /auth/login with status 200 in 0.01s
+[2025-06-23 20:30:52,434] - INFO - Incoming request: POST /auth/login
+[2025-06-23 20:30:52,795] - INFO - Completed POST /auth/login with status 200 in 0.36s
+[2025-06-23 20:30:52,936] - INFO - Incoming request: OPTIONS /project/get-projects
+[2025-06-23 20:30:52,938] - INFO - Incoming request: OPTIONS /project/get-projects
+[2025-06-23 20:30:52,939] - INFO - Completed OPTIONS /project/get-projects with status 200 in 0.00s
+[2025-06-23 20:30:52,940] - INFO - Completed OPTIONS /project/get-projects with status 200 in 0.00s
+[2025-06-23 20:30:52,946] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 20:30:52,996] - INFO - Completed GET /project/get-projects with status 200 in 0.05s
+[2025-06-23 20:30:53,033] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 20:30:53,063] - INFO - Completed GET /project/get-projects with status 200 in 0.03s
+[2025-06-23 20:31:01,015] - INFO - Incoming request: OPTIONS /project/create-projects
+[2025-06-23 20:31:01,018] - INFO - Completed OPTIONS /project/create-projects with status 200 in 0.00s
+[2025-06-23 20:31:01,026] - INFO - Incoming request: POST /project/create-projects
+[2025-06-23 20:31:01,063] - INFO - Completed POST /project/create-projects with status 200 in 0.04s
+[2025-06-23 20:31:04,244] - INFO - Incoming request: OPTIONS /project/1/tasks
+[2025-06-23 20:31:04,249] - INFO - Incoming request: OPTIONS /auth/get-users
+[2025-06-23 20:31:04,250] - INFO - Incoming request: OPTIONS /auth/get-users
+[2025-06-23 20:31:04,250] - INFO - Incoming request: OPTIONS /project/1/tasks
+[2025-06-23 20:31:04,252] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 20:31:04,255] - INFO - Completed OPTIONS /project/1/tasks with status 200 in 0.01s
+[2025-06-23 20:31:04,271] - INFO - Completed OPTIONS /auth/get-users with status 200 in 0.02s
+[2025-06-23 20:31:04,275] - INFO - Completed OPTIONS /auth/get-users with status 200 in 0.03s
+[2025-06-23 20:31:04,282] - INFO - Completed OPTIONS /project/1/tasks with status 200 in 0.03s
+[2025-06-23 20:31:04,293] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:31:04,299] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:31:04,330] - INFO - Completed GET /project/get-projects with status 200 in 0.08s
+[2025-06-23 20:31:04,350] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 20:31:04,366] - INFO - Completed GET /project/get-projects with status 200 in 0.02s
+[2025-06-23 20:31:04,438] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 20:31:04,471] - INFO - Completed GET /tool/1/tools with status 200 in 0.03s
+[2025-06-23 20:31:04,488] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 20:31:04,508] - INFO - Completed GET /tool/1/tools with status 200 in 0.02s
+[2025-06-23 20:31:04,551] - INFO - Completed GET /auth/get-users with status 200 in 0.25s
+[2025-06-23 20:31:04,561] - INFO - Completed GET /project/1/tasks with status 200 in 0.27s
+[2025-06-23 20:31:04,569] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:31:04,580] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:31:04,598] - INFO - Completed GET /auth/get-users with status 200 in 0.03s
+[2025-06-23 20:31:04,603] - INFO - Completed GET /project/1/tasks with status 200 in 0.02s
+[2025-06-23 20:31:12,070] - INFO - Incoming request: OPTIONS /tool/1/tools
+[2025-06-23 20:31:12,071] - INFO - Completed OPTIONS /tool/1/tools with status 200 in 0.00s
+[2025-06-23 20:31:12,075] - INFO - Incoming request: POST /tool/1/tools
+[2025-06-23 20:31:12,136] - INFO - Completed POST /tool/1/tools with status 200 in 0.06s
+[2025-06-23 20:31:12,149] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 20:31:12,169] - INFO - Completed GET /tool/1/tools with status 200 in 0.02s
+[2025-06-23 20:31:13,704] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:31:13,705] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 20:31:13,716] - INFO - Completed GET /auth/get-users with status 200 in 0.01s
+[2025-06-23 20:31:13,720] - INFO - Completed GET /tool/1/tools with status 200 in 0.02s
+[2025-06-23 20:31:13,749] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:31:13,754] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 20:31:13,760] - INFO - Completed GET /auth/get-users with status 200 in 0.01s
+[2025-06-23 20:31:13,769] - INFO - Completed GET /tool/1/tools with status 200 in 0.01s
+[2025-06-23 20:31:33,455] - INFO - Incoming request: OPTIONS /project/create-tasks
+[2025-06-23 20:31:33,457] - INFO - Completed OPTIONS /project/create-tasks with status 200 in 0.00s
+[2025-06-23 20:31:33,468] - INFO - Incoming request: POST /project/create-tasks
+[2025-06-23 20:31:33,517] - INFO - Completed POST /project/create-tasks with status 200 in 0.05s
+[2025-06-23 20:31:33,530] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:31:33,539] - INFO - Completed GET /project/1/tasks with status 200 in 0.01s
+[2025-06-23 20:31:35,648] - INFO - Incoming request: OPTIONS /comment/task/1
+[2025-06-23 20:31:35,656] - INFO - Incoming request: OPTIONS /project/tasks/1/attachments/
+[2025-06-23 20:31:35,664] - INFO - Incoming request: OPTIONS /comment/task/1
+[2025-06-23 20:31:35,665] - INFO - Completed OPTIONS /comment/task/1 with status 200 in 0.02s
+[2025-06-23 20:31:35,671] - INFO - Completed OPTIONS /project/tasks/1/attachments/ with status 200 in 0.01s
+[2025-06-23 20:31:35,683] - INFO - Completed OPTIONS /comment/task/1 with status 200 in 0.02s
+[2025-06-23 20:31:35,689] - INFO - Incoming request: OPTIONS /project/tasks/1/attachments/
+[2025-06-23 20:31:35,698] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:31:35,701] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:31:35,702] - INFO - Completed OPTIONS /project/tasks/1/attachments/ with status 200 in 0.01s
+[2025-06-23 20:31:35,717] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 20:31:35,729] - INFO - Completed GET /auth/get-users with status 200 in 0.03s
+[2025-06-23 20:31:35,734] - INFO - Completed GET /project/1/tasks with status 200 in 0.04s
+[2025-06-23 20:31:35,739] - INFO - Incoming request: GET /project/tasks/1/attachments/
+[2025-06-23 20:31:35,747] - INFO - Completed GET /tool/1/tools with status 200 in 0.03s
+[2025-06-23 20:31:35,763] - INFO - Incoming request: GET /comment/task/1
+[2025-06-23 20:31:35,768] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:31:35,781] - INFO - Completed GET /auth/get-users with status 200 in 0.01s
+[2025-06-23 20:31:35,798] - INFO - Completed GET /project/tasks/1/attachments/ with status 200 in 0.06s
+[2025-06-23 20:31:35,805] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:31:35,815] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 20:31:35,820] - INFO - Completed GET /comment/task/1 with status 200 in 0.06s
+[2025-06-23 20:31:35,834] - INFO - Completed GET /tool/1/tools with status 200 in 0.02s
+[2025-06-23 20:31:35,837] - INFO - Completed GET /project/1/tasks with status 200 in 0.03s
+[2025-06-23 20:31:35,845] - INFO - Incoming request: GET /project/tasks/1/attachments/
+[2025-06-23 20:31:35,849] - INFO - Incoming request: GET /comment/task/1
+[2025-06-23 20:31:35,863] - INFO - Completed GET /comment/task/1 with status 200 in 0.01s
+[2025-06-23 20:31:35,866] - INFO - Completed GET /project/tasks/1/attachments/ with status 200 in 0.02s
+[2025-06-23 20:31:41,867] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 20:31:41,872] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:31:41,879] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:31:41,908] - INFO - Completed GET /auth/get-users with status 200 in 0.04s
+[2025-06-23 20:31:41,918] - INFO - Completed GET /project/1/tasks with status 200 in 0.04s
+[2025-06-23 20:31:41,932] - INFO - Completed GET /project/get-projects with status 200 in 0.06s
+[2025-06-23 20:31:41,935] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:31:41,949] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:31:41,955] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 20:31:41,958] - INFO - Completed GET /auth/get-users with status 200 in 0.02s
+[2025-06-23 20:31:41,980] - INFO - Completed GET /project/1/tasks with status 200 in 0.03s
+[2025-06-23 20:31:42,005] - INFO - Completed GET /project/get-projects with status 200 in 0.05s
+[2025-06-23 20:31:42,055] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 20:31:42,070] - INFO - Completed GET /tool/1/tools with status 200 in 0.02s
+[2025-06-23 20:31:42,084] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 20:31:42,096] - INFO - Completed GET /tool/1/tools with status 200 in 0.01s
+[2025-06-23 20:31:59,072] - INFO - Incoming request: OPTIONS /project/update-task/1
+[2025-06-23 20:31:59,075] - INFO - Completed OPTIONS /project/update-task/1 with status 200 in 0.00s
+[2025-06-23 20:31:59,086] - INFO - Incoming request: PUT /project/update-task/1
+[2025-06-23 20:31:59,142] - INFO - Completed PUT /project/update-task/1 with status 200 in 0.06s
+[2025-06-23 20:31:59,150] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:31:59,161] - INFO - Completed GET /project/1/tasks with status 200 in 0.01s
+[2025-06-23 20:32:01,573] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:32:01,577] - INFO - Incoming request: GET /comment/task/1
+[2025-06-23 20:32:01,598] - INFO - Completed GET /project/1/tasks with status 200 in 0.02s
+[2025-06-23 20:32:01,604] - INFO - Completed GET /comment/task/1 with status 200 in 0.03s
+[2025-06-23 20:32:01,619] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:32:01,633] - INFO - Incoming request: GET /project/tasks/1/attachments/
+[2025-06-23 20:32:01,648] - INFO - Completed GET /auth/get-users with status 200 in 0.03s
+[2025-06-23 20:32:01,655] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 20:32:01,661] - INFO - Completed GET /project/tasks/1/attachments/ with status 200 in 0.03s
+[2025-06-23 20:32:01,667] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:32:01,674] - INFO - Completed GET /tool/1/tools with status 200 in 0.02s
+[2025-06-23 20:32:01,685] - INFO - Completed GET /project/1/tasks with status 200 in 0.02s
+[2025-06-23 20:32:01,687] - INFO - Incoming request: GET /comment/task/1
+[2025-06-23 20:32:01,700] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:32:01,710] - INFO - Completed GET /comment/task/1 with status 200 in 0.02s
+[2025-06-23 20:32:01,718] - INFO - Incoming request: GET /project/tasks/1/attachments/
+[2025-06-23 20:32:01,726] - INFO - Completed GET /auth/get-users with status 200 in 0.03s
+[2025-06-23 20:32:01,731] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 20:32:01,732] - INFO - Completed GET /project/tasks/1/attachments/ with status 200 in 0.01s
+[2025-06-23 20:32:01,742] - INFO - Completed GET /tool/1/tools with status 200 in 0.01s
+[2025-06-23 20:32:04,477] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 20:32:04,479] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:32:04,480] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:32:04,519] - INFO - Completed GET /auth/get-users with status 200 in 0.04s
+[2025-06-23 20:32:04,523] - INFO - Completed GET /project/get-projects with status 200 in 0.05s
+[2025-06-23 20:32:04,531] - INFO - Completed GET /project/1/tasks with status 200 in 0.05s
+[2025-06-23 20:32:04,534] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:32:04,538] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 20:32:04,547] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:32:04,565] - INFO - Completed GET /auth/get-users with status 200 in 0.03s
+[2025-06-23 20:32:04,583] - INFO - Completed GET /project/get-projects with status 200 in 0.05s
+[2025-06-23 20:32:04,600] - INFO - Completed GET /project/1/tasks with status 200 in 0.05s
+[2025-06-23 20:32:04,604] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 20:32:04,627] - INFO - Completed GET /tool/1/tools with status 200 in 0.02s
+[2025-06-23 20:32:04,633] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 20:32:04,642] - INFO - Completed GET /tool/1/tools with status 200 in 0.01s
+[2025-06-23 20:32:55,412] - INFO - Incoming request: PUT /project/update-task/1
+[2025-06-23 20:32:55,448] - INFO - Completed PUT /project/update-task/1 with status 200 in 0.04s
+[2025-06-23 20:32:55,464] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:32:55,473] - INFO - Completed GET /project/1/tasks with status 200 in 0.01s
+[2025-06-23 20:33:08,643] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:33:08,646] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:33:08,647] - INFO - Incoming request: GET /project/tasks/1/attachments/
+[2025-06-23 20:33:08,651] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 20:33:08,659] - INFO - Incoming request: GET /comment/task/1
+[2025-06-23 20:33:08,702] - INFO - Completed GET /tool/1/tools with status 200 in 0.05s
+[2025-06-23 20:33:08,713] - INFO - Completed GET /auth/get-users with status 200 in 0.07s
+[2025-06-23 20:33:08,725] - INFO - Completed GET /project/1/tasks with status 200 in 0.08s
+[2025-06-23 20:33:08,756] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 20:33:08,760] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:33:08,789] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:33:08,812] - INFO - Completed GET /tool/1/tools with status 200 in 0.06s
+[2025-06-23 20:33:08,816] - INFO - Completed GET /auth/get-users with status 200 in 0.06s
+[2025-06-23 20:33:08,828] - INFO - Completed GET /project/1/tasks with status 200 in 0.04s
+[2025-06-23 20:33:08,866] - INFO - Completed GET /comment/task/1 with status 200 in 0.21s
+[2025-06-23 20:33:08,881] - INFO - Incoming request: GET /comment/task/1
+[2025-06-23 20:33:08,893] - INFO - Completed GET /project/tasks/1/attachments/ with status 200 in 0.25s
+[2025-06-23 20:33:08,897] - INFO - Completed GET /comment/task/1 with status 200 in 0.02s
+[2025-06-23 20:33:08,903] - INFO - Incoming request: GET /project/tasks/1/attachments/
+[2025-06-23 20:33:08,918] - INFO - Completed GET /project/tasks/1/attachments/ with status 200 in 0.02s
+[2025-06-23 20:36:53,588] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:36:53,591] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:36:53,594] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 20:36:53,771] - INFO - Completed GET /project/get-projects with status 200 in 0.18s
+[2025-06-23 20:36:53,819] - INFO - Completed GET /auth/get-users with status 200 in 0.23s
+[2025-06-23 20:36:53,831] - INFO - Completed GET /project/1/tasks with status 200 in 0.24s
+[2025-06-23 20:36:53,839] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 20:36:53,871] - INFO - Completed GET /project/get-projects with status 200 in 0.03s
+[2025-06-23 20:36:53,888] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:36:53,904] - INFO - Completed GET /auth/get-users with status 200 in 0.02s
+[2025-06-23 20:36:53,922] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:36:53,937] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 20:36:53,953] - INFO - Completed GET /project/1/tasks with status 200 in 0.03s
+[2025-06-23 20:36:53,969] - INFO - Completed GET /tool/1/tools with status 200 in 0.03s
+[2025-06-23 20:36:53,974] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 20:36:53,994] - INFO - Completed GET /tool/1/tools with status 200 in 0.02s
+[2025-06-23 20:37:14,485] - INFO - Incoming request: PUT /project/update-task/1
+[2025-06-23 20:37:14,577] - INFO - Completed PUT /project/update-task/1 with status 200 in 0.09s
+[2025-06-23 20:37:14,585] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:37:14,600] - INFO - Completed GET /project/1/tasks with status 200 in 0.02s
+[2025-06-23 20:37:15,671] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:37:15,673] - INFO - Incoming request: GET /comment/task/1
+[2025-06-23 20:37:15,701] - INFO - Completed GET /project/1/tasks with status 200 in 0.03s
+[2025-06-23 20:37:15,705] - INFO - Completed GET /comment/task/1 with status 200 in 0.03s
+[2025-06-23 20:37:15,733] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:37:15,768] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 20:37:15,787] - INFO - Completed GET /auth/get-users with status 200 in 0.05s
+[2025-06-23 20:37:15,790] - INFO - Completed GET /tool/1/tools with status 200 in 0.02s
+[2025-06-23 20:37:15,800] - INFO - Incoming request: GET /project/tasks/1/attachments/
+[2025-06-23 20:37:15,808] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:37:15,836] - INFO - Completed GET /project/tasks/1/attachments/ with status 200 in 0.04s
+[2025-06-23 20:37:15,838] - INFO - Completed GET /project/1/tasks with status 200 in 0.03s
+[2025-06-23 20:37:15,848] - INFO - Incoming request: GET /comment/task/1
+[2025-06-23 20:37:15,852] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:37:15,866] - INFO - Completed GET /comment/task/1 with status 200 in 0.02s
+[2025-06-23 20:37:15,873] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 20:37:15,880] - INFO - Completed GET /auth/get-users with status 200 in 0.03s
+[2025-06-23 20:37:15,887] - INFO - Incoming request: GET /project/tasks/1/attachments/
+[2025-06-23 20:37:15,891] - INFO - Completed GET /tool/1/tools with status 200 in 0.02s
+[2025-06-23 20:37:15,901] - INFO - Completed GET /project/tasks/1/attachments/ with status 200 in 0.01s
+[2025-06-23 20:39:28,557] - INFO - Incoming request: PUT /project/update-task/1
+[2025-06-23 20:39:28,838] - INFO - Completed PUT /project/update-task/1 with status 200 in 0.28s
+[2025-06-23 20:39:28,846] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:39:28,859] - INFO - Completed GET /project/1/tasks with status 200 in 0.01s
+[2025-06-23 20:45:23,190] - INFO - Incoming request: OPTIONS /project/update-task/1
+[2025-06-23 20:45:23,191] - INFO - Completed OPTIONS /project/update-task/1 with status 200 in 0.00s
+[2025-06-23 20:45:23,197] - INFO - Incoming request: PUT /project/update-task/1
+[2025-06-23 20:45:23,334] - INFO - Completed PUT /project/update-task/1 with status 200 in 0.14s
+[2025-06-23 20:45:23,357] - INFO - Incoming request: OPTIONS /project/1/tasks
+[2025-06-23 20:45:23,358] - INFO - Completed OPTIONS /project/1/tasks with status 200 in 0.00s
+[2025-06-23 20:45:23,363] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:45:23,377] - INFO - Completed GET /project/1/tasks with status 200 in 0.01s
+[2025-06-23 20:45:32,435] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:45:32,441] - INFO - Incoming request: OPTIONS /comment/task/1
+[2025-06-23 20:45:32,449] - INFO - Incoming request: OPTIONS /comment/task/1
+[2025-06-23 20:45:32,455] - INFO - Incoming request: OPTIONS /auth/get-users
+[2025-06-23 20:45:32,461] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 20:45:32,464] - INFO - Incoming request: OPTIONS /project/tasks/1/attachments/
+[2025-06-23 20:45:32,469] - INFO - Completed OPTIONS /comment/task/1 with status 200 in 0.03s
+[2025-06-23 20:45:32,490] - INFO - Completed OPTIONS /comment/task/1 with status 200 in 0.04s
+[2025-06-23 20:45:32,511] - INFO - Completed OPTIONS /auth/get-users with status 200 in 0.06s
+[2025-06-23 20:45:32,516] - INFO - Completed OPTIONS /project/tasks/1/attachments/ with status 200 in 0.05s
+[2025-06-23 20:45:32,524] - INFO - Incoming request: OPTIONS /auth/get-users
+[2025-06-23 20:45:32,532] - INFO - Incoming request: OPTIONS /project/tasks/1/attachments/
+[2025-06-23 20:45:32,536] - INFO - Incoming request: GET /comment/task/1
+[2025-06-23 20:45:32,543] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:45:32,549] - INFO - Completed OPTIONS /auth/get-users with status 200 in 0.02s
+[2025-06-23 20:45:32,563] - INFO - Completed OPTIONS /project/tasks/1/attachments/ with status 200 in 0.03s
+[2025-06-23 20:45:32,572] - INFO - Incoming request: GET /project/tasks/1/attachments/
+[2025-06-23 20:45:32,580] - INFO - Completed GET /project/1/tasks with status 200 in 0.15s
+[2025-06-23 20:45:32,594] - INFO - Completed GET /comment/task/1 with status 200 in 0.06s
+[2025-06-23 20:45:32,601] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:45:32,605] - INFO - Incoming request: GET /comment/task/1
+[2025-06-23 20:45:32,622] - INFO - Completed GET /project/1/tasks with status 200 in 0.02s
+[2025-06-23 20:45:32,718] - INFO - Completed GET /project/tasks/1/attachments/ with status 200 in 0.15s
+[2025-06-23 20:45:32,733] - INFO - Completed GET /comment/task/1 with status 200 in 0.13s
+[2025-06-23 20:45:32,810] - INFO - Incoming request: GET /project/tasks/1/attachments/
+[2025-06-23 20:45:32,816] - INFO - Completed GET /auth/get-users with status 200 in 0.27s
+[2025-06-23 20:45:32,836] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:45:32,860] - INFO - Completed GET /project/tasks/1/attachments/ with status 200 in 0.05s
+[2025-06-23 20:45:32,876] - INFO - Completed GET /tool/1/tools with status 200 in 0.42s
+[2025-06-23 20:45:32,887] - INFO - Completed GET /auth/get-users with status 200 in 0.05s
+[2025-06-23 20:45:32,894] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 20:45:32,911] - INFO - Completed GET /tool/1/tools with status 200 in 0.02s
+[2025-06-23 20:45:35,346] - INFO - Incoming request: OPTIONS /project/get-projects
+[2025-06-23 20:45:35,349] - INFO - Incoming request: OPTIONS /project/get-projects
+[2025-06-23 20:45:35,351] - INFO - Completed OPTIONS /project/get-projects with status 200 in 0.00s
+[2025-06-23 20:45:35,357] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:45:35,365] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:45:35,367] - INFO - Completed OPTIONS /project/get-projects with status 200 in 0.02s
+[2025-06-23 20:45:35,377] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 20:45:35,395] - INFO - Completed GET /project/1/tasks with status 200 in 0.03s
+[2025-06-23 20:45:35,403] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:45:35,409] - INFO - Completed GET /auth/get-users with status 200 in 0.05s
+[2025-06-23 20:45:35,412] - INFO - Completed GET /project/get-projects with status 200 in 0.04s
+[2025-06-23 20:45:35,421] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:45:35,429] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 20:45:35,431] - INFO - Completed GET /project/1/tasks with status 200 in 0.03s
+[2025-06-23 20:45:35,445] - INFO - Completed GET /auth/get-users with status 200 in 0.02s
+[2025-06-23 20:45:35,458] - INFO - Completed GET /project/get-projects with status 200 in 0.03s
+[2025-06-23 20:45:35,467] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 20:45:35,481] - INFO - Completed GET /tool/1/tools with status 200 in 0.01s
+[2025-06-23 20:45:35,530] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 20:45:35,549] - INFO - Completed GET /tool/1/tools with status 200 in 0.02s
+[2025-06-23 20:45:39,765] - INFO - Incoming request: OPTIONS /project/delete-task/1
+[2025-06-23 20:45:39,768] - INFO - Completed OPTIONS /project/delete-task/1 with status 200 in 0.00s
+[2025-06-23 20:45:39,781] - INFO - Incoming request: DELETE /project/delete-task/1
+[2025-06-23 20:45:39,834] - INFO - Completed DELETE /project/delete-task/1 with status 200 in 0.05s
+[2025-06-23 20:45:43,787] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 20:45:43,803] - INFO - Completed GET /project/get-projects with status 200 in 0.02s
+[2025-06-23 20:45:43,816] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 20:45:43,844] - INFO - Completed GET /project/get-projects with status 200 in 0.03s
+[2025-06-23 20:45:49,826] - INFO - Incoming request: OPTIONS /summary/user-summary
+[2025-06-23 20:45:49,831] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 20:45:49,833] - INFO - Incoming request: OPTIONS /summary/user-summary
+[2025-06-23 20:45:49,836] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:45:49,844] - INFO - Completed OPTIONS /summary/user-summary with status 200 in 0.02s
+[2025-06-23 20:45:49,856] - INFO - Completed OPTIONS /summary/user-summary with status 200 in 0.02s
+[2025-06-23 20:45:49,881] - INFO - Incoming request: GET /summary/user-summary
+[2025-06-23 20:45:49,907] - INFO - Completed GET /auth/get-users with status 200 in 0.07s
+[2025-06-23 20:45:49,927] - INFO - Completed GET /project/get-projects with status 200 in 0.10s
+[2025-06-23 20:45:49,953] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:45:49,978] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 20:45:49,991] - INFO - Completed GET /summary/user-summary with status 200 in 0.11s
+[2025-06-23 20:45:49,998] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:45:50,008] - INFO - Incoming request: GET /summary/user-summary
+[2025-06-23 20:45:50,016] - INFO - Completed GET /auth/get-users with status 200 in 0.06s
+[2025-06-23 20:45:50,029] - INFO - Completed GET /project/get-projects with status 200 in 0.05s
+[2025-06-23 20:45:50,049] - INFO - Completed GET /project/1/tasks with status 200 in 0.05s
+[2025-06-23 20:45:50,067] - INFO - Completed GET /summary/user-summary with status 200 in 0.06s
+[2025-06-23 20:45:50,133] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:45:50,151] - INFO - Completed GET /project/1/tasks with status 200 in 0.02s
+[2025-06-23 20:45:56,785] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 20:45:56,807] - INFO - Completed GET /project/get-projects with status 200 in 0.02s
+[2025-06-23 20:45:56,815] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 20:45:56,827] - INFO - Completed GET /project/get-projects with status 200 in 0.01s
+[2025-06-23 20:45:59,842] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 20:45:59,847] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:45:59,864] - INFO - Incoming request: GET /summary/user-summary
+[2025-06-23 20:45:59,894] - INFO - Completed GET /auth/get-users with status 200 in 0.05s
+[2025-06-23 20:45:59,900] - INFO - Completed GET /project/get-projects with status 200 in 0.06s
+[2025-06-23 20:45:59,914] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:45:59,919] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 20:45:59,927] - INFO - Completed GET /summary/user-summary with status 200 in 0.06s
+[2025-06-23 20:45:59,944] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:45:59,966] - INFO - Completed GET /auth/get-users with status 200 in 0.05s
+[2025-06-23 20:45:59,979] - INFO - Completed GET /project/get-projects with status 200 in 0.06s
+[2025-06-23 20:46:00,000] - INFO - Incoming request: GET /summary/user-summary
+[2025-06-23 20:46:00,015] - INFO - Completed GET /project/1/tasks with status 200 in 0.07s
+[2025-06-23 20:46:00,056] - INFO - Completed GET /summary/user-summary with status 200 in 0.06s
+[2025-06-23 20:46:00,065] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:46:00,078] - INFO - Completed GET /project/1/tasks with status 200 in 0.01s
+[2025-06-23 20:49:32,296] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 20:49:32,435] - INFO - Completed GET /project/get-projects with status 200 in 0.14s
+[2025-06-23 20:49:32,443] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 20:49:32,469] - INFO - Completed GET /project/get-projects with status 200 in 0.03s
+[2025-06-23 20:49:34,783] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 20:49:34,786] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:49:34,818] - INFO - Completed GET /project/get-projects with status 200 in 0.04s
+[2025-06-23 20:49:34,823] - INFO - Completed GET /project/1/tasks with status 200 in 0.04s
+[2025-06-23 20:49:34,829] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:49:34,834] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 20:49:34,857] - INFO - Completed GET /auth/get-users with status 200 in 0.03s
+[2025-06-23 20:49:34,868] - INFO - Completed GET /project/get-projects with status 200 in 0.03s
+[2025-06-23 20:49:34,876] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 20:49:34,887] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 20:49:34,901] - INFO - Completed GET /project/1/tasks with status 200 in 0.03s
+[2025-06-23 20:49:34,907] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 20:49:34,915] - INFO - Completed GET /tool/1/tools with status 200 in 0.03s
+[2025-06-23 20:49:34,920] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 20:49:34,926] - INFO - Completed GET /auth/get-users with status 200 in 0.02s
+[2025-06-23 20:49:34,938] - INFO - Completed GET /tool/1/tools with status 200 in 0.02s
+[2025-06-23 21:28:47,687] - INFO - Incoming request: OPTIONS /project/1/tasks
+[2025-06-23 21:28:47,697] - INFO - Incoming request: OPTIONS /auth/get-users
+[2025-06-23 21:28:47,698] - INFO - Incoming request: OPTIONS /project/get-projects
+[2025-06-23 21:28:47,699] - INFO - Incoming request: OPTIONS /project/1/tasks
+[2025-06-23 21:28:47,699] - INFO - Incoming request: OPTIONS /auth/get-users
+[2025-06-23 21:28:47,700] - INFO - Incoming request: OPTIONS /project/get-projects
+[2025-06-23 21:28:47,710] - INFO - Completed OPTIONS /project/1/tasks with status 200 in 0.03s
+[2025-06-23 21:28:47,718] - INFO - Completed OPTIONS /auth/get-users with status 200 in 0.02s
+[2025-06-23 21:28:47,721] - INFO - Completed OPTIONS /project/get-projects with status 200 in 0.02s
+[2025-06-23 21:28:47,725] - INFO - Completed OPTIONS /project/1/tasks with status 200 in 0.03s
+[2025-06-23 21:28:47,728] - INFO - Completed OPTIONS /auth/get-users with status 200 in 0.03s
+[2025-06-23 21:28:47,730] - INFO - Completed OPTIONS /project/get-projects with status 200 in 0.03s
+[2025-06-23 21:28:47,737] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 21:28:47,753] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 21:28:47,763] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 21:28:48,162] - INFO - Completed GET /project/1/tasks with status 200 in 0.41s
+[2025-06-23 21:28:48,185] - ERROR - Exception during request: (psycopg2.errors.UndefinedColumn) column projects.start_date does not exist
+LINE 1: ...le, projects.description AS projects_description, projects.s...
+                                                             ^
+
+[SQL: SELECT projects.id AS projects_id, projects.title AS projects_title, projects.description AS projects_description, projects.start_date AS projects_start_date, projects.due_date AS projects_due_date 
+FROM projects]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column projects.start_date does not exist
+LINE 1: ...le, projects.description AS projects_description, projects.s...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\samue\Task-Manager\Backend\common\logging_middleware.py", line 15, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "C:\Users\samue\Task-Manager\Backend\apis\tasks.py", line 44, in get_projects
+    return task_service.get_all_projects(db)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\samue\Task-Manager\Backend\services\task_service.py", line 108, in get_all_projects
+    return db.query(Project).all()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+           ~~~~~~~~~~^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+        params,
+        ^^^^^^^
+        execution_options={"_sa_orm_load_options": self.load_options},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1415, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\sql\elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column projects.start_date does not exist
+LINE 1: ...le, projects.description AS projects_description, projects.s...
+                                                             ^
+
+[SQL: SELECT projects.id AS projects_id, projects.title AS projects_title, projects.description AS projects_description, projects.start_date AS projects_start_date, projects.due_date AS projects_due_date 
+FROM projects]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[2025-06-23 21:28:49,101] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 21:28:49,154] - INFO - Completed GET /project/1/tasks with status 200 in 0.05s
+[2025-06-23 21:28:49,159] - INFO - Completed GET /auth/get-users with status 200 in 1.40s
+[2025-06-23 21:28:49,165] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 21:28:49,167] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 21:28:49,174] - ERROR - Exception during request: (psycopg2.errors.UndefinedColumn) column projects.start_date does not exist
+LINE 1: ...le, projects.description AS projects_description, projects.s...
+                                                             ^
+
+[SQL: SELECT projects.id AS projects_id, projects.title AS projects_title, projects.description AS projects_description, projects.start_date AS projects_start_date, projects.due_date AS projects_due_date 
+FROM projects]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column projects.start_date does not exist
+LINE 1: ...le, projects.description AS projects_description, projects.s...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\samue\Task-Manager\Backend\common\logging_middleware.py", line 15, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "C:\Users\samue\Task-Manager\Backend\apis\tasks.py", line 44, in get_projects
+    return task_service.get_all_projects(db)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\samue\Task-Manager\Backend\services\task_service.py", line 108, in get_all_projects
+    return db.query(Project).all()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+           ~~~~~~~~~~^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+        params,
+        ^^^^^^^
+        execution_options={"_sa_orm_load_options": self.load_options},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1415, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\sql\elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column projects.start_date does not exist
+LINE 1: ...le, projects.description AS projects_description, projects.s...
+                                                             ^
+
+[SQL: SELECT projects.id AS projects_id, projects.title AS projects_title, projects.description AS projects_description, projects.start_date AS projects_start_date, projects.due_date AS projects_due_date 
+FROM projects]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[2025-06-23 21:28:49,604] - INFO - Completed GET /auth/get-users with status 200 in 0.44s
+[2025-06-23 21:29:18,356] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 21:29:18,367] - ERROR - Exception during request: (psycopg2.errors.UndefinedColumn) column projects.start_date does not exist
+LINE 1: ...le, projects.description AS projects_description, projects.s...
+                                                             ^
+
+[SQL: SELECT projects.id AS projects_id, projects.title AS projects_title, projects.description AS projects_description, projects.start_date AS projects_start_date, projects.due_date AS projects_due_date 
+FROM projects]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column projects.start_date does not exist
+LINE 1: ...le, projects.description AS projects_description, projects.s...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\samue\Task-Manager\Backend\common\logging_middleware.py", line 15, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "C:\Users\samue\Task-Manager\Backend\apis\tasks.py", line 44, in get_projects
+    return task_service.get_all_projects(db)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\samue\Task-Manager\Backend\services\task_service.py", line 108, in get_all_projects
+    return db.query(Project).all()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+           ~~~~~~~~~~^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+        params,
+        ^^^^^^^
+        execution_options={"_sa_orm_load_options": self.load_options},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1415, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\sql\elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column projects.start_date does not exist
+LINE 1: ...le, projects.description AS projects_description, projects.s...
+                                                             ^
+
+[SQL: SELECT projects.id AS projects_id, projects.title AS projects_title, projects.description AS projects_description, projects.start_date AS projects_start_date, projects.due_date AS projects_due_date 
+FROM projects]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[2025-06-23 21:29:18,617] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 21:29:18,629] - ERROR - Exception during request: (psycopg2.errors.UndefinedColumn) column projects.start_date does not exist
+LINE 1: ...le, projects.description AS projects_description, projects.s...
+                                                             ^
+
+[SQL: SELECT projects.id AS projects_id, projects.title AS projects_title, projects.description AS projects_description, projects.start_date AS projects_start_date, projects.due_date AS projects_due_date 
+FROM projects]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column projects.start_date does not exist
+LINE 1: ...le, projects.description AS projects_description, projects.s...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\samue\Task-Manager\Backend\common\logging_middleware.py", line 15, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "C:\Users\samue\Task-Manager\Backend\apis\tasks.py", line 44, in get_projects
+    return task_service.get_all_projects(db)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\samue\Task-Manager\Backend\services\task_service.py", line 108, in get_all_projects
+    return db.query(Project).all()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+           ~~~~~~~~~~^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+        params,
+        ^^^^^^^
+        execution_options={"_sa_orm_load_options": self.load_options},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1415, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\sql\elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column projects.start_date does not exist
+LINE 1: ...le, projects.description AS projects_description, projects.s...
+                                                             ^
+
+[SQL: SELECT projects.id AS projects_id, projects.title AS projects_title, projects.description AS projects_description, projects.start_date AS projects_start_date, projects.due_date AS projects_due_date 
+FROM projects]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[2025-06-23 21:35:48,952] - INFO - Incoming request: OPTIONS /auth/login
+[2025-06-23 21:35:48,954] - INFO - Completed OPTIONS /auth/login with status 200 in 0.00s
+[2025-06-23 21:35:48,960] - INFO - Incoming request: POST /auth/login
+[2025-06-23 21:35:49,822] - INFO - Completed POST /auth/login with status 200 in 0.86s
+[2025-06-23 21:35:49,941] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 21:35:49,966] - ERROR - Exception during request: (psycopg2.errors.UndefinedColumn) column projects.start_date does not exist
+LINE 1: ...le, projects.description AS projects_description, projects.s...
+                                                             ^
+
+[SQL: SELECT projects.id AS projects_id, projects.title AS projects_title, projects.description AS projects_description, projects.start_date AS projects_start_date, projects.due_date AS projects_due_date 
+FROM projects]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column projects.start_date does not exist
+LINE 1: ...le, projects.description AS projects_description, projects.s...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\samue\Task-Manager\Backend\common\logging_middleware.py", line 15, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "C:\Users\samue\Task-Manager\Backend\apis\tasks.py", line 44, in get_projects
+    return task_service.get_all_projects(db)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\samue\Task-Manager\Backend\services\task_service.py", line 108, in get_all_projects
+    return db.query(Project).all()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+           ~~~~~~~~~~^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+        params,
+        ^^^^^^^
+        execution_options={"_sa_orm_load_options": self.load_options},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1415, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\sql\elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column projects.start_date does not exist
+LINE 1: ...le, projects.description AS projects_description, projects.s...
+                                                             ^
+
+[SQL: SELECT projects.id AS projects_id, projects.title AS projects_title, projects.description AS projects_description, projects.start_date AS projects_start_date, projects.due_date AS projects_due_date 
+FROM projects]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[2025-06-23 21:35:51,050] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 21:35:51,057] - ERROR - Exception during request: (psycopg2.errors.UndefinedColumn) column projects.start_date does not exist
+LINE 1: ...le, projects.description AS projects_description, projects.s...
+                                                             ^
+
+[SQL: SELECT projects.id AS projects_id, projects.title AS projects_title, projects.description AS projects_description, projects.start_date AS projects_start_date, projects.due_date AS projects_due_date 
+FROM projects]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column projects.start_date does not exist
+LINE 1: ...le, projects.description AS projects_description, projects.s...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\samue\Task-Manager\Backend\common\logging_middleware.py", line 15, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "C:\Users\samue\Task-Manager\Backend\apis\tasks.py", line 44, in get_projects
+    return task_service.get_all_projects(db)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\samue\Task-Manager\Backend\services\task_service.py", line 108, in get_all_projects
+    return db.query(Project).all()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+           ~~~~~~~~~~^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+        params,
+        ^^^^^^^
+        execution_options={"_sa_orm_load_options": self.load_options},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1415, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\sql\elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column projects.start_date does not exist
+LINE 1: ...le, projects.description AS projects_description, projects.s...
+                                                             ^
+
+[SQL: SELECT projects.id AS projects_id, projects.title AS projects_title, projects.description AS projects_description, projects.start_date AS projects_start_date, projects.due_date AS projects_due_date 
+FROM projects]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[2025-06-23 21:39:58,527] - INFO - Incoming request: POST /auth/login
+[2025-06-23 21:39:58,851] - INFO - Completed POST /auth/login with status 200 in 0.32s
+[2025-06-23 21:39:58,968] - INFO - Incoming request: OPTIONS /project/get-projects
+[2025-06-23 21:39:58,970] - INFO - Incoming request: OPTIONS /project/get-projects
+[2025-06-23 21:39:58,971] - INFO - Completed OPTIONS /project/get-projects with status 200 in 0.00s
+[2025-06-23 21:39:58,975] - INFO - Completed OPTIONS /project/get-projects with status 200 in 0.01s
+[2025-06-23 21:39:58,987] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 21:39:59,002] - INFO - Completed GET /project/get-projects with status 200 in 0.02s
+[2025-06-23 21:39:59,008] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 21:39:59,015] - INFO - Completed GET /project/get-projects with status 200 in 0.01s
+[2025-06-23 21:40:32,471] - INFO - Incoming request: OPTIONS /project/create-projects
+[2025-06-23 21:40:32,475] - INFO - Completed OPTIONS /project/create-projects with status 200 in 0.00s
+[2025-06-23 21:40:32,516] - INFO - Incoming request: POST /project/create-projects
+[2025-06-23 21:40:32,637] - INFO - Completed POST /project/create-projects with status 200 in 0.12s
+[2025-06-23 21:40:35,183] - INFO - Incoming request: OPTIONS /project/1/tasks
+[2025-06-23 21:40:35,185] - INFO - Incoming request: OPTIONS /project/1/tasks
+[2025-06-23 21:40:35,186] - INFO - Incoming request: OPTIONS /auth/get-users
+[2025-06-23 21:40:35,188] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 21:40:35,189] - INFO - Incoming request: OPTIONS /auth/get-users
+[2025-06-23 21:40:35,194] - INFO - Completed OPTIONS /project/1/tasks with status 200 in 0.01s
+[2025-06-23 21:40:35,198] - INFO - Completed OPTIONS /project/1/tasks with status 200 in 0.01s
+[2025-06-23 21:40:35,203] - INFO - Completed OPTIONS /auth/get-users with status 200 in 0.02s
+[2025-06-23 21:40:35,205] - INFO - Completed OPTIONS /auth/get-users with status 200 in 0.02s
+[2025-06-23 21:40:35,213] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 21:40:35,215] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 21:40:35,234] - INFO - Completed GET /project/get-projects with status 200 in 0.05s
+[2025-06-23 21:40:35,240] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 21:40:35,261] - INFO - Completed GET /project/get-projects with status 200 in 0.02s
+[2025-06-23 21:40:35,329] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 21:40:35,346] - INFO - Completed GET /tool/1/tools with status 200 in 0.02s
+[2025-06-23 21:40:35,359] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 21:40:35,371] - INFO - Completed GET /tool/1/tools with status 200 in 0.01s
+[2025-06-23 21:40:35,442] - INFO - Completed GET /project/1/tasks with status 200 in 0.23s
+[2025-06-23 21:40:35,450] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 21:40:35,457] - INFO - Completed GET /auth/get-users with status 200 in 0.24s
+[2025-06-23 21:40:35,469] - INFO - Completed GET /project/1/tasks with status 200 in 0.02s
+[2025-06-23 21:40:35,481] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 21:40:35,499] - INFO - Completed GET /auth/get-users with status 200 in 0.02s
+[2025-06-23 21:42:59,445] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 21:42:59,457] - INFO - Completed GET /project/get-projects with status 200 in 0.01s
+[2025-06-23 21:42:59,465] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 21:42:59,477] - INFO - Completed GET /project/get-projects with status 200 in 0.01s
+[2025-06-23 21:43:01,312] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 21:43:01,315] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 21:43:01,322] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 21:43:01,339] - INFO - Completed GET /auth/get-users with status 200 in 0.02s
+[2025-06-23 21:43:01,344] - INFO - Completed GET /project/1/tasks with status 200 in 0.03s
+[2025-06-23 21:43:01,346] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 21:43:01,352] - INFO - Completed GET /project/get-projects with status 200 in 0.04s
+[2025-06-23 21:43:01,359] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 21:43:01,362] - INFO - Incoming request: GET /project/get-projects
+[2025-06-23 21:43:01,373] - INFO - Completed GET /auth/get-users with status 200 in 0.03s
+[2025-06-23 21:43:01,380] - INFO - Completed GET /project/1/tasks with status 200 in 0.02s
+[2025-06-23 21:43:01,390] - INFO - Completed GET /project/get-projects with status 200 in 0.03s
+[2025-06-23 21:43:01,418] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 21:43:01,428] - INFO - Completed GET /tool/1/tools with status 200 in 0.01s
+[2025-06-23 21:43:01,435] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 21:43:01,444] - INFO - Completed GET /tool/1/tools with status 200 in 0.01s
+[2025-06-23 21:43:02,587] - INFO - Incoming request: OPTIONS /tool/1/tools
+[2025-06-23 21:43:02,595] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 21:43:02,596] - INFO - Incoming request: OPTIONS /tool/1/tools
+[2025-06-23 21:43:02,603] - INFO - Completed OPTIONS /tool/1/tools with status 200 in 0.02s
+[2025-06-23 21:43:02,611] - INFO - Completed OPTIONS /tool/1/tools with status 200 in 0.01s
+[2025-06-23 21:43:02,615] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 21:43:02,629] - INFO - Completed GET /auth/get-users with status 200 in 0.03s
+[2025-06-23 21:43:02,636] - INFO - Completed GET /tool/1/tools with status 200 in 0.02s
+[2025-06-23 21:43:02,647] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 21:43:02,650] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 21:43:02,662] - INFO - Completed GET /auth/get-users with status 200 in 0.01s
+[2025-06-23 21:43:02,667] - INFO - Completed GET /tool/1/tools with status 200 in 0.02s
+[2025-06-23 21:43:24,913] - INFO - Incoming request: OPTIONS /tool/1/tools
+[2025-06-23 21:43:24,914] - INFO - Completed OPTIONS /tool/1/tools with status 200 in 0.00s
+[2025-06-23 21:43:24,921] - INFO - Incoming request: POST /tool/1/tools
+[2025-06-23 21:43:24,975] - INFO - Completed POST /tool/1/tools with status 200 in 0.05s
+[2025-06-23 21:43:24,982] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 21:43:24,993] - INFO - Completed GET /tool/1/tools with status 200 in 0.01s
+[2025-06-23 21:43:27,632] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 21:43:27,639] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 21:43:27,661] - INFO - Completed GET /auth/get-users with status 200 in 0.03s
+[2025-06-23 21:43:27,668] - INFO - Completed GET /tool/1/tools with status 200 in 0.03s
+[2025-06-23 21:43:27,678] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 21:43:27,690] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 21:43:27,699] - INFO - Completed GET /auth/get-users with status 200 in 0.02s
+[2025-06-23 21:43:27,708] - INFO - Completed GET /tool/1/tools with status 200 in 0.02s
+[2025-06-23 21:43:29,278] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 21:43:29,282] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 21:43:29,302] - INFO - Completed GET /auth/get-users with status 200 in 0.02s
+[2025-06-23 21:43:29,309] - INFO - Completed GET /tool/1/tools with status 200 in 0.03s
+[2025-06-23 21:43:29,312] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 21:43:29,323] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 21:43:29,329] - INFO - Completed GET /auth/get-users with status 200 in 0.02s
+[2025-06-23 21:43:29,339] - INFO - Completed GET /tool/1/tools with status 200 in 0.02s
+[2025-06-23 21:43:45,920] - INFO - Incoming request: OPTIONS /project/create-tasks
+[2025-06-23 21:43:45,922] - INFO - Completed OPTIONS /project/create-tasks with status 200 in 0.00s
+[2025-06-23 21:43:45,925] - INFO - Incoming request: POST /project/create-tasks
+[2025-06-23 21:43:45,954] - ERROR - Exception during request: cannot access local variable 'task' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 148, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream from None
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samue\Task-Manager\Backend\common\logging_middleware.py", line 15, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\samue\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "C:\Users\samue\Task-Manager\Backend\apis\tasks.py", line 15, in create_task
+    result, error = task_service.create_task(db, task)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\samue\Task-Manager\Backend\services\task_service.py", line 17, in create_task
+    if task.start_date < project.start_date or task.start_date > project.due_date:
+       ^^^^
+UnboundLocalError: cannot access local variable 'task' where it is not associated with a value
+[2025-06-23 21:50:05,268] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 21:50:05,272] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 21:50:05,512] - INFO - Completed GET /tool/1/tools with status 200 in 0.24s
+[2025-06-23 21:50:05,528] - INFO - Completed GET /auth/get-users with status 200 in 0.26s
+[2025-06-23 21:50:05,538] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 21:50:05,542] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 21:50:05,559] - INFO - Completed GET /tool/1/tools with status 200 in 0.02s
+[2025-06-23 21:50:05,562] - INFO - Completed GET /auth/get-users with status 200 in 0.02s
+[2025-06-23 21:50:43,144] - INFO - Incoming request: POST /project/create-tasks
+[2025-06-23 21:50:43,223] - INFO - Completed POST /project/create-tasks with status 400 in 0.08s
+[2025-06-23 21:51:02,982] - INFO - Incoming request: POST /project/create-tasks
+[2025-06-23 21:51:02,995] - INFO - Completed POST /project/create-tasks with status 400 in 0.01s
+[2025-06-23 21:51:54,550] - INFO - Incoming request: OPTIONS /auth/get-users
+[2025-06-23 21:51:54,551] - INFO - Incoming request: OPTIONS /auth/get-users
+[2025-06-23 21:51:54,553] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 21:51:54,554] - INFO - Completed OPTIONS /auth/get-users with status 200 in 0.00s
+[2025-06-23 21:51:54,556] - INFO - Completed OPTIONS /auth/get-users with status 200 in 0.00s
+[2025-06-23 21:51:54,572] - INFO - Completed GET /tool/1/tools with status 200 in 0.02s
+[2025-06-23 21:51:54,587] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 21:51:54,607] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 21:51:54,623] - INFO - Completed GET /auth/get-users with status 200 in 0.04s
+[2025-06-23 21:51:54,632] - INFO - Completed GET /tool/1/tools with status 200 in 0.02s
+[2025-06-23 21:51:54,638] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 21:51:54,659] - INFO - Completed GET /auth/get-users with status 200 in 0.02s
+[2025-06-23 21:52:03,433] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 21:52:03,435] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 21:52:03,451] - INFO - Completed GET /auth/get-users with status 200 in 0.02s
+[2025-06-23 21:52:03,457] - INFO - Incoming request: GET /auth/get-users
+[2025-06-23 21:52:03,462] - INFO - Completed GET /tool/1/tools with status 200 in 0.03s
+[2025-06-23 21:52:03,474] - INFO - Incoming request: GET /tool/1/tools
+[2025-06-23 21:52:03,490] - INFO - Completed GET /auth/get-users with status 200 in 0.03s
+[2025-06-23 21:52:03,500] - INFO - Completed GET /tool/1/tools with status 200 in 0.03s
+[2025-06-23 21:52:16,974] - INFO - Incoming request: POST /project/create-tasks
+[2025-06-23 21:52:17,071] - INFO - Completed POST /project/create-tasks with status 200 in 0.10s
+[2025-06-23 21:52:17,079] - INFO - Incoming request: OPTIONS /project/1/tasks
+[2025-06-23 21:52:17,080] - INFO - Completed OPTIONS /project/1/tasks with status 200 in 0.00s
+[2025-06-23 21:52:17,087] - INFO - Incoming request: GET /project/1/tasks
+[2025-06-23 21:52:17,104] - INFO - Completed GET /project/1/tasks with status 200 in 0.02s
