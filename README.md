@@ -144,11 +144,12 @@ Please ensure your code is clean, well-documented, and understandable before sub
 - `GET /get-projects`: To fetch the list of all projects
 - `DELETE /delete-project/{project_id}`: To delete a project
 
-### Task CRUD
+### Task Management
 - `POST /create-tasks`: Creates a new task
 - `GET /{project_id}/tasks`: To fetch all the tasks under a project
 - `PUT /update-task/{task_id}`: To update a task
 - `DELETE /delte-task/{task_id}`: To delete a task
+- `GET /tool/{project_id}/tools/{tool_id}/tasks`: Fetches all tasks using the tool
 
  ### Attachments
  - `POST /tasks/{task_id}/attachments`: To upload an email
@@ -165,6 +166,11 @@ Please ensure your code is clean, well-documented, and understandable before sub
 - `GET /user-summary`: To fetch the task summary of a user
 - `GET /project-summary`: To fetch the summary of a project
 - `GET /tasks/{status}`: Fetches summary based on certain filters
+
+### Tools
+- `POST /tool/{project_id}/tools`: Creates a tool
+- `GET /tool/{project_id}/tools`: Fetches all the tools under a project
+- `DELETE /tool/tools/{tool_id}`: Deletes a tool
 
 ## Detailed Enpoint Information
 
@@ -408,6 +414,18 @@ Please ensure your code is clean, well-documented, and understandable before sub
   "description": "Updated description"
 }
 ```
+#### Get tasks by tool
+**Endpoint**: GET /tool/{project_id}/tools/{tool_id}/tasks  
+**Description**: Retrives all the tasks using the tool  
+
+- Parameters
+  - project_id = 1 (path)
+  - tool_id = 1 (path)
+
+ **Response**
+ ```json
+[]
+```
 
 ### Attachments
 
@@ -635,6 +653,43 @@ Please ensure your code is clean, well-documented, and understandable before sub
   }
 ]
 ```
+
+### Tools
+
+#### Create tool  
+**Endpoint**: POST /tool/{project_id}/tools  
+**Description**: Creates a new tool under a project  
+- Parameter
+   - project_id = 1(path)
+**Response**
+```json
+{
+  "name": "string"
+}
+```
+#### Get Tools 
+**Endpoint**: GET /tool/{project_id}/tools  
+**Description**: Fetches all the tools under a project  
+- Parameter
+   - project_id = 1(path)
+**Response**
+```json
+[]
+```
+
+#### Delete tool  
+**Endpoint**: Delete /tool/tools/{tool_id}  
+**Description**: Deletes a new tool under a project  
+- Parameter
+   - tool_id = 1(path)
+**Response**
+```json
+{
+  "detail": "Tool deleted successfully!"
+}
+```
+
+
 
 ## Developer
 
