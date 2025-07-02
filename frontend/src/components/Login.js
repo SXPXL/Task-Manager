@@ -1,3 +1,21 @@
+/**
+ * Login Component
+ * ---------------
+ * Handles user login by collecting email and password, submitting to backend, and managing authentication state.
+ *
+ * State:
+ * - formData: Holds email and password input values
+ * - error: Error message to display on login failure
+ * - loading: Whether the login request is in progress
+ *
+ * Functions:
+ * - handleChange: Updates formData when input fields change
+ * - handlesubmit: Submits login form, handles authentication, and redirects on success
+ *
+ * Usage:
+ * Used as the login page for the application.
+ */
+
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
@@ -21,6 +39,10 @@ function Login() {
 
   // Handles changes to input fields and update state accordingly
   const handleChange = (e) => {
+    /**
+     * Updates formData state when an input field changes.
+     * @param {object} e - The input change event
+     */
     const {name,value } = e.target;
     setFormData((prev)=>({
       ...prev,
@@ -30,6 +52,11 @@ function Login() {
 
   // Handle form submission
   const handlesubmit = async (e) => {
+    /**
+     * Handles login form submission.
+     * Sends POST request to backend, updates auth state, and navigates on success.
+     * @param {object} e - The form submit event
+     */
     e.preventDefault(); // To prevent default form submit refresh
     setLoading(true);
     try{
@@ -80,7 +107,7 @@ function Login() {
         {error && <p className="error">{error}</p>}
         <button type="submit">Login</button>
         {/* Link to register page for new users */}
-        <p style={{ marginTop: "10px", color: "blue" }}>New user? <Link to="/register">Register</Link></p>    
+        <p>New user? <Link to="/register">Register</Link></p>    
       </form>
     </div>
     </div>

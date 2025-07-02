@@ -1,3 +1,56 @@
+/**
+ * TaskDetails Component
+ * ---------------------
+ * Displays detailed information about a specific task in a project.
+ *
+ * Features:
+ * - Fetches and displays task details, assigned user, and comments.
+ * - Allows authorized users (assignee, managers, and admins) to update the task.
+ * - Enables uploading and viewing .eml email attachments grouped by date.
+ * - Supports adding, editing, and deleting comments on the task.
+ * - Allows downloading uploaded emails.
+ * - Shows a spinner while data or files are loading.
+ *
+ * State:
+ * - task: Current task object
+ * - comments: List of comments for the task
+ * - newComment: New comment input value
+ * - users: List of all users
+ * - editingTask: Task object being edited
+ * - editCommentId: ID of the comment being edited
+ * - editContent: Content for editing a comment
+ * - emlFile: .eml or .pdf file selected for upload
+ * - uploadMessage: Feedback message for file upload
+ * - showFileInput: Show/hide upload input
+ * - emails: List of uploaded emails
+ * - showEmails: Toggle email display
+ * - uploading: Track if file is being uploaded
+ * - tools: List of tools for the project
+ *
+ * Functions:
+ * - fetchTask: Loads task details
+ * - fetchComments: Loads comments for the task
+ * - fetchUsers: Loads all users
+ * - fetchEmails: Loads email attachments
+ * - fetchTools: Loads tools for the project
+ * - getUserName: Returns username for a given user ID
+ * - getToolName: Returns tool name for a given tool ID
+ * - handleFileChange: Validates and sets selected file
+ * - handleFileUpload: Uploads selected file to backend
+ * - handleDownload: Downloads email attachment
+ * - handleUpdateTask: Opens update form for the task
+ * - handleTaskUpdated: Refreshes task details after editing
+ * - handleCommentSubmit: Submits a new comment
+ * - handleDeleteComment: Deletes a comment
+ * - handleEditCommentSubmit: Submits an edited comment
+ *
+ * Effects:
+ * - Fetches all required data on mount or when token/projectId/taskId changes
+ *
+ * Usage:
+ * Used as the detail page for a specific task in a project.
+ */
+
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -143,7 +196,8 @@ const TaskDetails = () => {
       `${BASE_URL}/project/tasks/${taskId}/attachments`,
       formData,
       {
-        headers: {
+        headers:
+         {
           Authorization: `Bearer ${token}`,
           "Content-Type": "multipart/form-data",
         },

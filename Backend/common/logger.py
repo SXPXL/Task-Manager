@@ -1,3 +1,18 @@
+"""
+Logger Configuration
+--------------------
+Sets up application-wide logging with console and file handlers, including log rotation.
+
+Features:
+- Logs to both console and file (rotated daily, keeps 30 days)
+- Custom log format with timestamp, level, and message
+- Ensures log directory exists
+- Avoids duplicate handlers
+
+Usage:
+Import the logger object and use logger.info(), logger.error(), etc. throughout the app.
+"""
+
 # common/logger.py
 
 import logging

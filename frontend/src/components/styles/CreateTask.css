@@ -1,3 +1,21 @@
+/*
+===========================================
+CreateTask.css
+-------------------------------------------
+Styles for the CreateTask modal and form component.
+
+Sections:
+- Modal: Fullscreen overlay for modal background
+- Modal Overlay: Alternative overlay for separating modal box and background
+- Create Task Form Container: Layout and appearance of the form
+- Input and Select Styling: Styles for input and select fields
+- Submit Button Styling: Styles for the create/submit button
+- Cancel Button Styling: Styles for the cancel button
+
+Usage:
+Import this file in the CreateTask component to apply consistent modal and form styling.
+=========================================== */
+
 /* ===========================================
    Modal (General Full-Screen Centered Overlay)
    =========================================== */

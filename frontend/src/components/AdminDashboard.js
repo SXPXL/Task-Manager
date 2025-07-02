@@ -1,3 +1,31 @@
+/**
+ * AdminDashboard Component
+ * ------------------------
+ * Displays all users in the system for the admin.
+ *
+ * Features:
+ * - View user details
+ * - Delete users (except other admins)
+ * - Change user roles via dropdown
+ * - Navigate to view tasks assigned to a user
+ *
+ * State:
+ * - users: List of all users
+ * - expandedUserId: Tracks which user's details are expanded
+ * - editingRoleUserId: Tracks which user's role is being edited
+ * - selectedRoles: Stores selected role values for dropdown
+ *
+ * Functions:
+ * - fetchUsers: Loads users from backend
+ * - handleDelete: Deletes a user after confirmation
+ * - toggleExpand: Expands/collapses user details
+ * - toggleEditRole: Enables/disables role editing for a user
+ * - handleChangeRole: Updates a user's role in the backend
+ *
+ * Usage:
+ * Used by admins to manage users and their roles.
+ */
+
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';

@@ -1,3 +1,22 @@
+/*
+===========================================
+Dashboard.css
+-------------------------------------------
+Styles for the Dashboard component and its subcomponents.
+
+Sections:
+- Whole Page Wrapper: Full-page background and centering
+- Dashboard Container: Main dashboard layout
+- Top Bar: Hamburger menu, logout, and welcome text
+- Side Hamburger Menu: Slide-out menu for navigation/profile
+- Project Section: Project list and header
+- Project List Box: Styles for the project list
+- Delete Button: Styles for the delete project button
+
+Usage:
+Import this file in the Dashboard component to apply consistent dashboard and project list styling.
+=========================================== */
+
 /* ===========================================
    Whole Page Wrapper
    =========================================== */

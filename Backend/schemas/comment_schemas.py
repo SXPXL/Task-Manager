@@ -1,3 +1,14 @@
+"""
+Comment Schemas
+---------------
+Defines Pydantic schemas for comment creation, base, and output/response.
+
+Classes:
+- CommentBase: Base schema for comment data
+- CommentCreate: For creating a new comment
+- CommentOut: For sending comment details in API responses
+"""
+
 from pydantic import BaseModel
 from datetime import datetime
 from schemas.user_schemas import UserOut

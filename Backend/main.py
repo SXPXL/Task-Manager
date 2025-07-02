@@ -1,11 +1,18 @@
 """
-This is the main entry point of the FastAPI application.
+Main Application Entry Point
+---------------------------
+Initializes and configures the FastAPI application.
 
-Modules and Configuration:
-- Imports route modules: Handles authentication, projects/tasks, comments, and statistics
-- Sets up CORS middleware: Allows cross-origin requests from the frontend (e.g., React app at localhost:3000)
-- Creates database tables using SQLAlchemy's Base metadata
-- Registers routers with specific URL prefixes for modular route organization
+Features:
+- Imports and registers route modules for authentication, projects/tasks, comments, summary, and tools
+- Sets up CORS middleware for frontend-backend communication
+- Integrates custom logging middleware
+- Loads admin configuration and ensures an admin user exists
+- Creates database tables using SQLAlchemy
+- Registers routers with specific URL prefixes for modular API structure
+
+Usage:
+Run this file to start the FastAPI backend server.
 """
 
 
@@ -45,7 +52,7 @@ app.include_router(comment_router,prefix="/comment")
 app.include_router(summary_router,prefix="/summary")
 app.include_router(tool_router,prefix="/tool")
 
-
+# Startup event to ensure admin user exists
 @app.on_event("startup")
 def on_startup():
     print("AAAAAA RUNNNNINGGGGG")

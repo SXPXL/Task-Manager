@@ -1,3 +1,24 @@
+/*
+===========================================
+AdminDashboard.css
+-------------------------------------------
+Styles for the Admin Dashboard component.
+
+Sections:
+- Admin Dashboard Container: Layout and background for the dashboard
+- User Card Container: Styles for each user card
+- User Card Header Section: Header layout and text for user cards
+- Delete Button: Styles for the delete user button
+- User Details Section: Expanded user details styling
+- Button Group: Layout for action buttons (delete, change role, view tasks)
+- Change Role Button: Styles for the change role button
+- Role Dropdown Section: Styles for the role selection dropdown
+- Update Role & View Tasks Button: Styles for update and view tasks buttons
+
+Usage:
+Import this file in the AdminDashboard component to apply consistent styling.
+=========================================== */
+
 /* ===========================================
    Admin Dashboard Container
    =========================================== */
@@ -119,7 +140,8 @@
 /* ===========================================
    Update Role Button
    =========================================== */
-.update-role {
+.update-role,
+.view-tasks-btn {
    background-color: #00b309;
   color: white;
   border: none;

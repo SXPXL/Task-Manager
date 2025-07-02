@@ -1,3 +1,14 @@
+"""
+User Schemas
+------------
+Defines Pydantic schemas for user creation, login, and output/response.
+
+Classes:
+- UserCreate: For user registration
+- UserLogin: For user authentication
+- UserOut: For sending user details in API responses
+"""
+
 from pydantic import BaseModel, EmailStr
 from datetime import datetime, date
 from typing import Optional

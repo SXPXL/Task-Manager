@@ -1,3 +1,30 @@
+/**
+ * Dashboard Component
+ * -------------------
+ * Home page displaying a list of projects based on the user's role.
+ *
+ * Features:
+ * - Shows all projects for admins/managers
+ * - Shows only relevant projects for normal users (with assigned tasks)
+ * - Allows admins/managers to create and delete projects
+ * - Handles logout and navigation
+ *
+ * State:
+ * - projects: List of projects to display
+ * - showCreateProject: Whether the create project modal is open
+ * - menuOpen: Whether the hamburger menu is open
+ *
+ * Functions:
+ * - fetchProjects: Loads projects from backend and filters by user role
+ * - handleDelete: Deletes a project after confirmation
+ * - handleLogout: Logs out the user and redirects
+ * - toggleCreateProject: Shows/hides the create project modal
+ * - goToProject: Navigates to the project detail page
+ *
+ * Usage:
+ * Used as the main landing page after login.
+ */
+
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';

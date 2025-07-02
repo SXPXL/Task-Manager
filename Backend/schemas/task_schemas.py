@@ -1,3 +1,17 @@
+"""
+Task Schemas
+------------
+Defines Pydantic schemas for task creation, update, and output.
+
+Features:
+- TaskCreate: Schema for creating a new task
+- TaskOut: Schema for sending task details in responses
+- Field validation for all required attributes
+
+Usage:
+Used by FastAPI endpoints for request validation and response serialization.
+"""
+
 from pydantic import BaseModel, EmailStr
 from datetime import datetime, date
 from typing import Optional
@@ -72,4 +86,3 @@ class TaskUpdate(BaseModel):
   due_date: Optional[date] = None
   start_date: Optional[date] = None
   due_date_change_reason: Optional[str] = None
-  

@@ -1,3 +1,22 @@
+/**
+ * Register Component
+ * ------------------
+ * Handles user registration by collecting username, email, and password.
+ * Submits the form data to backend API to create a new user.
+ * Displays error messages on failure and navigates to login page on success.
+ *
+ * State:
+ * - formdata: Holds username, email, and password input values
+ * - error: Error message to display on registration failure
+ *
+ * Functions:
+ * - handleChange: Updates formdata when input fields change
+ * - handleSubmit: Submits registration form, sends POST request, and handles response
+ *
+ * Usage:
+ * Used as the registration page for the application.
+ */
+
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -27,6 +46,10 @@ function Register() {
 
   // Handle input field changes
   const handleChange = (e) => {
+    /**
+     * Updates formdata state when an input field changes.
+     * @param {object} e - The input change event
+     */
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -36,6 +59,11 @@ function Register() {
 
   // Handle form submit
   const handleSubmit = async (e) => {
+    /**
+     * Handles registration form submission.
+     * Sends POST request to backend, clears form, and navigates on success.
+     * @param {object} e - The form submit event
+     */
     e.preventDefault(); // prevent page reload
     setError(""); // clear previous error
 
@@ -89,7 +117,7 @@ function Register() {
         <button type="submit">Register</button>
 
         {/* Link to Login if already registered */}
-        <p> <Link to="/login">Already registered? Click here to login</Link></p> 
+        <p>Already registered? <Link to="/login">Click here to login</Link></p> 
       </form>
     </div>
     </div>

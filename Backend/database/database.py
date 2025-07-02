@@ -1,15 +1,17 @@
 """
-This module sets up the database configuration and provides a session dependency for FastAPI routes.
+Database Configuration Module
+----------------------------
+Sets up the SQLAlchemy database engine, session, and base class.
 
 Components:
-- database_url: Defines the SQLite database location (in this case, 'users.db' in the current directory)
-- engine: SQLAlchemy engine created to connect to the database
-- SessionLocal: Session factory for creating and managing DB sessions (used as a dependency in FastAPI)
-- Base: Declarative base class used to define ORM models (tables)
-- get_db(): Dependency function that yields a database session and ensures it's closed after use
+- engine: SQLAlchemy engine for database connection
+- SessionLocal: Factory for database sessions
+- Base: Declarative base for ORM models
+- get_db: Dependency for providing a session to FastAPI routes
+
+Usage:
+Imported by models and API routes to interact with the database.
 """
-
-
 
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
@@ -30,8 +32,18 @@ SessionLocal = sessionmaker(autocommit=False,autoflush=False,bind=engine)
 Base = declarative_base()
 
 def get_db():
-  db=SessionLocal()
-  try:
-    yield db
-  finally:
-    db.close()
+    """
+    Dependency function for FastAPI routes to provide a database session.
+    
+    Purpose:
+        - Yields a SQLAlchemy session for use in API endpoints/services.
+        - Ensures the session is closed after the request is handled.
+    
+    Variables:
+        db: A new SQLAlchemy session instance from SessionLocal.
+    """
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()

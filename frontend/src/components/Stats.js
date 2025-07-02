@@ -1,3 +1,24 @@
+/**
+ * Stats Component
+ * ---------------
+ * Displays the user-specific dashboard summary of tasks.
+ * Fetches task counts and renders summary cards and a task chart.
+ * Allows navigation to filtered task lists by clicking on summary cards.
+ * Shows additional dashboards for users with 'manager' and 'admin' roles.
+ *
+ * State:
+ * - summary: User's task summary data
+ * - error: Error message during API calls
+ *
+ * Functions:
+ * - handleClick: Handles clicks on summary cards and navigates to filtered task lists
+ *
+ * Effects:
+ * - Fetches user summary data on token change
+ *
+ * Usage:
+ * Used as the main stats/summary page for users.
+ */
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -28,6 +49,7 @@ export default function Stats() {
    * Handles clicks on the summary cards.
    * Converts the label text into a URL-friendly status string and navigates to that tasks page.
    * Example: "Due Soon" → "due_soon"
+   * @param {string} label - The label of the summary card
    */
   const handleClick = (label) => {
    

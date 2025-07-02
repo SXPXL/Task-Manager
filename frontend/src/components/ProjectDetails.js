@@ -9,14 +9,50 @@ import GreenSpinner from './Spinner';
 import ToolList from './ToolList.js';
 import BASE_URL from '../config.js';
 
-
 /**
- * Project Detail Page
- * -------------------
- * Displays detailed information about a single project.
- * Shows the task list with filtering and sorting options.
- * Allows creating, updating, and deleting tasks for admins/managers.
- * Includes a print feature for the project report.
+ * ProjectDetail Component
+ * ----------------------
+ * Displays detailed information about a single project, including:
+ *   - Project title, description, start and due dates
+ *   - Task list with filtering (by status, assigned user, and tool)
+ *   - Task creation, update, and deletion (admin/manager only)
+ *   - ToolList sidebar for filtering tasks by tool
+ *   - Print feature for generating a project report
+ *
+ * State:
+ *   - project: Current project details
+ *   - tasks: Filtered list of tasks for the project
+ *   - allTasks: All tasks fetched for the project
+ *   - showCreateTask: Whether the create task form is visible
+ *   - selectedTool: Tool ID for filtering tasks
+ *   - filterStatus: Status filter for tasks (all, pending, in_progress, completed)
+ *   - editingTask: Task currently being edited
+ *   - users: List of users (for assignment and filtering)
+ *   - assignedUser: User ID for filtering tasks by assignee
+ *
+ * Effects:
+ *   - Fetches project, tasks, and users on mount or when token/projectId changes
+ *
+ * Functions:
+ *   - fetchProject: Loads project details
+ *   - fetchTasks: Loads and filters tasks for the project
+ *   - fetchUsers: Loads all users
+ *   - getUserName: Returns username for a given user ID
+ *   - handleTaskClick: Navigates to task detail page
+ *   - handleTaskCreated: Refreshes tasks after creation
+ *   - handleUpdateTask: Opens update form for a task
+ *   - handleTaskUpdated: Refreshes tasks after update
+ *   - handleDeleteTask: Deletes a task after confirmation
+ *   - handleToolClick: Sets tool filter
+ *   - handlePrint: Opens print dialog for project report
+ *
+ * UI Structure:
+ *   - Project info header
+ *   - Task header with filters and create button
+ *   - CreateTask and UpdateTask forms (conditional)
+ *   - ToolList sidebar
+ *   - Task list (filtered)
+ *   - Print section (hidden, for report)
  */
 const ProjectDetail = () => {
   const { projectId } = useParams(); // Project ID from URL parameters

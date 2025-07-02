@@ -1,3 +1,17 @@
+/**
+ * LandingPage Component
+ * ---------------------
+ * Public landing page for the application.
+ *
+ * Features:
+ * - Displays app name, tagline, and description
+ * - Provides navigation buttons to Sign Up and Sign In pages
+ * - Shows a footer with copyright
+ *
+ * Usage:
+ * Used as the entry point for unauthenticated users.
+ */
+
 import React from 'react';
 import './styles/LandingPage.css';
 import {Link} from 'react-router-dom'

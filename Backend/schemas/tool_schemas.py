@@ -1,3 +1,14 @@
+"""
+Tool Schemas
+------------
+Defines Pydantic schemas for tool creation and output/response.
+
+Classes:
+- ToolBase: Base schema for tool data
+- ToolCreate: For creating a new tool
+- ToolOut: For sending tool details in API responses
+"""
+
 from pydantic import BaseModel
 
 class ToolBase(BaseModel):

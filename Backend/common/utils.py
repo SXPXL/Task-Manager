@@ -1,16 +1,20 @@
 """
-This module provides utility functions for authentication and security.
+Utility Functions for Authentication and Security
+------------------------------------------------
+Provides helper functions for password hashing, JWT token creation, authentication, and permission checks.
 
 Includes:
-- Password hashing and verification using bcrypt.
-- JWT token creation for user authentication.
-- Password strength validation.
-- Permission checks for user actions.
+- hash_password: Hashes a plain password
+- verify_password: Verifies a password against a hash
+- create_access_token: Generates a JWT token for authentication
+- validate_password_strength: Checks password strength
+- get_current_user: Dependency to get the current authenticated user
+- Additional helpers for security and permissions
 
 Dependencies:
-- Passlib for secure password hashing.
-- JOSE for JWT encoding.
-- FastAPI for exception handling.
+- Passlib for secure password hashing
+- JOSE for JWT encoding
+- FastAPI for exception handling
 """
 
 from fastapi import Depends
@@ -34,16 +38,16 @@ algorithm="HS256"
 
 
 def hash_password(password):
-  """
+    """
     Generate a hashed version of the given password.
-
+    
     Args:
-    password (str): Plain text password.
-
+        password (str): The plain password to hash.
+        
     Returns:
-    str: Hashed password.
-  """
-  return password_context.hash(password)
+        str: The hashed password.
+    """
+    return password_context.hash(password)
 
 
 def check_password(password,hash_password):

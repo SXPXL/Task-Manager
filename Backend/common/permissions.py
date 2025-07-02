@@ -1,3 +1,15 @@
+"""
+Permission Dependencies
+----------------------
+Provides FastAPI dependencies to enforce user roles (admin, manager) for route protection.
+
+Includes:
+- admin_required: Ensures the current user is an admin
+- manager_required: Ensures the current user is an admin or manager
+
+Each function raises an HTTP 403 error if the user lacks the required role.
+"""
+
 from fastapi import Depends, HTTPException, status
 from common.utils import get_current_user
 from models.user_model import User

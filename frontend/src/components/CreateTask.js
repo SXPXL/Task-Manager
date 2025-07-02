@@ -6,13 +6,28 @@ import BASE_URL from '../config';
 /**
  * CreateTask Component
  * --------------------
- * A modal form used to create a new task within a specific project.
- * 
+ * Modal form for creating a new task within a specific project.
+ *
  * Props:
- * - token: authentication token (string)
- * - onTaskCreated: callback to notify parent when task is created
- * - onClose: function to close the modal
+ * - token: Authentication token (string)
+ * - onTaskCreated: Callback to notify parent when task is created
+ * - onClose: Function to close the modal
  * - projectId: ID of the project this task belongs to
+ *
+ * State:
+ * - users: List of users to assign the task to
+ * - tools: List of tools available for the project
+ * - formData: Object holding form field values (title, description, start_date, due_date, assigned_to, tool_id)
+ *
+ * Functions:
+ * - handleChange: Updates formData when input fields change
+ * - handleSubmit: Validates input, sends POST request, and handles response
+ *
+ * Effects:
+ * - Fetches users and tools when component mounts or project/token changes
+ *
+ * Usage:
+ * Used as a modal in the project details page for adding new tasks.
  */
 const CreateTask = ({ token, onTaskCreated, onClose, projectId }) => {
   const [users, setUsers] = useState([]);

@@ -1,17 +1,26 @@
+/**
+ * TaskChart Component
+ * -------------------
+ * Renders a pie chart displaying the distribution of tasks by status.
+ * Uses Recharts library for visualization.
+ *
+ * Props:
+ * - data: An object containing task counts with keys:
+ *    assigned_tasks, completed_tasks, overdue_tasks, soon_due_tasks
+ *
+ * Usage:
+ * Used in the Stats dashboard to visualize task status distribution.
+ */
+
 import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts";
 import './styles/TaskChart.css'
 
 
 
 /**
- * TaskChart Component
- * -------------------
- * Renders a pie chart displaying the distribution of tasks by status.
- * Uses Recharts library for visualization.
- * 
- * Props:
- * - data: An object containing task counts with keys:
- *    assigned_tasks, completed_tasks, overdue_tasks, soon_due_tasks
+ * Prepares data and renders a pie chart for task status distribution.
+ * @param {object} data - Task summary data
+ * @returns {JSX.Element} Pie chart markup
  */
 export default function TaskChart({ data }) {
   

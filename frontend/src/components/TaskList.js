@@ -1,3 +1,24 @@
+/**
+ * TaskListPage Component
+ * ----------------------
+ * Displays a list of tasks based on their status (e.g., "due_soon", "overdue").
+ * Fetches tasks from the backend and allows navigation to individual task details.
+ *
+ * State:
+ * - tasks: List of fetched tasks
+ * - loading: Whether the task list is loading
+ *
+ * Functions:
+ * - fetchTasks: Loads tasks from backend based on status and optional user_id
+ * - handleTaskClick: Navigates to the details page for a selected task
+ *
+ * Effects:
+ * - Fetches tasks when the component mounts or status/token changes
+ *
+ * Usage:
+ * Used to show filtered task lists from the dashboard or summary cards.
+ */
+
 import { useParams, useNavigate, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -23,6 +44,10 @@ export default function TaskListPage() {
 
   //To fetch tasks based on the status from the backend when the component mounts or status changes
   useEffect(() => {
+    /**
+     * Fetches tasks from the backend API based on status and optional user_id.
+     * Updates the tasks state and loading state.
+     */
     if (!token) return;
     const searchParams = new URLSearchParams(location.search);
     const userId = searchParams.get("user_id");
@@ -48,6 +73,11 @@ export default function TaskListPage() {
 
   // Handle task click to navigate to task details page
   const handleTaskClick = (taskId,projectId) => {
+    /**
+     * Navigates to the details page for the selected task.
+     * @param {number} taskId - The ID of the task
+     * @param {number} projectId - The ID of the project the task belongs to
+     */
     navigate(`/project/${projectId}/tasks/${taskId}`);
   };
 

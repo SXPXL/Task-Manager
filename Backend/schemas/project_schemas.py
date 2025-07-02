@@ -1,3 +1,13 @@
+"""
+Project Schemas
+---------------
+Defines Pydantic schemas for project creation and output/response.
+
+Classes:
+- ProjectCreate: For creating a new project
+- ProjectOut: For sending project details in API responses
+"""
+
 from pydantic import BaseModel
 from datetime import date
 

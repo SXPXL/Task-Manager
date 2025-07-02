@@ -1,3 +1,31 @@
+/**
+ * UpdateTaskForm Component
+ * ------------------------
+ * Modal form for updating an existing task's details.
+ *
+ * Props:
+ * - task: The task object to update
+ * - token: Authentication token for API requests
+ * - onClose: Function to close the modal
+ * - onUpdate: Callback to notify parent after successful update
+ *
+ * State:
+ * - formData: Holds updated task field values
+ * - reason: Reason for due date change (if applicable)
+ * - error: Error message for validation or API errors
+ * - initialDueDate: Ref to store the original due date
+ *
+ * Functions:
+ * - handleChange: Updates formData and resets reason if due date changes
+ * - handleSubmit: Validates input, sends PUT request, and handles response
+ *
+ * Effects:
+ * - Loads task data into form fields when task prop changes
+ *
+ * Usage:
+ * Used as a modal in the project/task details page for editing tasks.
+ */
+
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import './styles/UpdateTask.css';
@@ -15,6 +43,9 @@ const UpdateTaskForm = ({ task, token, onClose, onUpdate }) => {
   const initialDueDate = useRef('');
 
   useEffect(() => {
+    /**
+     * Loads task data into form fields when the task prop changes.
+     */
     if (task) {
       setFormData({
         title: task.title,
@@ -29,6 +60,10 @@ const UpdateTaskForm = ({ task, token, onClose, onUpdate }) => {
   }, [task]);
 
   const handleChange = (e) => {
+    /**
+     * Updates formData state and resets reason if due date changes.
+     * @param {object} e - The input change event
+     */
     setFormData({ ...formData, [e.target.name]: e.target.value });
     if (e.target.name === 'due_date' && e.target.value !== initialDueDate.current) {
       setReason('');
@@ -36,6 +71,10 @@ const UpdateTaskForm = ({ task, token, onClose, onUpdate }) => {
   };
 
   const handleSubmit = async (e) => {
+    /**
+     * Validates input, sends PUT request to update the task, and handles response.
+     * @param {object} e - The form submit event
+     */
     e.preventDefault();
     setError('');
 

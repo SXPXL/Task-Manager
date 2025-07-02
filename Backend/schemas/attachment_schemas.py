@@ -1,3 +1,12 @@
+"""
+Attachment Schemas
+------------------
+Defines Pydantic schemas for attachment output/response.
+
+Classes:
+- AttachmentOut: For sending attachment details in API responses
+"""
+
 from pydantic import BaseModel
 from datetime import datetime
 

@@ -1,3 +1,21 @@
+/**
+ * ManagerDashboard Component
+ * -------------------------
+ * Displays a summary dashboard for managers, including project and task statistics.
+ *
+ * State:
+ * - summary: Holds total projects, total tasks, in-progress tasks, and completed tasks
+ *
+ * Effects:
+ * - Fetches all projects and their tasks on mount to compute summary statistics
+ *
+ * Functions:
+ * - fetchData: Loads project and task data, computes summary, and updates state
+ *
+ * Usage:
+ * Used by managers to get an overview of project/task status.
+ */
+
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './styles/ManagerDashboard.css';
@@ -14,6 +32,9 @@ const ManagerDashboard = () => {
 
   // To fetch projects and tasks data 
   useEffect(() => {
+    /**
+     * Fetches all projects and their tasks from the backend, computes summary statistics, and updates state.
+     */
     const fetchData = async () => {
       try {
 

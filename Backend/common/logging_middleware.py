@@ -1,3 +1,17 @@
+"""
+Logging Middleware
+------------------
+Provides a FastAPI middleware class for logging incoming requests and responses.
+
+Features:
+- Logs request method and path
+- Logs response status and duration
+- Logs exceptions during request handling
+
+Class:
+- LoggingMiddleware: Middleware for logging HTTP requests and responses
+"""
+
 # common/logging_middleware.py
 
 import time
@@ -6,6 +20,12 @@ from starlette.middleware.base import BaseHTTPMiddleware
 from common.logger import logger
 
 class LoggingMiddleware(BaseHTTPMiddleware):
+    """
+    Middleware to log incoming HTTP requests and responses.
+    
+    Methods:
+        dispatch(request, call_next): Logs request details, handles exceptions, and logs response status and duration.
+    """
     async def dispatch(self, request: Request, call_next):
         start_time = time.time()
 

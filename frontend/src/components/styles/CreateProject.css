@@ -1,3 +1,21 @@
+/*
+===========================================
+CreateProject.css
+-------------------------------------------
+Styles for the CreateProject modal and form component.
+
+Sections:
+- Modal Overlay: Fullscreen overlay for modal background
+- Modal Content Box: Main modal content styling
+- Create Project Form Styling: Layout and appearance of the form
+- Input Fields: Styles for text, textarea, and select inputs
+- Submit Button: Styles for the create/submit button
+- Close Button: Styles for the close/cancel button
+
+Usage:
+Import this file in the CreateProject component to apply consistent modal and form styling.
+=========================================== */
+
 /* ===========================================
    Modal Overlay
    =========================================== */

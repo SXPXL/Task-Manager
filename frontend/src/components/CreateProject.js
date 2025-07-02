@@ -1,3 +1,24 @@
+/**
+ * CreateProject Component
+ * -----------------------
+ * Modal form for creating a new project.
+ *
+ * Props:
+ * - onClose: Function to close the modal
+ * - onProjectCreated: Callback to notify parent when a new project is created
+ *
+ * State:
+ * - formData: Object holding form field values (title, description, start_date, due_date)
+ * - message: Feedback message for the user
+ *
+ * Functions:
+ * - handleChange: Updates formData when input fields change
+ * - handleSubmit: Validates input, sends POST request, and handles response
+ *
+ * Usage:
+ * Used as a modal in the dashboard for admins/managers to add new projects.
+ */
+
 import React, { useState } from "react";
 import axios from "axios";
 import { useAuth } from "../context/AuthContext";
